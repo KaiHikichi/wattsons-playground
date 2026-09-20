@@ -5,6 +5,10 @@ This fork is deployed as the Cloudflare Worker `hellowattson-playground` by
 the repo secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. The build
 uses `BASE_URL="/"` so the bundle is hostname-agnostic.
 
+Only `CI-build`, `CI-typos`, the skills checks and `deploy-worker` run here.
+Upstream's other workflows (i18n sync, release, bundle size, e2e, GitHub Pages
+deploy) need upstream's secrets and are deleted after every sync from upstream.
+
 ---
 
 # LiveCodes
