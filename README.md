@@ -1,3 +1,12 @@
+## Science Alive fork
+
+This fork is deployed as the Cloudflare Worker `hellowattson-playground` by
+`.github/workflows/deploy-worker.yml` on every push to `develop`. It requires
+the repo secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. The build
+uses `BASE_URL="/"` so the bundle is hostname-agnostic.
+
+---
+
 # LiveCodes
 
 A Code Playground That Just Works!
