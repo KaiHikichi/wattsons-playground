@@ -3,7 +3,8 @@
 This fork is deployed as the Cloudflare Worker `hellowattson-playground` by
 `.github/workflows/deploy-worker.yml` on every push to `develop`. It requires
 the repo secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. The build
-uses `BASE_URL="/"` so the bundle is hostname-agnostic.
+uses `BASE_URL="/"` so the bundle is hostname-agnostic, and skips the docs site
+(`DOCS_BASE_URL=null`, so in-app docs links go to livecodes.io/docs).
 
 Only `CI-build`, `CI-typos`, the skills checks and `deploy-worker` run here.
 Upstream's other workflows (i18n sync, release, bundle size, e2e, GitHub Pages
