@@ -128,6 +128,33 @@ test.describe('SDK options', () => {
     expect(titleText).toBe('Starter Content'); // saved project wins, not "Different Starter"
   });
 
+  test('save keeps activityId in URL', async ({ page, getTestUrl }) => {
+    const activityId = 'test-activity-' + Date.now();
+
+    const starterConfig: Partial<Config> = {
+      markup: {
+        language: 'markdown',
+        content: `# Starter Content`,
+      },
+    };
+
+    const url = getPlaygroundUrl({
+      appUrl: getTestUrl(),
+      activityId,
+      config: starterConfig,
+    });
+    await page.goto(url);
+
+    const { app, waitForResultUpdate } = await getLoadedApp(page);
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    await page.keyboard.press('Control+S');
+    await page.waitForTimeout(500); // give the async IndexedDB write time to complete
+
+    expect(page.url()).toContain(`activityId=${activityId}`);
+  });
+
   test('options override: template -> import -> config -> params', async ({ page, getTestUrl }) => {
     const url = getPlaygroundUrl({
       appUrl: getTestUrl(),

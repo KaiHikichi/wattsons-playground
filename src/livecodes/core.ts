@@ -1320,7 +1320,7 @@ const save = async (notify = false, setTitle = true, isAutoSave = false) => {
     );
   }
 
-  await share(false);
+  await share(false, undefined, undefined, undefined, undefined, isAutoSave);
 };
 
 const fork = async () => {
@@ -1338,6 +1338,7 @@ const share = async (
   urlUpdate = true,
   includeResult = false,
   permanentUrl = false,
+  isAutoSave = false,
 ): Promise<ShareData> => {
   const config = getConfig();
   const content = contentOnly
@@ -1377,12 +1378,13 @@ const share = async (
         result: includeResult ? getCache().result : undefined,
       }));
   } else {
-    const playgroundUrl = getPlaygroundUrl({ appUrl, config: content });
+    const playgroundUrl = getPlaygroundUrl({ appUrl, activityId: params.activityId, config: content });
     shareURL = new URL(playgroundUrl);
   }
 
   if (urlUpdate) {
-    updateUrl(shareURL.href, true);
+    const push = !(params.activityId && isAutoSave);
+    updateUrl(shareURL.href, push);
   }
 
   const projectTitle = content.title !== defaultConfig.title ? content.title + ' - ' : '';
@@ -5324,6 +5326,11 @@ const initializePlayground = async (
     params.mode === 'simple';
 
   window.history.replaceState(null, '', './'); // fix URL from "/app" to "/"
+  if (params.activityId) {
+    const url = new URL(location.href);
+    url.hash = 'activityId=' + encodeURIComponent(params.activityId);
+    window.history.replaceState(null, '', url.href);
+  }
   await initializeStores(stores, isEmbed);
   
   const activityId = params.activityId;
