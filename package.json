@@ -23,7 +23,7 @@
     "build": "run-s build:app build:docs",
     "build:app": "run-s clean copy:* && node ./scripts/build.js",
     "build:docs": "cd docs && npm run build",
-    "build:cloudflare": "cross-env BASE_URL=\"/\" DOCS_BASE_URL=null npm run build:app",
+    "build:cloudflare": "cross-env CF_WORKERS=1 BASE_URL=\"/\" DOCS_BASE_URL=null npm run build:app",
     "copy:assets": "recursive-delete build/livecodes/assets && mkdirp build/livecodes/assets && recursive-copy src/livecodes/assets build/livecodes/assets",
     "copy-php": "node scripts/copy-php.js",
     "storybook:watch": "nodemon --watch storybook/_stories -e \"*\" ./scripts/generate-stories.mts",
