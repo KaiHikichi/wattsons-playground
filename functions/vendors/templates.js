@@ -1,5 +1,6 @@
 export const starterTemplates = {
   "blank": "Blank Project",
+  "science-alive": "Science Alive Starter",
   "javascript": "JavaScript Starter",
   "typescript": "TypeScript Starter",
   "react": "React Starter",
