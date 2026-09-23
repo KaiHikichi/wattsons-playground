@@ -5,14 +5,13 @@ describe('parsePythonError', () => {
     const text = [
       'Traceback (most recent call last):',
       '  File "https://testing.example/main.py#__main__", line 3, in <module>',
-      '    t.forwrd(100)',
-      "AttributeError: 'Turtle' object has no attribute 'forwrd'. Did you mean: 'forward'?",
+      '    t.jump(100)',
+      "AttributeError: 'Turtle' object has no attribute 'jump'",
     ].join('\n');
 
     expect(parsePythonError(text)).toEqual({
       line: 3,
-      message:
-        "AttributeError: 'Turtle' object has no attribute 'forwrd'. Did you mean: 'forward'?",
+      message: "AttributeError: 'Turtle' object has no attribute 'jump'",
     });
   });
 
@@ -34,13 +33,12 @@ describe('parsePythonError', () => {
     const text = [
       'PythonError: Traceback (most recent call last):',
       '  File "<exec>", line 3, in <module>',
-      "AttributeError: 'Turtle' object has no attribute 'forwrd'. Did you mean: 'forward'?",
+      "AttributeError: 'Turtle' object has no attribute 'jump'",
     ].join('\n');
 
     expect(parsePythonError(text)).toEqual({
       line: 3,
-      message:
-        "AttributeError: 'Turtle' object has no attribute 'forwrd'. Did you mean: 'forward'?",
+      message: "AttributeError: 'Turtle' object has no attribute 'jump'",
     });
   });
 
