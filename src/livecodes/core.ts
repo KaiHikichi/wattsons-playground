@@ -692,6 +692,14 @@ const showMode = (mode?: Config['mode'], view?: Config['view']) => {
       toolsPane?.hide();
     }
   }
+  // #127: in simple mode, Run sits at the editor pane's right edge. Moving the node keeps its listeners.
+  // ponytail: .toolbar-app is a fixed 50% wide, so this matches the default split only; if students
+  // drag the gutter, move the button into #editors instead.
+  if (mode === 'simple') {
+    toolbarElement.querySelector('.toolbar-app')?.append(runButton);
+  } else {
+    toolbarElement.querySelector('#share-button')?.before(runButton);
+  }
   document.body.classList.toggle('simple-mode', mode === 'simple');
   document.body.classList.toggle('focus-mode', mode === 'focus');
   document.body.classList.toggle('lite-mode', mode === 'lite');
