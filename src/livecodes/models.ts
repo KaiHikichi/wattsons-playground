@@ -337,6 +337,8 @@ export interface CodeEditor {
   foldLines?: (linesToFold: Array<{ from: number; to: number }>) => void | Promise<void>;
   layout?: () => void;
   addTypes?: (lib: EditorLibrary, force?: boolean) => any;
+  // Wattson (#129): underline the failing line after a Python run error (Monaco only)
+  setErrorMarker?: (error: { line: number; message: string } | null) => void;
   onContentChanged: (callback: () => void) => void;
   addKeyBinding: (label: string, keybinding: any, callback: () => void) => void;
   keyCodes: {

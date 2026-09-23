@@ -425,6 +425,36 @@ export const createEditor = async (options: EditorOptions): Promise<CodeEditor> 
     editor.getModel()?.onDidChangeContent(fn);
   };
 
+  // Wattson (#129): underline the failing line after a Python run error
+  const errorMarkerOwner = 'wattson-run-error';
+  // edited since the last run started: a late error would point at the wrong line
+  let editedSinceRun = false;
+  const setErrorMarker = (error: { line: number; message: string } | null) => {
+    const model = editor.getModel();
+    if (!model) return;
+    if (!error) editedSinceRun = false;
+    if (!error || editedSinceRun || error.line < 1 || error.line > model.getLineCount()) {
+      monaco.editor.setModelMarkers(model, errorMarkerOwner, []);
+      return;
+    }
+    const lineContent = model.getLineContent(error.line);
+    const startColumn = lineContent.length - lineContent.trimStart().length + 1;
+    monaco.editor.setModelMarkers(model, errorMarkerOwner, [
+      {
+        severity: monaco.MarkerSeverity.Error,
+        message: error.message,
+        startLineNumber: error.line,
+        startColumn,
+        endLineNumber: error.line,
+        endColumn: model.getLineMaxColumn(error.line),
+      },
+    ]);
+  };
+  editor.onDidChangeModelContent(() => {
+    editedSinceRun = true;
+    monaco.editor.setModelMarkers(editor.getModel()!, errorMarkerOwner, []);
+  });
+
   const keyCodes = {
     // eslint-disable-next-line
     CtrlEnter: monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter,
@@ -920,6 +950,7 @@ export const createEditor = async (options: EditorOptions): Promise<CodeEditor> 
     changeSettings,
     configureTailwindcss,
     onContentChanged,
+    setErrorMarker,
     keyCodes,
     addKeyBinding,
     registerFormatter,
