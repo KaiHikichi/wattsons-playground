@@ -33,7 +33,7 @@ export const scienceAliveStarter: Template = {
 }
 `.trimStart(),
   },
-  
+
   script: {
     language: 'python',
     content: `

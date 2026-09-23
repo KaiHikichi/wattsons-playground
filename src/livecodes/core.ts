@@ -1194,7 +1194,9 @@ const setWindowTitle = () => {
       : '';
 
   parent.document.title =
-    hostLabel + (title && title !== 'Untitled Project' ? title + ' - ' : '') + 'Wattsons-Playground';
+    hostLabel +
+    (title && title !== 'Untitled Project' ? title + ' - ' : '') +
+    'Wattsons-Playground';
 };
 
 const setExternalResourcesMark = () => {
@@ -1378,7 +1380,11 @@ const share = async (
         result: includeResult ? getCache().result : undefined,
       }));
   } else {
-    const playgroundUrl = getPlaygroundUrl({ appUrl, activityId: params.activityId, config: content });
+    const playgroundUrl = getPlaygroundUrl({
+      appUrl,
+      activityId: params.activityId,
+      config: content,
+    });
     shareURL = new URL(playgroundUrl);
   }
 
@@ -2732,15 +2738,6 @@ const handleCommandMenu = async () => {
 
   eventsManager.addEventListener(window, 'keydown', onHotkey, true);
   eventsManager.addEventListener(UI.getCommandMenuLink(), 'click', () => openCommandMenu(), true);
-};
-
-const handleLogoLink = () => {
-  if (isEmbed || getConfig().mode === 'result') return;
-  const logoLink = UI.getLogoLink();
-  eventsManager.addEventListener(logoLink, 'click', async (event: Event) => {
-    event.preventDefault();
-    parent.postMessage({ args: 'home' }, location.origin);
-  });
 };
 
 const handleRunButton = () => {
@@ -4980,7 +4977,6 @@ const basicHandlers = () => {
   split = createSplitPanes();
   typeLoader = createTypeLoader(baseUrl);
 
-  //handleLogoLink(); disable for simplicity
   handleResize();
   handleIframeResize();
   handleIframeScroll();
@@ -5318,7 +5314,7 @@ const initializePlayground = async (
   const appConfig = options?.config ?? {};
   const codeImportConfig = importCompressedCode(importUrl);
   const sdkConfig = importCompressedCode(params.config ?? '');
-  let initialConfig = { ...codeImportConfig, ...appConfig, ...sdkConfig };
+  const initialConfig = { ...codeImportConfig, ...appConfig, ...sdkConfig };
   baseUrl = options?.baseUrl ?? '/livecodes/';
   isHeadless = options?.isHeadless ?? false;
   isLite =
@@ -5340,7 +5336,7 @@ const initializePlayground = async (
     window.history.replaceState(null, '', url.href);
   }
   await initializeStores(stores, isEmbed);
-  
+
   const activityId = params.activityId;
   let activityConfig: Partial<Config> | undefined;
   if (activityId) {
@@ -5355,7 +5351,7 @@ const initializePlayground = async (
 
   const userConfig = stores.userConfig?.getValue() ?? {};
   const builtConfig = buildConfig({ ...getConfig(), ...userConfig, ...initialConfig });
-  setConfig(activityConfig ? { ...builtConfig, ...activityConfig } : builtConfig);  
+  setConfig(activityConfig ? { ...builtConfig, ...activityConfig } : builtConfig);
   configureModes({ config: getConfig(), isEmbed, isLite });
   compiler = (window as any).compiler = await getCompiler({
     config: getConfig(),
