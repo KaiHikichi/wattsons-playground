@@ -44,6 +44,7 @@ type VuePropConstructor =
   | Array<StringConstructor | ObjectConstructor>;
 
 const props = {
+  activityId: String,
   appUrl: String,
   config: [Object, String],
   headless: Boolean,

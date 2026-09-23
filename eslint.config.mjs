@@ -36,7 +36,8 @@ export default [
       '**/.storybook',
       'docs/docs/api/assets',
       'functions/vendors',
-      'storybook/**/src/livecodes*.ts',
+      // storybook deps are never installed in CI (see #12)
+      'storybook/**',
     ],
   },
   ...fixupConfigRules(

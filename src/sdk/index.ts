@@ -442,6 +442,7 @@ export function getPlaygroundUrl(options: EmbedOptions = {}): string {
   const isHeadless = options.view === 'headless' || headless;
 
   if (lite) {
+    // eslint-disable-next-line no-console
     console.warn(
       `Deprecation notice: "lite" option is deprecated. Use "config: { mode: 'lite' }" instead.`,
     );
@@ -453,6 +454,7 @@ export function getPlaygroundUrl(options: EmbedOptions = {}): string {
   }
 
   if (view) {
+    // eslint-disable-next-line no-console
     console.warn(
       `Deprecation notice: The "view" option has been moved to "config.view". For headless mode use "headless: true".`,
     );
@@ -503,7 +505,7 @@ export function getPlaygroundUrl(options: EmbedOptions = {}): string {
 
   // Handle activityId
   if (activityId && activityId.trim() !== '') {
-      hashParams.set('activityId', activityId);
+    hashParams.set('activityId', activityId);
   }
 
   if (importId) {
