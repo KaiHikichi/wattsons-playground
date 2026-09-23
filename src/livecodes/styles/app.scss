@@ -601,20 +601,22 @@ kbd {
       flex-grow: 1;
       gap: calc(var(--outline-width) * 2);
     }
+  }
 
-    .button {
-      background: var(--btn-bg-color);
-      border: var(--btn-border);
-      border-radius: var(--btn-border-radius);
-      color: var(--btn-color);
-      display: inherit;
-      height: var(--s32);
-      place-items: center;
+  // simple mode moves #run-button into .toolbar-app (see core.ts showMode)
+  .toolbar-render .button,
+  .toolbar-app #run-button {
+    background: var(--btn-bg-color);
+    border: var(--btn-border);
+    border-radius: var(--btn-border-radius);
+    color: var(--btn-color);
+    display: inherit;
+    height: var(--s32);
+    place-items: center;
 
-      &:hover {
-        background: var(--btn-bg-active);
-        color: var(--btn-active);
-      }
+    &:hover {
+      background: var(--btn-bg-active);
+      color: var(--btn-active);
     }
   }
 

@@ -692,6 +692,13 @@ const showMode = (mode?: Config['mode'], view?: Config['view']) => {
       toolsPane?.hide();
     }
   }
+  // #127: in simple mode, Run sits left of the language selector, next to the code.
+  // Moving the node keeps its listeners.
+  if (mode === 'simple') {
+    toolbarElement.querySelector('#select-editor')?.before(runButton);
+  } else {
+    toolbarElement.querySelector('#share-button')?.before(runButton);
+  }
   document.body.classList.toggle('simple-mode', mode === 'simple');
   document.body.classList.toggle('focus-mode', mode === 'focus');
   document.body.classList.toggle('lite-mode', mode === 'lite');
