@@ -692,11 +692,10 @@ const showMode = (mode?: Config['mode'], view?: Config['view']) => {
       toolsPane?.hide();
     }
   }
-  // #127: in simple mode, Run sits at the editor pane's right edge. Moving the node keeps its listeners.
-  // ponytail: .toolbar-app is a fixed 50% wide, so this matches the default split only; if students
-  // drag the gutter, move the button into #editors instead.
+  // #127: in simple mode, Run sits left of the language selector, next to the code.
+  // Moving the node keeps its listeners.
   if (mode === 'simple') {
-    toolbarElement.querySelector('.toolbar-app')?.append(runButton);
+    toolbarElement.querySelector('#select-editor')?.before(runButton);
   } else {
     toolbarElement.querySelector('#share-button')?.before(runButton);
   }
