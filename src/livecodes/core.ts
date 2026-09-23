@@ -158,6 +158,8 @@ import {
   stringify,
   toDataUrl,
 } from './utils';
+// Wattson (#129): underline the failing line after a Python run error
+import { parsePythonError } from './utils/python-error';
 import {
   fontDMSansUrl,
   fontInterUrl,
@@ -1255,6 +1257,8 @@ const setCustomSettingsMark = () => {
 const run = async (editorId?: EditorId, runTests?: boolean) => {
   setLoading(true);
   if (editorId !== 'style') {
+    // Wattson (#129): clear the previous run's error squiggle (style-only runs keep it)
+    editors.script?.setErrorMarker?.(null);
     toolsPane?.console?.clear(/* silent= */ true);
   }
   const config = getConfig();
@@ -4411,6 +4415,18 @@ const handleConsole = () => {
       toolsPane.setActiveTool('console');
       if (toolsPane.getStatus() === 'closed') {
         toolsPane.open();
+      }
+    }
+
+    // Wattson (#129): underline the failing line after a Python run error
+    if (
+      event.data.method === 'error' &&
+      ['python', 'python-wasm'].includes(editorLanguages?.script as Language)
+    ) {
+      const errorText = event.data.args?.map((arg: any) => arg.content ?? '').join('\n') ?? '';
+      const pythonError = parsePythonError(errorText);
+      if (pythonError) {
+        editors.script?.setErrorMarker?.(pythonError);
       }
     }
 
