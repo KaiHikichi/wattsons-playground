@@ -205,6 +205,8 @@ let split: ReturnType<typeof createSplitPanes> | null = null;
 let typeLoader: ReturnType<typeof createTypeLoader>;
 const screens: Screen[] = [];
 const params = getParams(); // query string params
+// Activity links always autosave: students must never need to press Save to resume.
+const isAutosave = () => getConfig().autosave || !!params.activityId;
 const iframeScrollPosition = { x: 0, y: 0 };
 const editorIds: EditorId[] = ['markup', 'style', 'script'];
 
@@ -1177,7 +1179,7 @@ const setProjectTitle = (setDefault = false) => {
   if (title === getConfig().title) return;
 
   setConfig({ ...getConfig(), title });
-  if (getConfig().autosave) {
+  if (isAutosave()) {
     save(!projectId, false);
   }
   setWindowTitle();
@@ -2594,7 +2596,7 @@ const handleChangeContent = () => {
       }
     }
 
-    if (config.autosave) {
+    if (isAutosave()) {
       await save(/* notify = */ false, /* setTitle = */ true, /* isAutoSave = */ true);
     }
 
