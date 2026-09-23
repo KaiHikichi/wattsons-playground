@@ -11,3 +11,9 @@
 /livecodes/assets/*
   ! cache-control
   cache-control: public, max-age=14400, must-revalidate
+
+# Cloudflare Web Analytics injects a module beacon into HTML responses. In the
+# /app iframe shell that makes Firefox ignore the app's import map (breaks CodeMirror).
+/app
+  ! cache-control
+  cache-control: public, max-age=0, must-revalidate, no-transform

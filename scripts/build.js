@@ -65,7 +65,7 @@ const prepareDir = async () => {
   await Promise.all(fileNames.map(async (f) => fs.promises.unlink(outDir + '/livecodes/' + f)));
   await Promise.all([
     // add headers
-    process.env.CF_PAGES ? copyFile('src/_headers', '_headers') : Promise.resolve(),
+    process.env.CF_PAGES || process.env.CF_WORKERS ? copyFile('src/_headers', '_headers') : Promise.resolve(),
     copyFile('src/netlify.toml', 'netlify.toml'),
     copyFile('src/favicon.ico', 'favicon.ico'),
     copyFile('src/404.html', '404.html', addBaseUrl),
