@@ -4407,6 +4407,14 @@ const handleConsole = () => {
       return;
     }
 
+    // Wattson (#128): the console starts closed, so open it when a run errors
+    if (event.data.method === 'error' && toolsPane?.console) {
+      toolsPane.setActiveTool('console');
+      if (toolsPane.getStatus() === 'closed') {
+        toolsPane.open();
+      }
+    }
+
     let consoleEvent: CustomEvent<{ method: string; args: any[] } | void>;
     if (sdkWatchers.console.hasSubscribers()) {
       const message = event.data;

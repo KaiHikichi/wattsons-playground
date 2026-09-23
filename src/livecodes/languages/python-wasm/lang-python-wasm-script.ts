@@ -89,7 +89,7 @@ __builtins__.input = input
       await livecodes.pyodide.runPythonAsync(code);
     } catch (err) {
       // eslint-disable-next-line no-console
-      console.log(err);
+      console.error(err);
     }
   }
 
