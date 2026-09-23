@@ -38,6 +38,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>官方网站</2> </1> <3> <4>指南</4> </3> <5> <6>参考</6> </5> <7> <8>样例</8> </7> <9> <10>加载启动模板</10> </9>',
     name: 'Blockly',
   },
+  cWasm: {
+    desc: 'C 由 <1>Clang</1> 编译为 WebAssembly，完全在浏览器中运行。',
+    link: '<1> <2>C 语言参考</2> </1> <3> <4>Clang 官网</4> </3> <5> <6>在 Y 分钟内学习 X，其中 X=C</6> </5> <7> <8>LiveCodes 文档</8> </7> <9> <10>加载启动模板</10> </9>',
+    name: 'C (Wasm)',
+  },
   civet: {
     desc: 'Civet 是一种可编译为 TypeScript 或 JavaScript 的编程语言，因此您可以在保留现有工具链的同时，享受简洁而强大的语法。',
     link: '<1> <2>Civet 官方网站</2> </1> <3> <4>Civet 速查册</4> </3> <5> <6>加载启动模板</6> </5>',
@@ -70,9 +75,9 @@ const languageInfo: I18nLangInfoTranslation = {
     name: 'C++',
   },
   cppWasm: {
-    desc: '运行在 WebAssembly 上的 Clang C/C++ 编译器，使用由 <2>polylang.io</2> 适配的 <1>wasm-clang</1> 。',
-    link: '<1> <2>标准 C++ 基金会</2> </1> <3> <4>Clang 官网</4> </3> <5> <6>在 Y 分钟内学习 X，其中 X=C++</6> </5> <7> <8>加载启动模板</8> </7>',
-    name: 'C/C++（WASM）',
+    desc: 'C++ 由 <1>Clang</1> 编译为 WebAssembly，完全在浏览器中运行。这提供了真正的 C++ 编译器，不同于基于 <2>JSCPP 的 C++</2> 解释器。',
+    link: '<1> <2>标准 C++ 基金会</2> </1> <3> <4>Clang 官网</4> </3> <5> <6>在 Y 分钟内学习 X，其中 X=C++</6> </5> <7> <8>LiveCodes 文档</8> </7> <9> <10>加载启动模板</10> </9>',
+    name: 'C++ (Wasm)',
   },
   csharpWasm: {
     desc: '在 WebAssembly 上运行的 C# 编译器，使用<1>Blazor</1>',
@@ -97,6 +102,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1><2>官方网站</2></1> <3> <4>LiveCodes 文档</4> </3>',
     name: 'EJS',
   },
+  elm: {
+    desc: 'Elm 通过 Elm 编译器的 WebAssembly 构建版本在浏览器中编译为 JavaScript。',
+    link: '<1><2>Elm 官方网站</2></1> <3><4>Elm 指南</4></3> <5> <6>LiveCodes 文档</6> </5> <7> <8>加载入门模板</8> </7>',
+    name: 'Elm',
+  },
   eta: {
     desc: '用于 Node、Deno 和浏览器的嵌入式 JS 模板引擎。轻巧、快速且可插拔。使用 TypeScript 编写。',
     link: '<1><2>官方网站</2></1> <3> <4>文档</4> </3> <5> <6>LiveCodes 文档</6> </5>',
@@ -112,6 +122,17 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Flow 官方网站</2> </1> <3> <4>Flow 文档</4> </3>',
     name: 'Flow',
   },
+  fsharp: {
+    desc1: 'F# 是一种基于 .NET 平台的跨平台、开源函数式编程语言。',
+    desc2: '这里，它使用 Fable 编译成了 JavaScript。',
+    link: '<1><2>F# 官方网站</2></1> <3> <4>F# 文档</4> </3> <5> <6>Fable 官方网站</6> </5> <7> <8>LiveCodes 文档</8> </7> <9> <10>加载入门模板</10> </9>',
+    name: 'F#',
+  },
+  fsharpWasm: {
+    desc: '在 WebAssembly 上运行的真实 F# 编译器和 .NET 运行时。<1></1>这与官方 F# 编译器的行为一致。不过，需要在结果页面下载 .NET WebAssembly 运行时，首次运行时可能需要一些时间。',
+    link: '<1><2>F# 官方网站</2></1> <3> <4>F# 文档</4> </3> <5> <6>LiveCodes 文档</6> </5> <7> <8>加载入门模板</8> </7>',
+    name: 'F# (Wasm)',
+  },
   gleam: {
     desc1: 'Gleam 是一种对构建可扩展的类型安全系统友好的编程语言！',
     desc2: 'Gleam 是一种静态类型的函数式编程语言，可编译为 Erlang 或 JavaScript。',
@@ -121,7 +142,7 @@ const languageInfo: I18nLangInfoTranslation = {
   go: {
     desc1: 'Go（Golang）是一种开源编程语言，可以轻松构建简单、可靠、高效的软件。',
     desc2: '此处使用 GopherJS 将其编译为 JavaScript。',
-    link: '<1><2>Go 官方网站</2></1> <3><4>Go 文档</4></3> <5> <6>GopherJS 仓库</6> </5> <7> <8>在 Y 分钟内学习 X，其中 X=Go</8> </7> <9><10>加载启动模板</10></9>',
+    link: '<1><2>Go 官方网站</2></1> <3><4>Go 文档</4></3> <5> <6>GopherJS 仓库</6> </5> <7> <8>在 Y 分钟内学习 X，其中 X=Go</8> </7> <9> <10>LiveCodes 文档</10> </9> <11> <12>加载启动模板</12> </11>',
     name: 'Go',
   },
   goWasm: {
@@ -139,6 +160,16 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1><2>官方网站</2></1> <3> <4>LiveCodes 文档</4> </3>',
     name: 'Handlebars',
   },
+  haskell: {
+    desc: '使用 MicroHs 在浏览器中运行 Haskell。',
+    link: '<1> <2>Haskell 官方网站</2> </1> <3> <4>GitHub 上的 MicroHs</4> </3> <5> <6>LiveCodes 文档</6> </5> <7> <8>加载入门模板</8> </7>',
+    name: 'Haskell',
+  },
+  haskellWasm: {
+    desc: 'Haskell 由<1>浏览器中的 GHC</1>（即 GHC 的 WebAssembly 版本）进行编译和运行，该 GHC 完全在客户端运行。',
+    link: '<1> <2>Haskell 官方网站</2> </1> <3> <4>GHC 文档</4> </3> <5> <6>浏览器中的 GHC</6> </5> <7> <8>LiveCodes 文档</8> </7> <9> <10>加载入门模板</10> </9>',
+    name: 'Haskell (Wasm)',
+  },
   imba: {
     desc: '友好的全栈语言。',
     link: '<1><2>官方网站</2></1>',
@@ -146,7 +177,7 @@ const languageInfo: I18nLangInfoTranslation = {
   },
   java: {
     desc: '使用 DoppioJVM 在浏览器中运行的 JVM。',
-    link: '<1> <2>Java 官方网站    DoppioJVM    在 Y 分钟内学习 X，其中 X=java    加载启动模板</2> </1> <3> <4></4> </3> <5> <6></6> </5> <7> <8></8> </7>',
+    link: '<1> <2>Java 官方网站</2> </1> <3> <4>DoppioJVM</4> </3> <5> <6>在 Y 分钟内学习 X，其中 X=java</6> </5> <7> <8>LiveCodes 文档</8> </7> <9> <10>加载启动模板</10> </9>',
     name: 'Java',
   },
   javascript: {
@@ -230,6 +261,16 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: '一种丰富而强大的 JavaScript 模板语言。Nunjucks 本质上是 <1>jinja2</1> 的一个移植。',
     link: '<1> <2>官方网站</2> </1> <3> <4>LiveCodes 文档</4> </3>',
     name: 'Nunjucks',
+  },
+  objcWasm: {
+    desc: 'Objective-C 由 <1>Clang</1> 编译为 WebAssembly，使用 <2>GNUstep</2> Objective-C 运行时。这是一个运行时，而不是类库，因此 Foundation 不可用。',
+    link: '<1> <2>Objective-C 文档</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>在 Y 分钟内学习 X，其中 X=Objective-C</6> </5> <7> <8>LiveCodes 文档</8> </7> <9> <10>加载启动模板</10> </9>',
+    name: 'Objective-C (Wasm)',
+  },
+  objcppWasm: {
+    desc: 'Objective-C++ 由 <1>Clang</1> 编译为 WebAssembly，使用 <2>GNUstep</2> Objective-C 运行时。这是一个运行时，而不是类库，因此 Foundation 不可用。',
+    link: '<1> <2>Objective-C 文档</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>在 Y 分钟内学习 X，其中 X=Objective-C</6> </5> <7> <8>LiveCodes 文档</8> </7>',
+    name: 'Objective-C++ (Wasm)',
   },
   ocaml: {
     desc1: 'OCaml 是一种工业级编程语言，支持函数式、命令式和面向对象编程范式。',
@@ -336,6 +377,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Ruby 官方网站</2> </1> <3> <4>Ruby 文档</4> </3> <5> <6>ruby.wasm 网站</6> </5> <7><8>CRuby</8></7> <9> <10>在 Y 分钟内学习 X，其中 X=ruby</10> </9> <11> <12>LiveCodes 文档</12> </11> <13> <14>加载启动模板</14> </13>',
     name: 'Ruby（WASM）',
   },
+  rustWasm: {
+    desc: 'Rust 由<1>Miri</1>（Rust 中级中间表示（IR）解释器）进行解释，编译为 WebAssembly，并在浏览器中完全运行。',
+    link: '<1> <2>Rust 官方网站</2> </1> <3> <4>《Rust 入门指南》</4> </3> <5> <6>《Y分钟学会X》，其中X=Rust</6> </5> <7> <8>LiveCodes 文档</8> </7> <9> <10>加载入门模板</10> </9>',
+    name: 'Rust (Wasm)',
+  },
   sass: {
     desc: '语法超赞的样式表。',
     link: '<1> <2>Sass 官方网站</2> </1> <3> <4>Sass 文档</4> </3> <5> <6>Sass（缩进）语法</6> </5> <7> <8>在 Y 分钟内学习 X，其中 X=sass</8> </7>',
@@ -420,6 +466,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>官方网站</2> </1> <3> <4>TypeScript 文档</4> </3> <5> <6>在 Y 分钟内学习 X，其中 X=TypeScript</6> </5> <7> <8>加载启动模板</8> </7>',
     name: 'TypeScript',
   },
+  vbWasm: {
+    desc: '在 WebAssembly 上运行的 VB.NET 编译器，使用 <1>Roslyn</1> 和 <2>.NET WebAssembly 运行时</2>',
+    link: '<1> <2> Visual Basic 语言文档</2> </1> <3> <4>在 Y 分钟内学习 X，其中 X=Visual Basic </4> </3> <5> <6> LiveCodes 文档</6> </5> <7> <8>加载入门模板</8> </7>',
+    name: 'VB.NET (Wasm)',
+  },
   vue: {
     link: '<1> <2>Vue.js v3 官方网站</2> </1> <3> <4>Vue3 文档</4> </3> <5> <6>Vue3 单文件组件</6> </5> <7> <8>LiveCodes 文档</8> </7> <9><10>加载启动模板</10> </9>',
     name: 'Vue3 单文件组件',
@@ -434,6 +485,11 @@ const languageInfo: I18nLangInfoTranslation = {
     desc2: '使用 wabt.js 将其转换为 wasm。',
     link: '<1><2>WebAssembly.org</2></1> <3> <4> WebAssembly 文本规范</4> </3> <5> <6> MDN 上的 WebAssembly</6> </5> <7> <8> 理解 WebAssembly 文本格式</8> </7> <9> <10> wabt.js 文档</10> </9> <11> <12> 在 Y 分钟内学习 X，其中 X=WebAssembly</12> </11> <13> <14> 加载启动模板</14> </13>',
     name: 'WebAssembly 文本格式',
+  },
+  zigWasm: {
+    desc: '在 WebAssembly 上运行的 Zig 编译器。',
+    link: '<1> <2>Zig 网站</2> </1> <3> <4>Zig 语言文档</4> </3> <5> <6>Y分钟掌握X，其中X=Zig</6> </5> <7> <8>LiveCodes 文档</8> </7> <9> <10>加载入门模板</10> </9>',
+    name: 'Zig (Wasm)',
   },
 };
 

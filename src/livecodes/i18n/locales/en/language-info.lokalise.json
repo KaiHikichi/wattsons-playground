@@ -84,6 +84,18 @@
     "notes": "",
     "translation": "Blockly"
   },
+  "cWasm.desc": {
+    "notes": "### <tag-1> ###\n<a href=\"https://clang.llvm.org/\" target=\"_blank\" rel=\"noopener\" />\n\n",
+    "translation": "C compiled to WebAssembly by <tag-1>Clang</tag-1>, running entirely in the browser."
+  },
+  "cWasm.link": {
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://en.cppreference.com/w/c\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://clang.llvm.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"https://learnxinyminutes.com/docs/c/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"{{DOCS_BASE_URL}}languages/c-wasm\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-9> ###\n<li  />\n\n### <tag-10> ###\n<a href=\"?template=c-wasm\" class=\"button\" target=\"_parent\" data-template=\"c-wasm\" />\n\n",
+    "translation": "<tag-1> <tag-2>C language reference</tag-2> </tag-1> <tag-3> <tag-4>Clang official website</tag-4> </tag-3> <tag-5> <tag-6>Learn X in Y minutes, where X=C</tag-6> </tag-5> <tag-7> <tag-8>LiveCodes Documentation</tag-8> </tag-7> <tag-9> <tag-10>Load starter template</tag-10> </tag-9>"
+  },
+  "cWasm.name": {
+    "notes": "",
+    "translation": "C (Wasm)"
+  },
   "civet.desc": {
     "notes": "",
     "translation": "Civet is a programming language that compiles to TypeScript or JavaScript, so you can use existing tooling but enable concise and powerful syntax."
@@ -161,16 +173,16 @@
     "translation": "C++"
   },
   "cppWasm.desc": {
-    "notes": "### <tag-1> ###\n<a href=\"https://github.com/binji/wasm-clang\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-2> ###\n<a href=\"https://github.com/chris-koch-penn/polylang.io\" target=\"_blank\" rel=\"noopener\" />\n\n",
-    "translation": "Clang C/C++ compiler running on WebAssembly, using <tag-1>wasm-clang</tag-1> adapted by <tag-2>polylang.io</tag-2>"
+    "notes": "### <tag-1> ###\n<a href=\"https://clang.llvm.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-2> ###\n<a href=\"{{DOCS_BASE_URL}}languages/cpp\" target=\"_blank\" rel=\"noopener\" />\n\n",
+    "translation": "C++ compiled to WebAssembly by <tag-1>Clang</tag-1>, running entirely in the browser. This provides a real C++ compiler, unlike the <tag-2>JSCPP-based C++</tag-2> interpreter."
   },
   "cppWasm.link": {
-    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://isoclang.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://clang.llvm.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"https://learnxinyminutes.com/docs/c++/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"?template=cpp-wasm\" class=\"button\" target=\"_parent\" data-template=\"cpp-wasm\" />\n\n",
-    "translation": "<tag-1> <tag-2>Standard C++ Foundation</tag-2> </tag-1> <tag-3> <tag-4>Clang official website</tag-4> </tag-3> <tag-5> <tag-6>Learn X in Y minutes, where X=C++</tag-6> </tag-5> <tag-7> <tag-8>Load starter template</tag-8> </tag-7>"
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://isocpp.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://clang.llvm.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"https://learnxinyminutes.com/docs/c++/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"{{DOCS_BASE_URL}}languages/cpp-wasm\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-9> ###\n<li  />\n\n### <tag-10> ###\n<a href=\"?template=cpp-wasm\" class=\"button\" target=\"_parent\" data-template=\"cpp-wasm\" />\n\n",
+    "translation": "<tag-1> <tag-2>Standard C++ Foundation</tag-2> </tag-1> <tag-3> <tag-4>Clang official website</tag-4> </tag-3> <tag-5> <tag-6>Learn X in Y minutes, where X=C++</tag-6> </tag-5> <tag-7> <tag-8>LiveCodes Documentation</tag-8> </tag-7> <tag-9> <tag-10>Load starter template</tag-10> </tag-9>"
   },
   "cppWasm.name": {
     "notes": "",
-    "translation": "C/C++ (Wasm)"
+    "translation": "C++ (Wasm)"
   },
   "csharpWasm.desc": {
     "notes": "### <tag-1> ###\n<a href=\"https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor\" target=\"_blank\" rel=\"noopener\" />\n\n",
@@ -228,6 +240,18 @@
     "notes": "",
     "translation": "EJS"
   },
+  "elm.desc": {
+    "notes": "",
+    "translation": "Elm is compiled to JavaScript in the browser by a WebAssembly build of the Elm compiler."
+  },
+  "elm.link": {
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://elm-lang.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://guide.elm-lang.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"{{DOCS_BASE_URL}}languages/elm\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"?template=elm\" class=\"button\" target=\"_parent\" data-template=\"elm\" />\n\n",
+    "translation": "<tag-1><tag-2>Elm official website</tag-2></tag-1> <tag-3><tag-4>Elm guide</tag-4></tag-3> <tag-5> <tag-6>LiveCodes Documentation</tag-6> </tag-5> <tag-7> <tag-8>Load starter template</tag-8> </tag-7>"
+  },
+  "elm.name": {
+    "notes": "",
+    "translation": "Elm"
+  },
   "eta.desc": {
     "notes": "",
     "translation": "Embedded JS template engine for Node, Deno, and the browser. Lightweight, fast, and pluggable. Written in TypeScript."
@@ -263,6 +287,34 @@
   "flow.name": {
     "notes": "",
     "translation": "Flow"
+  },
+  "fsharp.desc1": {
+    "notes": "",
+    "translation": "F# is a cross-platform, open-source functional programming language that runs on the .NET platform."
+  },
+  "fsharp.desc2": {
+    "notes": "",
+    "translation": "Here, it is compiled to JavaScript using Fable."
+  },
+  "fsharp.link": {
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://fsharp.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://learn.microsoft.com/en-us/dotnet/fsharp/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"https://fable.io/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"{{DOCS_BASE_URL}}languages/fsharp\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-9> ###\n<li  />\n\n### <tag-10> ###\n<a href=\"?template=fsharp\" class=\"button\" target=\"_parent\" data-template=\"fsharp\" />\n\n",
+    "translation": "<tag-1><tag-2>F# official website</tag-2></tag-1> <tag-3> <tag-4>F# documentation</tag-4> </tag-3> <tag-5> <tag-6>Fable official website</tag-6> </tag-5> <tag-7> <tag-8>LiveCodes Documentations</tag-8> </tag-7> <tag-9> <tag-10>Load starter template</tag-10> </tag-9>"
+  },
+  "fsharp.name": {
+    "notes": "",
+    "translation": "F#"
+  },
+  "fsharpWasm.desc": {
+    "notes": "### <tag-1> ###\n<br  />\n\n",
+    "translation": "The real F# compiler and .NET runtime running on WebAssembly. <tag-1></tag-1>This matches the behavior of the official F# compiler. However, the .NET WebAssembly runtime needs to be downloaded in the result page, which can take some time on the first run."
+  },
+  "fsharpWasm.link": {
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://fsharp.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://learn.microsoft.com/en-us/dotnet/fsharp/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"{{DOCS_BASE_URL}}languages/fsharp-wasm\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"?template=fsharp-wasm\" class=\"button\" target=\"_parent\" data-template=\"fsharp-wasm\" />\n\n",
+    "translation": "<tag-1><tag-2>F# official website</tag-2></tag-1> <tag-3> <tag-4>F# documentation</tag-4> </tag-3> <tag-5> <tag-6>LiveCodes Documentation</tag-6> </tag-5> <tag-7> <tag-8>Load starter template</tag-8> </tag-7>"
+  },
+  "fsharpWasm.name": {
+    "notes": "",
+    "translation": "F# (Wasm)"
   },
   "gleam.desc1": {
     "notes": "",
@@ -331,6 +383,30 @@
   "handlebars.name": {
     "notes": "",
     "translation": "Handlebars"
+  },
+  "haskell.desc": {
+    "notes": "",
+    "translation": "Haskell running in the browser using MicroHs."
+  },
+  "haskell.link": {
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://www.haskell.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://github.com/augustss/MicroHs\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"{{DOCS_BASE_URL}}languages/haskell\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"?template=haskell\" class=\"button\" target=\"_parent\" data-template=\"haskell\" />\n\n",
+    "translation": "<tag-1> <tag-2>Haskell official website</tag-2> </tag-1> <tag-3> <tag-4>MicroHs on GitHub</tag-4> </tag-3> <tag-5> <tag-6>LiveCodes Documentations</tag-6> </tag-5> <tag-7> <tag-8>Load starter template</tag-8> </tag-7>"
+  },
+  "haskell.name": {
+    "notes": "",
+    "translation": "Haskell"
+  },
+  "haskellWasm.desc": {
+    "notes": "### <tag-1> ###\n<a href=\"https://github.com/haskell-wasm/ghc-in-browser\" target=\"_blank\" rel=\"noopener\" />\n\n",
+    "translation": "Haskell is compiled and run in the browser by <tag-1>GHC in the browser</tag-1>, a WebAssembly build of GHC, running entirely client-side."
+  },
+  "haskellWasm.link": {
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://www.haskell.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://www.haskell.org/ghc/documentation.html\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"https://github.com/haskell-wasm/ghc-in-browser\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"{{DOCS_BASE_URL}}languages/haskell-wasm\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-9> ###\n<li  />\n\n### <tag-10> ###\n<a href=\"?template=haskell-wasm\" class=\"button\" target=\"_parent\" data-template=\"haskell-wasm\" />\n\n",
+    "translation": "<tag-1> <tag-2>Haskell official website</tag-2> </tag-1> <tag-3> <tag-4>GHC documentation</tag-4> </tag-3> <tag-5> <tag-6>GHC in the browser</tag-6> </tag-5> <tag-7> <tag-8>LiveCodes Documentation</tag-8> </tag-7> <tag-9> <tag-10>Load starter template</tag-10> </tag-9>"
+  },
+  "haskellWasm.name": {
+    "notes": "",
+    "translation": "Haskell (Wasm)"
   },
   "imba.desc": {
     "notes": "",
@@ -551,6 +627,30 @@
   "nunjucks.name": {
     "notes": "",
     "translation": "Nunjucks"
+  },
+  "objcWasm.desc": {
+    "notes": "### <tag-1> ###\n<a href=\"https://clang.llvm.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-2> ###\n<a href=\"https://github.com/gnustep/libobjc2\" target=\"_blank\" rel=\"noopener\" />\n\n",
+    "translation": "Objective-C compiled to WebAssembly by <tag-1>Clang</tag-1>, using the <tag-2>GNUstep</tag-2> Objective-C runtime. This is a runtime and not a class library, so Foundation is not available."
+  },
+  "objcWasm.link": {
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://developer.apple.com/documentation/objectivec\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://github.com/gnustep/libobjc2\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"https://learnxinyminutes.com/docs/objective-c/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"{{DOCS_BASE_URL}}languages/objc-wasm\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-9> ###\n<li  />\n\n### <tag-10> ###\n<a href=\"?template=objc-wasm\" class=\"button\" target=\"_parent\" data-template=\"objc-wasm\" />\n\n",
+    "translation": "<tag-1> <tag-2>Objective-C documentation</tag-2> </tag-1> <tag-3> <tag-4>GNUstep libobjc2</tag-4> </tag-3> <tag-5> <tag-6>Learn X in Y minutes, where X=Objective-C</tag-6> </tag-5> <tag-7> <tag-8>LiveCodes Documentation</tag-8> </tag-7> <tag-9> <tag-10>Load starter template</tag-10> </tag-9>"
+  },
+  "objcWasm.name": {
+    "notes": "",
+    "translation": "Objective-C (Wasm)"
+  },
+  "objcppWasm.desc": {
+    "notes": "### <tag-1> ###\n<a href=\"https://clang.llvm.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-2> ###\n<a href=\"https://github.com/gnustep/libobjc2\" target=\"_blank\" rel=\"noopener\" />\n\n",
+    "translation": "Objective-C++ compiled to WebAssembly by <tag-1>Clang</tag-1>, using the <tag-2>GNUstep</tag-2> Objective-C runtime. This is a runtime and not a class library, so Foundation is not available."
+  },
+  "objcppWasm.link": {
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://developer.apple.com/documentation/objectivec\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://github.com/gnustep/libobjc2\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"https://learnxinyminutes.com/docs/objective-c/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"{{DOCS_BASE_URL}}languages/objcpp-wasm\" target=\"_blank\" rel=\"noopener\" />\n\n",
+    "translation": "<tag-1> <tag-2>Objective-C documentation</tag-2> </tag-1> <tag-3> <tag-4>GNUstep libobjc2</tag-4> </tag-3> <tag-5> <tag-6>Learn X in Y minutes, where X=Objective-C</tag-6> </tag-5> <tag-7> <tag-8>LiveCodes Documentation</tag-8> </tag-7>"
+  },
+  "objcppWasm.name": {
+    "notes": "",
+    "translation": "Objective-C++ (Wasm)"
   },
   "ocaml.desc1": {
     "notes": "",
@@ -808,6 +908,18 @@
     "notes": "",
     "translation": "Ruby (WASM)"
   },
+  "rustWasm.desc": {
+    "notes": "### <tag-1> ###\n<a href=\"https://github.com/rust-lang/miri\" target=\"_blank\" rel=\"noopener\" />\n\n",
+    "translation": "Rust is interpreted by <tag-1>Miri</tag-1> (the Rust mid-level IR interpreter) compiled to WebAssembly, running entirely in the browser."
+  },
+  "rustWasm.link": {
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://www.rust-lang.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://doc.rust-lang.org/book/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"https://learnxinyminutes.com/rust/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"{{DOCS_BASE_URL}}languages/rust-wasm\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-9> ###\n<li  />\n\n### <tag-10> ###\n<a href=\"?template=rust-wasm\" class=\"button\" target=\"_parent\" data-template=\"rust-wasm\" />\n\n",
+    "translation": "<tag-1> <tag-2>Rust official website</tag-2> </tag-1> <tag-3> <tag-4>The Rust Book</tag-4> </tag-3> <tag-5> <tag-6>Learn X in Y minutes, where X=Rust</tag-6> </tag-5> <tag-7> <tag-8>LiveCodes Documentation</tag-8> </tag-7> <tag-9> <tag-10>Load starter template</tag-10> </tag-9>"
+  },
+  "rustWasm.name": {
+    "notes": "",
+    "translation": "Rust (Wasm)"
+  },
   "sass.desc": {
     "notes": "",
     "translation": "Syntactically Awesome Style Sheets."
@@ -1008,6 +1120,18 @@
     "notes": "",
     "translation": "TypeScript"
   },
+  "vbWasm.desc": {
+    "notes": "### <tag-1> ###\n<a href=\"https://github.com/dotnet/roslyn\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-2> ###\n<a href=\"https://github.com/dotnet/runtime/tree/main/src/mono/wasm\" target=\"_blank\" rel=\"noopener\" />\n\n",
+    "translation": "VB.NET compiler running on WebAssembly, using <tag-1>Roslyn</tag-1> and the <tag-2>.NET WebAssembly runtime</tag-2>"
+  },
+  "vbWasm.link": {
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://learn.microsoft.com/en-us/dotnet/visual-basic/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://learnxinyminutes.com/docs/visualbasic/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"{{DOCS_BASE_URL}}languages/vb-wasm\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"?template=vb-wasm\" class=\"button\" target=\"_parent\" data-template=\"vb-wasm\" />\n\n",
+    "translation": "<tag-1> <tag-2>Visual Basic language documentation</tag-2> </tag-1> <tag-3> <tag-4>Learn X in Y minutes, where X=Visual Basic</tag-4> </tag-3> <tag-5> <tag-6>LiveCodes Documentation</tag-6> </tag-5> <tag-7> <tag-8>Load starter template</tag-8> </tag-7>"
+  },
+  "vbWasm.name": {
+    "notes": "",
+    "translation": "VB.NET (Wasm)"
+  },
   "vue.link": {
     "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://vuejs.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://vuejs.org/guide/introduction.html\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"https://vuejs.org/api/sfc-spec.html\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"{{DOCS_BASE_URL}}languages/vue\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-9> ###\n<li  />\n\n### <tag-10> ###\n<a href=\"?template=vue\" class=\"button\" target=\"_parent\" data-template=\"vue\" />\n\n",
     "translation": "<tag-1> <tag-2>Vue.js v3 official website</tag-2> </tag-1> <tag-3> <tag-4>Vue3 documentation</tag-4> </tag-3> <tag-5> <tag-6>Vue3 single file components</tag-6> </tag-5> <tag-7> <tag-8>LiveCodes Documentations</tag-8> </tag-7> <tag-9> <tag-10>Load starter template</tag-10> </tag-9>"
@@ -1043,5 +1167,17 @@
   "wat.name": {
     "notes": "",
     "translation": "WebAssembly Text Format"
+  },
+  "zigWasm.desc": {
+    "notes": "",
+    "translation": "Zig compiler running on WebAssembly."
+  },
+  "zigWasm.link": {
+    "notes": "### <tag-1> ###\n<li  />\n\n### <tag-2> ###\n<a href=\"https://ziglang.org/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-3> ###\n<li  />\n\n### <tag-4> ###\n<a href=\"https://ziglang.org/documentation/master/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-5> ###\n<li  />\n\n### <tag-6> ###\n<a href=\"https://learnxinyminutes.com/docs/zig/\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-7> ###\n<li  />\n\n### <tag-8> ###\n<a href=\"{{DOCS_BASE_URL}}languages/zig-wasm\" target=\"_blank\" rel=\"noopener\" />\n\n### <tag-9> ###\n<li  />\n\n### <tag-10> ###\n<a href=\"?template=zig-wasm\" class=\"button\" target=\"_parent\" data-template=\"zig-wasm\" />\n\n",
+    "translation": "<tag-1> <tag-2>Zig website</tag-2> </tag-1> <tag-3> <tag-4>Zig language documentation</tag-4> </tag-3> <tag-5> <tag-6>Learn X in Y minutes, where X=Zig</tag-6> </tag-5> <tag-7> <tag-8>LiveCodes Documentation</tag-8> </tag-7> <tag-9> <tag-10>Load starter template</tag-10> </tag-9>"
+  },
+  "zigWasm.name": {
+    "notes": "",
+    "translation": "Zig (Wasm)"
   }
 }

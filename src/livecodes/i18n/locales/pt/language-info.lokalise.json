@@ -63,6 +63,15 @@
   "blockly.name": {
     "translation": "Blockly"
   },
+  "cWasm.desc": {
+    "translation": "C compilado para WebAssembly pelo <tag-1>Clang</tag-1>, sendo executado inteiramente no navegador."
+  },
+  "cWasm.link": {
+    "translation": "<tag-1> <tag-2>Referência da linguagem C</tag-2> </tag-1> <tag-3> <tag-4>Site oficial do Clang</tag-4> </tag-3> <tag-5> <tag-6>Aprenda X em Y minutos, onde X=C</tag-6> </tag-5> <tag-7> <tag-8>Documentação do LiveCodes</tag-8> </tag-7> <tag-9> <tag-10>Carregar modelo inicial</tag-10> </tag-9>"
+  },
+  "cWasm.name": {
+    "translation": "C (Wasm)"
+  },
   "civet.desc": {
     "translation": "Civet é uma linguagem de programação que compila para TypeScript ou JavaScript, permitindo que você use ferramentas existentes, mas habilite uma sintaxe concisa e poderosa."
   },
@@ -121,13 +130,13 @@
     "translation": "C++"
   },
   "cppWasm.desc": {
-    "translation": "Compilador Clang C/C++ executado em WebAssembly, usando <tag-1>wasm-clang</tag-1> adaptado por <tag-2>polylang.io</tag-2>."
+    "translation": "C++ compilado para WebAssembly pelo <tag-1>Clang</tag-1>, sendo executado inteiramente no navegador. Isto fornece um compilador de C++ real, ao contrário do interpretador de <tag-2>C++ baseado em JSCPP</tag-2>."
   },
   "cppWasm.link": {
-    "translation": "<tag-1> <tag-2>Fundação C++ Padrão</tag-2> </tag-1> <tag-3> <tag-4>Site oficial do Clang</tag-4> </tag-3> <tag-5> <tag-6>Aprenda X em Y minutos, onde X=C++</tag-6> </tag-5> <tag-7> <tag-8>Carregar modelo inicial</tag-8> </tag-7>"
+    "translation": "<tag-1> <tag-2>Fundação C++ Padrão</tag-2> </tag-1> <tag-3> <tag-4>Site oficial do Clang</tag-4> </tag-3> <tag-5> <tag-6>Aprenda X em Y minutos, onde X=C++</tag-6> </tag-5> <tag-7> <tag-8>Documentação do LiveCodes</tag-8> </tag-7> <tag-9> <tag-10>Carregar modelo inicial</tag-10> </tag-9>"
   },
   "cppWasm.name": {
-    "translation": "C/C++ (Wasm)"
+    "translation": "C++ (Wasm)"
   },
   "csharpWasm.desc": {
     "translation": "Compilador C# executado no WebAssembly, usando <tag-1>Blazor</tag-1>"
@@ -171,6 +180,15 @@
   "ejs.name": {
     "translation": "EJS"
   },
+  "elm.desc": {
+    "translation": "O Elm é compilado para JavaScript no navegador por uma versão do compilador Elm para WebAssembly."
+  },
+  "elm.link": {
+    "translation": "<tag-1><tag-2>Site oficial do Elm</tag-2></tag-1> <tag-3><tag-4>Guia do Elm</tag-4></tag-3> <tag-5> <tag-6>Documentação do LiveCodes</tag-6> </tag-5> <tag-7> <tag-8>Carregar modelo inicial</tag-8> </tag-7>"
+  },
+  "elm.name": {
+    "translation": "Elm"
+  },
   "eta.desc": {
     "translation": "Motor de modelo JS incorporado para Node, Deno e o navegador. Leve, rápido e plugável. Escrito em TypeScript."
   },
@@ -198,6 +216,27 @@
   "flow.name": {
     "translation": "Flow"
   },
+  "fsharp.desc1": {
+    "translation": "O F# é uma linguagem de programação funcional, multiplataforma e de código aberto que funciona na plataforma .NET."
+  },
+  "fsharp.desc2": {
+    "translation": "Aqui, é compilado para JavaScript utilizando o Fable."
+  },
+  "fsharp.link": {
+    "translation": "<tag-1><tag-2>Site oficial do F#</tag-2></tag-1> <tag-3> <tag-4>Documentação do F#</tag-4> </tag-3> <tag-5> <tag-6>Site oficial do Fable</tag-6> </tag-5> <tag-7> <tag-8>Documentação do LiveCodes</tag-8> </tag-7> <tag-9> <tag-10>Carregar modelo inicial</tag-10> </tag-9>"
+  },
+  "fsharp.name": {
+    "translation": "F#"
+  },
+  "fsharpWasm.desc": {
+    "translation": "O verdadeiro compilador F# e o ambiente de execução .NET a funcionar no WebAssembly. <tag-1></tag-1>Isto corresponde ao comportamento do compilador oficial do F#. No entanto, o ambiente de execução .NET para WebAssembly tem de ser descarregado na página de resultados, o que pode demorar algum tempo na primeira execução."
+  },
+  "fsharpWasm.link": {
+    "translation": "<tag-1><tag-2>Site oficial do F#</tag-2></tag-1> <tag-3> <tag-4>Documentação do F#</tag-4> </tag-3> <tag-5> <tag-6>Documentação do LiveCodes</tag-6> </tag-5> <tag-7> <tag-8>Carregar modelo inicial</tag-8> </tag-7>"
+  },
+  "fsharpWasm.name": {
+    "translation": "F# (Wasm)"
+  },
   "gleam.desc1": {
     "translation": "Gleam é uma linguagem amigável para construir sistemas seguros de tipos que escalam!"
   },
@@ -217,7 +256,7 @@
     "translation": "Aqui, é compilado para JavaScript usando GopherJS."
   },
   "go.link": {
-    "translation": "<tag-1><tag-2>Site do Go</tag-2></tag-1> <tag-3><tag-4>Documentação do Go</tag-4></tag-3> <tag-5> <tag-6>Repositório do GopherJS</tag-6> </tag-5> <tag-7> <tag-8>Aprenda X em Y minutos, onde X=Go</tag-8> </tag-7> <tag-9><tag-10>Carregar modelo inicial</tag-10></tag-9>"
+    "translation": "<tag-1><tag-2>Site do Go</tag-2></tag-1> <tag-3><tag-4>Documentação do Go</tag-4></tag-3> <tag-5> <tag-6>Repositório do GopherJS</tag-6> </tag-5> <tag-7> <tag-8>Aprenda X em Y minutos, onde X=Go</tag-8> </tag-7> <tag-9> <tag-10>Documentação do LiveCodes</tag-10> </tag-9> <tag-11> <tag-12>Carregar modelo inicial</tag-12> </tag-11>"
   },
   "go.name": {
     "translation": "Go"
@@ -249,6 +288,24 @@
   "handlebars.name": {
     "translation": "Handlebars"
   },
+  "haskell.desc": {
+    "translation": "Haskell a ser executado no navegador utilizando o MicroHs."
+  },
+  "haskell.link": {
+    "translation": "<tag-1> <tag-2>Site oficial do Haskell</tag-2> </tag-1> <tag-3> <tag-4>MicroHs no GitHub</tag-4> </tag-3> <tag-5> <tag-6>Documentação do LiveCodes</tag-6> </tag-5> <tag-7> <tag-8>Carregar modelo inicial</tag-8> </tag-7>"
+  },
+  "haskell.name": {
+    "translation": "Haskell"
+  },
+  "haskellWasm.desc": {
+    "translation": "O Haskell é compilado e executado no navegador pelo <tag-1>GHC in the browser</tag-1>, uma versão do GHC em WebAssembly, que funciona inteiramente do lado do cliente."
+  },
+  "haskellWasm.link": {
+    "translation": "<tag-1> <tag-2>Site oficial do Haskell</tag-2> </tag-1> <tag-3> <tag-4>Documentação do GHC</tag-4> </tag-3> <tag-5> <tag-6>O GHC no navegador</tag-6> </tag-5> <tag-7> <tag-8>Documentação do LiveCodes</tag-8> </tag-7> <tag-9> <tag-10>Carregar modelo inicial</tag-10> </tag-9>"
+  },
+  "haskellWasm.name": {
+    "translation": "Haskell (Wasm)"
+  },
   "imba.desc": {
     "translation": "A linguagem amigável full-stack."
   },
@@ -262,7 +319,7 @@
     "translation": "JVM em execução no navegador usando DoppioJVM."
   },
   "java.link": {
-    "translation": "<tag-1> <tag-2>Sítio Web oficial de Java</tag-2> </tag-1> <tag-3> <tag-4> DoppioJVM</tag-4> </tag-3> <tag-5> <tag-6> Aprender X em Y minutos, onde X=java</tag-6> </tag-5> <tag-7> <tag-8> Carregar modelo inicial</tag-8> </tag-7>"
+    "translation": "<tag-1> <tag-2>Sítio Web oficial de Java</tag-2> </tag-1> <tag-3> <tag-4> DoppioJVM</tag-4> </tag-3> <tag-5> <tag-6> Aprender X em Y minutos, onde X=java</tag-6> </tag-5> <tag-7> <tag-8>Documentação do LiveCodes</tag-8> </tag-7> <tag-9> <tag-10> Carregar modelo inicial</tag-10> </tag-9>"
   },
   "java.name": {
     "translation": "Java"
@@ -413,6 +470,24 @@
   },
   "nunjucks.name": {
     "translation": "Nunjucks"
+  },
+  "objcWasm.desc": {
+    "translation": "Objective-C compilado para WebAssembly pelo <tag-1>Clang</tag-1>, usando o runtime Objective-C <tag-2>GNUstep</tag-2>. Isto é um runtime e não uma biblioteca de classes, pelo que o Foundation não está disponível."
+  },
+  "objcWasm.link": {
+    "translation": "<tag-1> <tag-2>Documentação do Objective-C</tag-2> </tag-1> <tag-3> <tag-4>GNUstep libobjc2</tag-4> </tag-3> <tag-5> <tag-6>Aprenda X em Y minutos, onde X=Objective-C</tag-6> </tag-5> <tag-7> <tag-8>Documentação do LiveCodes</tag-8> </tag-7> <tag-9> <tag-10>Carregar modelo inicial</tag-10> </tag-9>"
+  },
+  "objcWasm.name": {
+    "translation": "Objective-C (Wasm)"
+  },
+  "objcppWasm.desc": {
+    "translation": "Objective-C++ compilado para WebAssembly pelo <tag-1>Clang</tag-1>, usando o runtime Objective-C <tag-2>GNUstep</tag-2>. Isto é um runtime e não uma biblioteca de classes, pelo que o Foundation não está disponível."
+  },
+  "objcppWasm.link": {
+    "translation": "<tag-1> <tag-2>Documentação do Objective-C</tag-2> </tag-1> <tag-3> <tag-4>GNUstep libobjc2</tag-4> </tag-3> <tag-5> <tag-6>Aprenda X em Y minutos, onde X=Objective-C</tag-6> </tag-5> <tag-7> <tag-8>Documentação do LiveCodes</tag-8> </tag-7>"
+  },
+  "objcppWasm.name": {
+    "translation": "Objective-C++ (Wasm)"
   },
   "ocaml.desc1": {
     "translation": "OCaml é uma linguagem de programação de nível industrial que suporta estilos funcionais, imperativos e orientados a objetos."
@@ -606,6 +681,15 @@
   "rubyWasm.name": {
     "translation": "Ruby (WASM)"
   },
+  "rustWasm.desc": {
+    "translation": "O Rust é interpretado pelo <tag-1>Miri</tag-1> (o interpretador de IR de nível intermédio do Rust), compilado para WebAssembly, sendo executado na íntegra no navegador."
+  },
+  "rustWasm.link": {
+    "translation": "<tag-1> <tag-2>Site oficial do Rust</tag-2> </tag-1> <tag-3> <tag-4>O Livro do Rust</tag-4> </tag-3> <tag-5> <tag-6>Aprenda X em Y minutos, onde X = Rust</tag-6> </tag-5> <tag-7> <tag-8>Documentação do LiveCodes</tag-8> </tag-7> <tag-9> <tag-10>Carregar modelo inicial</tag-10> </tag-9>"
+  },
+  "rustWasm.name": {
+    "translation": "Rust (Wasm)"
+  },
   "sass.desc": {
     "translation": "Folhas de Estilo Sintaticamente Incríveis."
   },
@@ -756,6 +840,15 @@
   "typescript.name": {
     "translation": "TypeScript"
   },
+  "vbWasm.desc": {
+    "translation": "Compilador VB.NET executado no WebAssembly, usando <tag-1>Roslyn</tag-1> e o <tag-2>ambiente de execução .NET para WebAssembly</tag-2>"
+  },
+  "vbWasm.link": {
+    "translation": "<tag-1> <tag-2>Documentação da linguagem Visual Basic</tag-2> </tag-1> <tag-3> <tag-4> Aprenda X em Y minutos, onde X=Visual Basic</tag-4> </tag-3> <tag-5> <tag-6> Documentação LiveCodes</tag-6> </tag-5> <tag-7> <tag-8> Carregar modelo inicial</tag-8> </tag-7>"
+  },
+  "vbWasm.name": {
+    "translation": "VB.NET (Wasm)"
+  },
   "vue.link": {
     "translation": "<tag-1> <tag-2>Site oficial do Vue.js v3</tag-2> </tag-1> <tag-3> <tag-4>Documentação do Vue3</tag-4> </tag-3> <tag-5> <tag-6>Componentes de arquivo único do Vue3</tag-6> </tag-5> <tag-7> <tag-8>Documentação do LiveCodes</tag-8> </tag-7> <tag-9><tag-10>Carregar modelo inicial</tag-10></tag-9>"
   },
@@ -782,5 +875,14 @@
   },
   "wat.name": {
     "translation": "Formato de Texto WebAssembly"
+  },
+  "zigWasm.desc": {
+    "translation": "Compilador Zig a funcionar no WebAssembly."
+  },
+  "zigWasm.link": {
+    "translation": "<tag-1> <tag-2>Site do Zig</tag-2> </tag-1> <tag-3> <tag-4>Documentação da linguagem Zig</tag-4> </tag-3> <tag-5> <tag-6>Aprenda X em Y minutos, em que X = Zig</tag-6> </tag-5> <tag-7> <tag-8>Documentação do LiveCodes</tag-8> </tag-7> <tag-9> <tag-10>Carregar modelo inicial</tag-10> </tag-9>"
+  },
+  "zigWasm.name": {
+    "translation": "Zig (Wasm)"
   }
 }

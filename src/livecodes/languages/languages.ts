@@ -7,25 +7,30 @@ import { babel } from './babel';
 import { bbcode } from './bbcode';
 import { blockly } from './blockly';
 import { civet } from './civet';
+import { cWasm, cppWasm, objcWasm, objcppWasm } from './clang-wasm';
 import { clio } from './clio';
 import { clojurescript } from './clojurescript';
 import { coffeescript } from './coffeescript';
 import { commonlisp } from './commonlisp';
 import { cpp } from './cpp';
-import { cppWasm } from './cpp-wasm';
 import { csharpWasm } from './csharp-wasm';
 import { css } from './css';
 import { diagrams } from './diagrams';
 import { dot } from './dot';
 import { ejs } from './ejs';
+import { elm } from './elm';
 import { eta } from './eta';
 import { fennel } from './fennel';
 import { flow } from './flow';
+import { fsharp } from './fsharp';
+import { fsharpWasm } from './fsharp-wasm';
 import { gleam } from './gleam';
 import { go } from './go';
 import { goWasm } from './go-wasm';
 import { haml } from './haml';
 import { handlebars } from './handlebars';
+import { haskell } from './haskell';
+import { haskellWasm } from './haskell-wasm';
 import { html } from './html';
 import { imba } from './imba';
 import { java } from './java';
@@ -63,6 +68,7 @@ import { richtext } from './richtext';
 import { riot } from './riot';
 import { ruby } from './ruby';
 import { rubyWasm } from './ruby-wasm';
+import { rustWasm } from './rust-wasm';
 import { scheme } from './scheme';
 import { sass, scss } from './scss';
 import { solid, solidTsx } from './solid';
@@ -76,10 +82,13 @@ import { tcl } from './tcl';
 import { teal } from './teal';
 import { twig } from './twig';
 import { typescript } from './typescript';
+import { vbWasm } from './vb-wasm';
 import { vento } from './vento';
 import { vue, vueApp } from './vue';
 import { vue2 } from './vue2';
 import { wat } from './wat';
+import { zigWasm } from './zig-wasm';
+
 export const languages: LanguageSpecs[] = [
   html,
   markdown,
@@ -135,6 +144,7 @@ export const languages: LanguageSpecs[] = [
   civet,
   clio,
   imba,
+  elm,
   rescript,
   reason,
   ocaml,
@@ -148,19 +158,29 @@ export const languages: LanguageSpecs[] = [
   php,
   phpWasm,
   cpp,
+  cWasm,
   cppWasm,
+  objcWasm,
+  objcppWasm,
+  rustWasm,
+  zigWasm,
   java,
   csharpWasm,
+  vbWasm,
+  fsharp,
+  fsharpWasm,
+  haskell,
+  haskellWasm,
+  scheme,
+  commonlisp,
+  clojurescript,
+  gleam,
   perl,
   lua,
   luaWasm,
   teal,
   fennel,
   julia,
-  scheme,
-  commonlisp,
-  clojurescript,
-  gleam,
   tcl,
   assemblyscript,
   wat,

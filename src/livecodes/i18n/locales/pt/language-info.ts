@@ -38,6 +38,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Site oficial</2> </1> <3> <4>Guias</4> </3> <5> <6>Referência</6> </5> <7> <8>Exemplos</8> </7> <9> <10>Carregar modelo inicial</10> </9>',
     name: 'Blockly',
   },
+  cWasm: {
+    desc: 'C compilado para WebAssembly pelo <1>Clang</1>, sendo executado inteiramente no navegador.',
+    link: '<1> <2>Referência da linguagem C</2> </1> <3> <4>Site oficial do Clang</4> </3> <5> <6>Aprenda X em Y minutos, onde X=C</6> </5> <7> <8>Documentação do LiveCodes</8> </7> <9> <10>Carregar modelo inicial</10> </9>',
+    name: 'C (Wasm)',
+  },
   civet: {
     desc: 'Civet é uma linguagem de programação que compila para TypeScript ou JavaScript, permitindo que você use ferramentas existentes, mas habilite uma sintaxe concisa e poderosa.',
     link: '<1> <2>Site oficial do Civet</2> </1> <3> <4>Folha de dicas do Civet</4> </3> <5> <6>Carregar modelo inicial</6> </5>',
@@ -71,9 +76,9 @@ const languageInfo: I18nLangInfoTranslation = {
     name: 'C++',
   },
   cppWasm: {
-    desc: 'Compilador Clang C/C++ executado em WebAssembly, usando <1>wasm-clang</1> adaptado por <2>polylang.io</2>.',
-    link: '<1> <2>Fundação C++ Padrão</2> </1> <3> <4>Site oficial do Clang</4> </3> <5> <6>Aprenda X em Y minutos, onde X=C++</6> </5> <7> <8>Carregar modelo inicial</8> </7>',
-    name: 'C/C++ (Wasm)',
+    desc: 'C++ compilado para WebAssembly pelo <1>Clang</1>, sendo executado inteiramente no navegador. Isto fornece um compilador de C++ real, ao contrário do interpretador de <2>C++ baseado em JSCPP</2>.',
+    link: '<1> <2>Fundação C++ Padrão</2> </1> <3> <4>Site oficial do Clang</4> </3> <5> <6>Aprenda X em Y minutos, onde X=C++</6> </5> <7> <8>Documentação do LiveCodes</8> </7> <9> <10>Carregar modelo inicial</10> </9>',
+    name: 'C++ (Wasm)',
   },
   csharpWasm: {
     desc: 'Compilador C# executado no WebAssembly, usando <1>Blazor</1>',
@@ -98,6 +103,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1><2>Site oficial</2></1> <3> <4>Documentação do LiveCodes</4> </3>',
     name: 'EJS',
   },
+  elm: {
+    desc: 'O Elm é compilado para JavaScript no navegador por uma versão do compilador Elm para WebAssembly.',
+    link: '<1><2>Site oficial do Elm</2></1> <3><4>Guia do Elm</4></3> <5> <6>Documentação do LiveCodes</6> </5> <7> <8>Carregar modelo inicial</8> </7>',
+    name: 'Elm',
+  },
   eta: {
     desc: 'Motor de modelo JS incorporado para Node, Deno e o navegador. Leve, rápido e plugável. Escrito em TypeScript.',
     link: '<1><2>Site oficial</2></1> <3> <4>Documentação</4> </3> <5> <6>Documentação do LiveCodes</6> </5>',
@@ -113,6 +123,18 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Site oficial do Flow</2> </1> <3> <4>Documentação do Flow</4> </3>',
     name: 'Flow',
   },
+  fsharp: {
+    desc1:
+      'O F# é uma linguagem de programação funcional, multiplataforma e de código aberto que funciona na plataforma .NET.',
+    desc2: 'Aqui, é compilado para JavaScript utilizando o Fable.',
+    link: '<1><2>Site oficial do F#</2></1> <3> <4>Documentação do F#</4> </3> <5> <6>Site oficial do Fable</6> </5> <7> <8>Documentação do LiveCodes</8> </7> <9> <10>Carregar modelo inicial</10> </9>',
+    name: 'F#',
+  },
+  fsharpWasm: {
+    desc: 'O verdadeiro compilador F# e o ambiente de execução .NET a funcionar no WebAssembly. <1></1>Isto corresponde ao comportamento do compilador oficial do F#. No entanto, o ambiente de execução .NET para WebAssembly tem de ser descarregado na página de resultados, o que pode demorar algum tempo na primeira execução.',
+    link: '<1><2>Site oficial do F#</2></1> <3> <4>Documentação do F#</4> </3> <5> <6>Documentação do LiveCodes</6> </5> <7> <8>Carregar modelo inicial</8> </7>',
+    name: 'F# (Wasm)',
+  },
   gleam: {
     desc1: 'Gleam é uma linguagem amigável para construir sistemas seguros de tipos que escalam!',
     desc2:
@@ -124,7 +146,7 @@ const languageInfo: I18nLangInfoTranslation = {
     desc1:
       'Go (Golang) é uma linguagem de programação de código aberto que torna fácil construir software simples, confiável e eficiente.',
     desc2: 'Aqui, é compilado para JavaScript usando GopherJS.',
-    link: '<1><2>Site do Go</2></1> <3><4>Documentação do Go</4></3> <5> <6>Repositório do GopherJS</6> </5> <7> <8>Aprenda X em Y minutos, onde X=Go</8> </7> <9><10>Carregar modelo inicial</10></9>',
+    link: '<1><2>Site do Go</2></1> <3><4>Documentação do Go</4></3> <5> <6>Repositório do GopherJS</6> </5> <7> <8>Aprenda X em Y minutos, onde X=Go</8> </7> <9> <10>Documentação do LiveCodes</10> </9> <11> <12>Carregar modelo inicial</12> </11>',
     name: 'Go',
   },
   goWasm: {
@@ -142,6 +164,16 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1><2>Site oficial</2></1> <3> <4>Documentação do LiveCodes</4> </3>',
     name: 'Handlebars',
   },
+  haskell: {
+    desc: 'Haskell a ser executado no navegador utilizando o MicroHs.',
+    link: '<1> <2>Site oficial do Haskell</2> </1> <3> <4>MicroHs no GitHub</4> </3> <5> <6>Documentação do LiveCodes</6> </5> <7> <8>Carregar modelo inicial</8> </7>',
+    name: 'Haskell',
+  },
+  haskellWasm: {
+    desc: 'O Haskell é compilado e executado no navegador pelo <1>GHC in the browser</1>, uma versão do GHC em WebAssembly, que funciona inteiramente do lado do cliente.',
+    link: '<1> <2>Site oficial do Haskell</2> </1> <3> <4>Documentação do GHC</4> </3> <5> <6>O GHC no navegador</6> </5> <7> <8>Documentação do LiveCodes</8> </7> <9> <10>Carregar modelo inicial</10> </9>',
+    name: 'Haskell (Wasm)',
+  },
   imba: {
     desc: 'A linguagem amigável full-stack.',
     link: '<1><2>Site oficial</2></1>',
@@ -149,7 +181,7 @@ const languageInfo: I18nLangInfoTranslation = {
   },
   java: {
     desc: 'JVM em execução no navegador usando DoppioJVM.',
-    link: '<1> <2>Sítio Web oficial de Java</2> </1> <3> <4> DoppioJVM</4> </3> <5> <6> Aprender X em Y minutos, onde X=java</6> </5> <7> <8> Carregar modelo inicial</8> </7>',
+    link: '<1> <2>Sítio Web oficial de Java</2> </1> <3> <4> DoppioJVM</4> </3> <5> <6> Aprender X em Y minutos, onde X=java</6> </5> <7> <8>Documentação do LiveCodes</8> </7> <9> <10> Carregar modelo inicial</10> </9>',
     name: 'Java',
   },
   javascript: {
@@ -233,6 +265,16 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'Uma linguagem de modelação rica e poderosa para JavaScript. Nunjucks é essencialmente uma adaptação do <1>jinja2</1>.',
     link: '<1> <2>Site oficial</2> </1> <3> <4>Documentação do LiveCodes</4> </3>',
     name: 'Nunjucks',
+  },
+  objcWasm: {
+    desc: 'Objective-C compilado para WebAssembly pelo <1>Clang</1>, usando o runtime Objective-C <2>GNUstep</2>. Isto é um runtime e não uma biblioteca de classes, pelo que o Foundation não está disponível.',
+    link: '<1> <2>Documentação do Objective-C</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Aprenda X em Y minutos, onde X=Objective-C</6> </5> <7> <8>Documentação do LiveCodes</8> </7> <9> <10>Carregar modelo inicial</10> </9>',
+    name: 'Objective-C (Wasm)',
+  },
+  objcppWasm: {
+    desc: 'Objective-C++ compilado para WebAssembly pelo <1>Clang</1>, usando o runtime Objective-C <2>GNUstep</2>. Isto é um runtime e não uma biblioteca de classes, pelo que o Foundation não está disponível.',
+    link: '<1> <2>Documentação do Objective-C</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Aprenda X em Y minutos, onde X=Objective-C</6> </5> <7> <8>Documentação do LiveCodes</8> </7>',
+    name: 'Objective-C++ (Wasm)',
   },
   ocaml: {
     desc1:
@@ -341,6 +383,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Site oficial do Ruby</2> </1> <3> <4>Documentação do Ruby</4> </3> <5> <6>Site do ruby.wasm</6> </5> <7><8>CRuby</8></7> <9> <10>Aprenda X em Y minutos, onde X=ruby</10> </9> <11> <12>Documentação do LiveCodes</12> </11> <13> <14>Carregar modelo inicial</14> </13>',
     name: 'Ruby (WASM)',
   },
+  rustWasm: {
+    desc: 'O Rust é interpretado pelo <1>Miri</1> (o interpretador de IR de nível intermédio do Rust), compilado para WebAssembly, sendo executado na íntegra no navegador.',
+    link: '<1> <2>Site oficial do Rust</2> </1> <3> <4>O Livro do Rust</4> </3> <5> <6>Aprenda X em Y minutos, onde X = Rust</6> </5> <7> <8>Documentação do LiveCodes</8> </7> <9> <10>Carregar modelo inicial</10> </9>',
+    name: 'Rust (Wasm)',
+  },
   sass: {
     desc: 'Folhas de Estilo Sintaticamente Incríveis.',
     link: '<1> <2>Site oficial do Sass</2> </1> <3> <4>Documentação do Sass</4> </3> <5> <6>Sintaxe indentada do Sass</6> </5> <7> <8>Aprenda X em Y minutos, onde X=sass</8> </7>',
@@ -425,6 +472,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Site oficial</2> </1> <3> <4>Documentação do TypeScript</4> </3> <5> <6>Aprenda X em Y minutos, onde X=TypeScript</6> </5> <7> <8>Carregar modelo inicial</8> </7>',
     name: 'TypeScript',
   },
+  vbWasm: {
+    desc: 'Compilador VB.NET executado no WebAssembly, usando <1>Roslyn</1> e o <2>ambiente de execução .NET para WebAssembly</2>',
+    link: '<1> <2>Documentação da linguagem Visual Basic</2> </1> <3> <4> Aprenda X em Y minutos, onde X=Visual Basic</4> </3> <5> <6> Documentação LiveCodes</6> </5> <7> <8> Carregar modelo inicial</8> </7>',
+    name: 'VB.NET (Wasm)',
+  },
   vue: {
     link: '<1> <2>Site oficial do Vue.js v3</2> </1> <3> <4>Documentação do Vue3</4> </3> <5> <6>Componentes de arquivo único do Vue3</6> </5> <7> <8>Documentação do LiveCodes</8> </7> <9><10>Carregar modelo inicial</10></9>',
     name: 'Componentes de Arquivo Único Vue3',
@@ -439,6 +491,11 @@ const languageInfo: I18nLangInfoTranslation = {
     desc2: 'É convertido para wasm usando wabt.js.',
     link: '<1><2>WebAssembly.org</2></1> <3> <4>Especificações de Texto WebAssembly</4> </3> <5> <6>WebAssembly no MDN</6> </5> <7> <8>Entendendo o formato de texto WebAssembly</8> </7> <9> <10>Documentação do wabt.js</10> </9> <11> <12>Aprenda X em Y minutos, onde X=WebAssembly</12> </11> <13><14>Carregar modelo inicial</14></13>',
     name: 'Formato de Texto WebAssembly',
+  },
+  zigWasm: {
+    desc: 'Compilador Zig a funcionar no WebAssembly.',
+    link: '<1> <2>Site do Zig</2> </1> <3> <4>Documentação da linguagem Zig</4> </3> <5> <6>Aprenda X em Y minutos, em que X = Zig</6> </5> <7> <8>Documentação do LiveCodes</8> </7> <9> <10>Carregar modelo inicial</10> </9>',
+    name: 'Zig (Wasm)',
   },
 };
 

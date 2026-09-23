@@ -63,6 +63,15 @@
   "blockly.name": {
     "translation": "Blockly"
   },
+  "cWasm.desc": {
+    "translation": "C توسط <tag-1>Clang</tag-1> به WebAssembly کامپایل شده و کاملاً در مرورگر اجرا می‌شود."
+  },
+  "cWasm.link": {
+    "translation": "<tag-1> <tag-2>مرجع زبان C</tag-2> </tag-1> <tag-3> <tag-4>وب‌سایت رسمی Clang</tag-4> </tag-3> <tag-5> <tag-6>یادگیری X در Y دقیقه، جایی که X=C</tag-6> </tag-5> <tag-7> <tag-8>مستندات لایوکدز</tag-8> </tag-7> <tag-9> <tag-10>بارگذاری قالب شروع کننده</tag-10> </tag-9>"
+  },
+  "cWasm.name": {
+    "translation": "C (Wasm)"
+  },
   "civet.desc": {
     "translation": "Civet یک زبان برنامه‌نویسی است که به TypeScript یا JavaScript کامپایل می‌شود، بنابراین می‌توانید از ابزارهای موجود استفاده کنید اما از نحو مختصر و قدرتمند بهره‌مند شوید."
   },
@@ -121,13 +130,13 @@
     "translation": "C++"
   },
   "cppWasm.desc": {
-    "translation": "کامپایلر Clang C/C++ که روی WebAssembly اجرا می‌شود، با استفاده از <tag-1>wasm-clang</tag-1> که توسط <tag-2>polylang.io</tag-2> تطبیق داده شده است"
+    "translation": "C++ توسط <tag-1>Clang</tag-1> به WebAssembly کامپایل شده و کاملاً در مرورگر اجرا می‌شود. این یک کامپایلر واقعی C++ ارائه می‌دهد، برخلاف مفسر <tag-2>C++ مبتنی بر JSCPP</tag-2>."
   },
   "cppWasm.link": {
-    "translation": "<tag-1> <tag-2>بنیاد استاندارد ++C</tag-2> </tag-1> <tag-3> <tag-4>وب‌سایت رسمی Clang</tag-4> </tag-3> <tag-5> <tag-6>یادگیری X در Y دقیقه، جایی که X=C++</tag-6> </tag-5> <tag-7> <tag-8>بارگذاری قالب شروع کننده</tag-8> </tag-7>"
+    "translation": "<tag-1> <tag-2>بنیاد استاندارد ++C</tag-2> </tag-1> <tag-3> <tag-4>وب‌سایت رسمی Clang</tag-4> </tag-3> <tag-5> <tag-6>یادگیری X در Y دقیقه، جایی که X=C++</tag-6> </tag-5> <tag-7> <tag-8>مستندات لایوکدز</tag-8> </tag-7> <tag-9> <tag-10>بارگذاری قالب شروع کننده</tag-10> </tag-9>"
   },
   "cppWasm.name": {
-    "translation": "C/C++ (Wasm)"
+    "translation": "C++ (Wasm)"
   },
   "csharpWasm.desc": {
     "translation": "کامپایلر #C که روی WebAssembly اجرا می‌شود، با استفاده از <tag-1>Blazor</tag-1>"
@@ -171,6 +180,15 @@
   "ejs.name": {
     "translation": "EJS"
   },
+  "elm.desc": {
+    "translation": "زبان Elm توسط یک نسخه WebAssembly از کامپایلر Elm، در مرورگر به جاوااسکریپت کامپایل می‌شود."
+  },
+  "elm.link": {
+    "translation": "<tag-1><tag-2>وب‌سایت رسمی Elm</tag-2></tag-1> <tag-3><tag-4>راهنمای Elm</tag-4></tag-3> <tag-5> <tag-6>مستندات LiveCodes</tag-6> </tag-5> <tag-7> <tag-8>بارگذاری الگوی اولیه</tag-8> </tag-7>"
+  },
+  "elm.name": {
+    "translation": "Elm"
+  },
   "eta.desc": {
     "translation": "موتور قالب JS تعبیه شده برای Node، Deno و مرورگر. سبک، سریع و قابل توسعه. نوشته شده در TypeScript."
   },
@@ -198,6 +216,27 @@
   "flow.name": {
     "translation": "Flow"
   },
+  "fsharp.desc1": {
+    "translation": "F# یک زبان برنامه‌نویسی تابعی متن‌باز و چندسکویی است که بر روی پلتفرم .NET اجرا می‌شود."
+  },
+  "fsharp.desc2": {
+    "translation": "در اینجا، با استفاده از Fable به جاوااسکریپت کامپایل شده است."
+  },
+  "fsharp.link": {
+    "translation": "<tag-1><tag-2>وب‌سایت رسمی F#</tag-2></tag-1> <tag-3> <tag-4>مستندات F#</tag-4> </tag-3> <tag-5> <tag-6>وب‌سایت رسمی Fable</tag-6> </tag-5> <tag-7> <tag-8>مستندات LiveCodes</tag-8> </tag-7> <tag-9> <tag-10>بارگیری قالب شروع</tag-10> </tag-9>"
+  },
+  "fsharp.name": {
+    "translation": "F#"
+  },
+  "fsharpWasm.desc": {
+    "translation": "کامپایلر واقعی F# و محیط اجرایی .NET که روی WebAssembly اجرا می‌شود. <tag-1></tag-1>این با رفتار کامپایلر رسمی F# مطابقت دارد. با این حال، محیط اجرایی .NET WebAssembly باید در صفحه نتایج دانلود شود که در اولین اجرا می‌تواند مدتی طول بکشد."
+  },
+  "fsharpWasm.link": {
+    "translation": "<tag-1><tag-2>وب‌سایت رسمی F#</tag-2></tag-1> <tag-3> <tag-4>اسناد F#</tag-4> </tag-3> <tag-5> <tag-6>مستندات LiveCodes</tag-6> </tag-5> <tag-7> <tag-8>بارگیری قالب شروع</tag-8> </tag-7>"
+  },
+  "fsharpWasm.name": {
+    "translation": "F# (Wasm)"
+  },
   "gleam.desc1": {
     "translation": "Gleam یک زبان دوستانه برای ساخت سیستم‌های مقیاس‌پذیر با امنیت نوع است!"
   },
@@ -217,7 +256,7 @@
     "translation": "در اینجا، با استفاده از GopherJS به JavaScript کامپایل می‌شود."
   },
   "go.link": {
-    "translation": "<tag-1><tag-2>وب‌سایت Go</tag-2></tag-1> <tag-3><tag-4>مستندات Go</tag-4></tag-3> <tag-5> <tag-6>مخزن GopherJS</tag-6> </tag-5> <tag-7> <tag-8>یادگیری X در Y دقیقه، جایی که X=Go</tag-8> </tag-7> <tag-9> <tag-10>بارگذاری قالب شروع کننده</tag-10> </tag-9>"
+    "translation": "<tag-1><tag-2>وب‌سایت Go</tag-2></tag-1> <tag-3><tag-4>مستندات Go</tag-4></tag-3> <tag-5> <tag-6>مخزن GopherJS</tag-6> </tag-5> <tag-7> <tag-8>یادگیری X در Y دقیقه، جایی که X=Go</tag-8> </tag-7> <tag-9> <tag-10>مستندات LiveCodes</tag-10> </tag-9> <tag-11> <tag-12>بارگذاری قالب شروع کننده</tag-12> </tag-11>"
   },
   "go.name": {
     "translation": "Go"
@@ -248,6 +287,24 @@
   },
   "handlebars.name": {
     "translation": "Handlebars"
+  },
+  "haskell.desc": {
+    "translation": "اجرای Haskell در مرورگر با استفاده از MicroHs."
+  },
+  "haskell.link": {
+    "translation": "<tag-1> <tag-2>وب‌سایت رسمی هاسکل</tag-2> </tag-1> <tag-3> <tag-4>MicroHs در گیت‌هاب</tag-4> </tag-3> <tag-5> <tag-6>مستندات LiveCodes</tag-6> </tag-5> <tag-7> <tag-8>بارگذاری قالب اولیه</tag-8> </tag-7>"
+  },
+  "haskell.name": {
+    "translation": "Haskell"
+  },
+  "haskellWasm.desc": {
+    "translation": "هسکل توسط <tag-1>GHC در مرورگر</tag-1> کامپایل و در مرورگر اجرا می‌شود، که یک ساختار WebAssembly از GHC است و کاملاً سمت کلاینت اجرا می‌شود."
+  },
+  "haskellWasm.link": {
+    "translation": "<tag-1> <tag-2>وب‌سایت رسمی هسکل (Haskell)</tag-2> </tag-1> <tag-3> <tag-4>مستندات GHC</tag-4> </tag-3> <tag-5> <tag-6>GHC در مرورگر</tag-6> </tag-5> <tag-7> <tag-8>مستندات LiveCodes</tag-8> </tag-7> <tag-9> <tag-10>بارگذاری قالب اولیه</tag-10> </tag-9>"
+  },
+  "haskellWasm.name": {
+    "translation": "Haskell (Wasm)"
   },
   "imba.desc": {
     "translation": "زبان full-stack دوستانه."
@@ -413,6 +470,24 @@
   },
   "nunjucks.name": {
     "translation": "Nunjucks"
+  },
+  "objcWasm.desc": {
+    "translation": "Objective-C توسط <tag-1>Clang</tag-1> به WebAssembly کامپایل شده و از محیط اجرایی Objective-C <tag-2>GNUstep</tag-2> استفاده می‌کند. این یک محیط اجرایی است و نه یک کتابخانه کلاس، بنابراین Foundation در دسترس نیست."
+  },
+  "objcWasm.link": {
+    "translation": "<tag-1> <tag-2>مستندات Objective-C</tag-2> </tag-1> <tag-3> <tag-4>GNUstep libobjc2</tag-4> </tag-3> <tag-5> <tag-6>یادگیری X در Y دقیقه، جایی که X=Objective-C</tag-6> </tag-5> <tag-7> <tag-8>مستندات لایوکدز</tag-8> </tag-7> <tag-9> <tag-10>بارگذاری قالب شروع کننده</tag-10> </tag-9>"
+  },
+  "objcWasm.name": {
+    "translation": "Objective-C (Wasm)"
+  },
+  "objcppWasm.desc": {
+    "translation": "Objective-C++ توسط <tag-1>Clang</tag-1> به WebAssembly کامپایل شده و از محیط اجرایی Objective-C <tag-2>GNUstep</tag-2> استفاده می‌کند. این یک محیط اجرایی است و نه یک کتابخانه کلاس، بنابراین Foundation در دسترس نیست."
+  },
+  "objcppWasm.link": {
+    "translation": "<tag-1> <tag-2>مستندات Objective-C</tag-2> </tag-1> <tag-3> <tag-4>GNUstep libobjc2</tag-4> </tag-3> <tag-5> <tag-6>یادگیری X در Y دقیقه، جایی که X=Objective-C</tag-6> </tag-5> <tag-7> <tag-8>مستندات لایوکدز</tag-8> </tag-7>"
+  },
+  "objcppWasm.name": {
+    "translation": "Objective-C++ (Wasm)"
   },
   "ocaml.desc1": {
     "translation": "OCaml یک زبان برنامه‌نویسی با قدرت صنعتی است که از سبک‌های تابعی، دستوری و شی‌گرا پشتیبانی می‌کند."
@@ -606,6 +681,15 @@
   "rubyWasm.name": {
     "translation": "Ruby (WASM)"
   },
+  "rustWasm.desc": {
+    "translation": "زبان برنامه‌نویسی Rust توسط <tag-1>Miri</tag-1> (مفسر IR سطح میانی Rust) که به WebAssembly کامپایل شده و کاملاً در مرورگر اجرا می‌شود، تفسیر می‌شود."
+  },
+  "rustWasm.link": {
+    "translation": "<tag-1> <tag-2>وب‌سایت رسمی راست</tag-2> </tag-1> <tag-3> <tag-4>کتاب راست</tag-4> </tag-3> <tag-5> <tag-6>یادگیری X در Y دقیقه، که X=راست</tag-6> </tag-5> <tag-7> <tag-8>مستندات لایوکدز</tag-8> </tag-7> <tag-9> <tag-10>بارگذاری قالب شروع</tag-10> </tag-9>"
+  },
+  "rustWasm.name": {
+    "translation": "Rust (Wasm)"
+  },
   "sass.desc": {
     "translation": "شیوه‌نامه‌های شگفت انگیز از نظر نحوی."
   },
@@ -756,6 +840,15 @@
   "typescript.name": {
     "translation": "TypeScript"
   },
+  "vbWasm.desc": {
+    "translation": "کامپایلر VB.NET که روی WebAssembly اجرا می‌شود، با استفاده از <tag-1>Roslyn</tag-1> و <tag-2>محیط اجرایی .NET WebAssembly</tag-2>"
+  },
+  "vbWasm.link": {
+    "translation": "<tag-1> <tag-2>مستندات زبان Visual Basic</tag-2> </tag-1> <tag-3> <tag-4>یادگیری X در Y دقیقه، جایی که X=Visual Basic</tag-4> </tag-3> <tag-5> <tag-6>مستندات LiveCodes</tag-6> </tag-5> <tag-7> <tag-8>بارگذاری قالب شروع کننده</tag-8> </tag-7>"
+  },
+  "vbWasm.name": {
+    "translation": "VB.NET (Wasm)"
+  },
   "vue.link": {
     "translation": "<tag-1> <tag-2>وب‌سایت رسمی Vue.js v3</tag-2> </tag-1> <tag-3> <tag-4>مستندات Vue3</tag-4> </tag-3> <tag-5> <tag-6>کامپوننت‌های تک فایلی Vue3</tag-6> </tag-5> <tag-7> <tag-8>مستندات LiveCodes</tag-8> </tag-7> <tag-9> <tag-10>بارگذاری قالب شروع کننده</tag-10> </tag-9>"
   },
@@ -782,5 +875,14 @@
   },
   "wat.name": {
     "translation": "فرمت متنی WebAssembly"
+  },
+  "zigWasm.desc": {
+    "translation": "کامپایلر Zig که روی WebAssembly اجرا می‌شود."
+  },
+  "zigWasm.link": {
+    "translation": "<tag-1> <tag-2>وبسایت زیگ</tag-2> </tag-1> <tag-3> <tag-4>مستندات زبان زیگ</tag-4> </tag-3> <tag-5> <tag-6>زبان زیگ را در چند دقیقه بیاموزید</tag-6> </tag-5> <tag-7> <tag-8>مستندات LiveCodes</tag-8> </tag-7> <tag-9> <tag-10>بارگذاری قالب شروع</tag-10> </tag-9>"
+  },
+  "zigWasm.name": {
+    "translation": "Zig (Wasm)"
   }
 }

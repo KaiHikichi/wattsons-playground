@@ -8,20 +8,25 @@ import { blank } from './blank';
 import { blocklyStarter } from './blockly-starter';
 import { bootstrapStarter } from './bootstrap-starter';
 import { civetStarter } from './civet-starter';
+import { cWasmStarter, cppWasmStarter, objcWasmStarter } from './clang-wasm-starters';
 import { clioStarter } from './clio-starter';
 import { clojurescriptStarter } from './clojurescript-starter';
 import { coffeescriptStarter } from './coffeescript-starter';
 import { commonlispStarter } from './commonlisp-starter';
 import { cppStarter } from './cpp-starter';
-import { cppWasmStarter } from './cpp-wasm-starter';
 import { csharpWasmStarter } from './csharp-wasm-starter';
 import { d3Starter } from './d3-starter';
 import { daisyuiStarter } from './daisyui-starter';
 import { diagramsStarter } from './diagrams-starter';
+import { elmStarter } from './elm-starter';
 import { fennelStarter } from './fennel-starter';
+import { fsharpStarter } from './fsharp-starter';
+import { fsharpWasmStarter } from './fsharp-wasm-starter';
 import { gleamStarter } from './gleam-starter';
 import { goStarter } from './go-starter';
 import { goWasmStarter } from './go-wasm-starter';
+import { haskellStarter } from './haskell-starter';
+import { haskellWasmStarter } from './haskell-wasm-starter';
 import { imbaStarter } from './imba-starter';
 import { javaStarter } from './java-starter';
 import { javascriptStarter } from './javascript-starter';
@@ -56,6 +61,7 @@ import { rescriptStarter } from './rescript-starter';
 import { riotStarter } from './riot-starter';
 import { rubyStarter } from './ruby-starter';
 import { rubyWasmStarter } from './ruby-wasm-starter';
+import { rustWasmStarter } from './rust-wasm-starter';
 import { schemeStarter } from './scheme-starter';
 import { scienceAliveStarter } from './sciencealive-starter';
 import { shadcnuiStarter } from './shadcn-ui-starter';
@@ -67,9 +73,11 @@ import { tailwindcssStarter } from './tailwindcss-starter';
 import { tclStarter } from './tcl-starter';
 import { tealStarter } from './teal-starter';
 import { typescriptStarter } from './typescript-starter';
+import { vbWasmStarter } from './vb-wasm-starter';
 import { vueSfcStarter } from './vue-sfc-starter';
 import { vue2Starter } from './vue2-starter';
 import { watStarter } from './wat-starter';
+import { zigWasmStarter } from './zig-wasm-starter';
 
 export const starterTemplates = [
   blank,
@@ -85,6 +93,7 @@ export const starterTemplates = [
   solidStarter,
   litStarter,
   stencilStarter,
+  markdownStarter,
   mdxStarter,
   tailwindcssStarter,
   shadcnuiStarter,
@@ -106,6 +115,7 @@ export const starterTemplates = [
   civetStarter,
   clioStarter,
   imbaStarter,
+  elmStarter,
   rescriptStarter,
   reasonStarter,
   ocamlStarter,
@@ -119,21 +129,29 @@ export const starterTemplates = [
   phpStarter,
   phpWasmStarter,
   cppStarter,
+  cWasmStarter,
   cppWasmStarter,
+  objcWasmStarter,
+  rustWasmStarter,
+  zigWasmStarter,
   javaStarter,
   csharpWasmStarter,
+  vbWasmStarter,
+  fsharpStarter,
+  fsharpWasmStarter,
+  haskellStarter,
+  haskellWasmStarter,
+  schemeStarter,
+  commonlispStarter,
+  clojurescriptStarter,
+  gleamStarter,
   perlStarter,
   luaStarter,
   luaWasmStarter,
   tealStarter,
   fennelStarter,
   juliaStarter,
-  schemeStarter,
-  commonlispStarter,
-  clojurescriptStarter,
-  gleamStarter,
   tclStarter,
-  markdownStarter,
   assemblyscriptStarter,
   watStarter,
   sqlStarter,

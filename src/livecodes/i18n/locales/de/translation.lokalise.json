@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Bootstrap-Starter"
   },
+  "templates.starter.c-wasm": {
+    "translation": "C (Wasm)-Starter"
+  },
   "templates.starter.civet": {
     "translation": "Civet-Starter"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "Diagramm-Starter"
   },
+  "templates.starter.elm": {
+    "translation": "Elm-Starter"
+  },
   "templates.starter.fennel": {
     "translation": "Fennel-Starter"
+  },
+  "templates.starter.fsharp": {
+    "translation": "F# -Starter"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "F# (Wasm)-Starter"
   },
   "templates.starter.gleam": {
     "translation": "Gleam-Starter"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Go (Wasm)-Starter"
+  },
+  "templates.starter.haskell": {
+    "translation": "Haskell-Starter"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Haskell (Wasm)-Starter"
   },
   "templates.starter.heading": {
     "translation": "Starter-Vorlagen"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "MiniZink-Starter"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Objective-C (Wasm)-Starter"
+  },
   "templates.starter.ocaml": {
     "translation": "OCaml-Starter"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Ruby (Wasm)-Starter"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Rust (Wasm)-Starter"
+  },
   "templates.starter.scheme": {
     "translation": "Scheme-Starter"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "TypeScript-Starter"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "VB.NET (Wasm)-Starter"
+  },
   "templates.starter.vue": {
     "translation": "Vue-Starter"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "WebAssembly Text-Starter"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Zig (Wasm)-Starter"
   },
   "templates.user.heading": {
     "translation": "Meine Vorlagen"

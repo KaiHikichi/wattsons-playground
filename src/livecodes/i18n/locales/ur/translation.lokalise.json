@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "بوٹ اسٹریپ شروعاتی"
   },
+  "templates.starter.c-wasm": {
+    "translation": "C (واسم) شروعاتی"
+  },
   "templates.starter.civet": {
     "translation": "سیویٹ شروعاتی"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "ڈایاگرامز شروعاتی"
   },
+  "templates.starter.elm": {
+    "translation": "ایلم شروعاتی"
+  },
   "templates.starter.fennel": {
     "translation": "فینل شروعاتی"
+  },
+  "templates.starter.fsharp": {
+    "translation": "F# شروعاتی"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "F# (واسم) شروعاتی"
   },
   "templates.starter.gleam": {
     "translation": "گلیم شروعاتی"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "گو (واسم) شروعاتی"
+  },
+  "templates.starter.haskell": {
+    "translation": "ہاسکل شروعاتی"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "ہاسکل (واسم) شروعاتی"
   },
   "templates.starter.heading": {
     "translation": "شروعاتی سانچے"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "MiniZinc شروعاتی"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Objective-C (واسم) شروعاتی"
+  },
   "templates.starter.ocaml": {
     "translation": "اوکامل شروعاتی"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "روبی (واسم) شروعاتی"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "راست (واسم) شروعاتی"
+  },
   "templates.starter.scheme": {
     "translation": "اسکیم شروعاتی"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "ٹائپ اسکرپٹ شروعاتی"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "VB.NET (واسم) شروعاتی"
+  },
   "templates.starter.vue": {
     "translation": "ویو شروعاتی"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "ویب اسمبلی ٹیکسٹ شروعاتی"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Zig (واسم) شروعاتی"
   },
   "templates.user.heading": {
     "translation": "میرے سانچے"

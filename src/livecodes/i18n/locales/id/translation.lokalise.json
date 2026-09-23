@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Pemula Bootstrap"
   },
+  "templates.starter.c-wasm": {
+    "translation": "Pemula C (Wasm)"
+  },
   "templates.starter.civet": {
     "translation": "Pemula Civet"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "Pemula Diagram"
   },
+  "templates.starter.elm": {
+    "translation": "Pemula Elm"
+  },
   "templates.starter.fennel": {
     "translation": "Pemula Fennel"
+  },
+  "templates.starter.fsharp": {
+    "translation": "Pemula F#"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "Pemula F# (Wasm)"
   },
   "templates.starter.gleam": {
     "translation": "Pemula Gleam"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Pemula Go (Wasm)"
+  },
+  "templates.starter.haskell": {
+    "translation": "Pemula Haskell"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Pemula Haskell (Wasm)"
   },
   "templates.starter.heading": {
     "translation": "Template Pemula"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "Pemula MiniZinc"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Pemula Objective-C (Wasm)"
+  },
   "templates.starter.ocaml": {
     "translation": "Pemula Ocaml"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Pemula Ruby (Wasm)"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Pemula Rust (Wasm)"
+  },
   "templates.starter.scheme": {
     "translation": "Pemula Scheme"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "Pemula TypeScript"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "Pemula VB.NET (Wasm)"
+  },
   "templates.starter.vue": {
     "translation": "Pemula Vue SFC"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "Pemula Teks WebAssembly"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Pemula Zig (Wasm)"
   },
   "templates.user.heading": {
     "translation": "Template Saya"

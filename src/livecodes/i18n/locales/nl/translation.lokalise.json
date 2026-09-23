@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Bootstrap-starter"
   },
+  "templates.starter.c-wasm": {
+    "translation": "C (Wasm)-starter"
+  },
   "templates.starter.civet": {
     "translation": "Civet-starter"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "Diagrammen-starter"
   },
+  "templates.starter.elm": {
+    "translation": "Elm-starter"
+  },
   "templates.starter.fennel": {
     "translation": "Fennel-starter"
+  },
+  "templates.starter.fsharp": {
+    "translation": "F#-starter"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "F# (Wasm)-starter"
   },
   "templates.starter.gleam": {
     "translation": "Gleam-starter"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Go (Wasm)-starter"
+  },
+  "templates.starter.haskell": {
+    "translation": "Haskell-starter"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Haskell (Wasm)-starter"
   },
   "templates.starter.heading": {
     "translation": "Startsjablonen"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "MiniZinc Starter"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Objective-C (Wasm)-starter"
+  },
   "templates.starter.ocaml": {
     "translation": "Ocaml-starter"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Ruby (Wasm)-starter"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Rust (Wasm)-starter"
+  },
   "templates.starter.scheme": {
     "translation": "Scheme-starter"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "TypeScript-starter"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "VB.NET (Wasm)-starter"
+  },
   "templates.starter.vue": {
     "translation": "Vue SFC-starter"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "WebAssembly Text-starter"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Zig (Wasm)-starter"
   },
   "templates.user.heading": {
     "translation": "Mijn sjablonen"

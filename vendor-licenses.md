@@ -28,9 +28,13 @@ BiwaScheme: [MIT License](https://github.com/biwascheme/biwascheme/blob/7a95e757
 
 Blockly: [Apache-2.0 License](https://github.com/google/blockly/blob/3ae4a618429c87fc002e512e5a2504af382325fd/LICENSE)
 
+browser_wasi_shim: [MIT License](https://github.com/bjorn3/browser_wasi_shim/blob/b068ec2c22d68581c48f2592f8cca1681bf71a98/LICENSE-MIT) OR [Apache License 2.0](https://github.com/bjorn3/browser_wasi_shim/blob/b068ec2c22d68581c48f2592f8cca1681bf71a98/LICENSE-APACHE)
+
 BrowserFS: [MIT License](https://github.com/jvilk/BrowserFS/blob/76fd5122fcf3ad6bff3315550aafb041cfb6a72e/license.md)
 
 brython: [BSD-3-Clause license](https://github.com/brython-dev/brython/blob/c579e26d7e24c37c77f00fc345af0248ca6be8eb/LICENCE.txt)
+
+bsdtar-wasm: [BSD licenses](https://github.com/haskell-wasm/bsdtar-wasm/blob/012117de366c13285036f37b4fcd9a59d1a06fbb/LICENSE)
 
 chai: [MIT License](https://github.com/chaijs/chai/blob/1a8247f30dbe0f54268a9748ae673caec75d6bfe/LICENSE)
 
@@ -70,11 +74,19 @@ EJS: [Apache License 2.0](https://github.com/mde/ejs/blob/f47d7aedd51a983e4f7304
 
 elkjs-svg: [MIT License](https://github.com/EmilStenstrom/elkjs-svg/blob/4a8709b2407d23218904f523552c565a37764e40/LICENSE)
 
+Elm: [BSD-3-Clause License](https://github.com/elm/compiler/blob/1bd5b36915a38335195ca7792fe3995f53d84d5e/LICENSE)
+
 emmet-monaco-es: [MIT License](https://github.com/troy351/emmet-monaco-es/blob/b578210738fb591c65fb34530d28c0d0341fbb7d/LICENSE)
 
 ES Module Shims: [MIT License](https://github.com/guybedford/es-module-shims/blob/986733009f4c9374decd4c0348740134ff499157/LICENSE)
 
 Eta: [MIT License](https://github.com/eta-dev/eta/blob/b25689e67cd07937a4595bca8ba39fe52cd76948/LICENSE)
+
+Fable: [MIT License](https://github.com/fable-compiler/Fable/blob/67e8540a21183248826d1b65b3d8e3eddc8d5825/LICENSE)
+
+F#: [MIT License](https://github.com/dotnet/fsharp/blob/df0e60991911eed31f861bb38403a389346055e2/License.txt)
+
+.NET runtime: [MIT License](https://github.com/dotnet/runtime/blob/20f7be9ec07eafd5b756df30de33a9452c9e1c14/LICENSE.TXT)
 
 fengari-web: [MIT License](https://github.com/fengari-lua/fengari-web/blob/77d35f5e1516f431cbb96e165b4272f2fc9b0b3a/LICENSE)
 
@@ -85,6 +97,8 @@ FlexSearch: [Apache License 2.0](https://github.com/nextapps-de/flexsearch/blob/
 flow-remove-types: [MIT License](https://github.com/facebook/flow/blob/3ebee9f08106eb8aefbf98111fee696d333b8456/packages/flow-remove-types/LICENSE)
 
 Fscreen: [MIT License](https://github.com/rafgraph/fscreen/blob/04244204efff724253df24f78336c9a2b7bc6505/LICENSE)
+
+GHC: [BSD-3-Clause and bundled component licenses](https://gitlab.haskell.org/ghc/ghc/-/blob/master/LICENSE)
 
 github-markdown-css: [MIT License](https://github.com/sindresorhus/github-markdown-css/blob/888d5a03223a2c14a8d3eb40e90a22f62469a46b/license)
 
@@ -148,7 +162,11 @@ mhsdesign/jit-browser-tailwindcss: [MIT License](https://github.com/mhsdesign/ji
 
 MDX: [MIT License](https://github.com/mdx-js/mdx/blob/7fd1d9a4272754951e70dbaecff07a0ae402e13e/license)
 
+MicroHs: [Apache License 2.0](https://github.com/augustss/MicroHs/blob/455782164e75998b140d869c1b7cdde0c8a21508/LICENSE) (the Haskell packages bundled with it keep their own upstream licences)
+
 minizinc-js: [MPL-2.0 License](https://github.com/MiniZinc/minizinc-js/blob/3f7c34f0549195e5a66cf0f2d6f34cb5bce867f4/LICENSE)
+
+Miri: [MIT License](https://github.com/rust-lang/miri/blob/92ea60bf0effd37aea533cd19c9702c43b90abe7/LICENSE-MIT) OR [Apache License 2.0](https://github.com/rust-lang/miri/blob/92ea60bf0effd37aea533cd19c9702c43b90abe7/LICENSE-APACHE)
 
 MJML: [MIT License](https://github.com/mjmlio/mjml/blob/988819de3375867c09585d28f555166b97415200/LICENSE.md)
 
@@ -240,6 +258,8 @@ Riot: [MIT License](https://github.com/riot/riot/blob/2b08ebf8c7fa3f338d24b7320e
 
 ruby.wasm: [MIT License](https://github.com/ruby/ruby.wasm/blob/097b7ca8d2ed2a98eea4dcf2da8089bb8ff06e07/LICENSE)
 
+Rust (compiler and standard library): [MIT License](https://github.com/rust-lang/rust/blob/018018e881e2db0956f229dbb543e21f058d1ce7/LICENSE-MIT) OR [Apache License 2.0](https://github.com/rust-lang/rust/blob/018018e881e2db0956f229dbb543e21f058d1ce7/LICENSE-APACHE)
+
 Sass.js: [MIT License](https://github.com/medialize/sass.js/blob/71d9bed2cad10969efda9905aa1bddacc480f372/LICENSE)
 
 SnackBar: [MIT License](https://github.com/egoist/snackbar/blob/4bc2fb7afd32d53a39661418fa5189dbb6e4aa86/LICENSE)
@@ -305,6 +325,12 @@ vue3-sfc-loader: [MIT License](https://github.com/FranckFreiburger/vue3-sfc-load
 wabt.js: [Apache-2.0 license](https://github.com/AssemblyScript/wabt.js/blob/182b4ee7d59f72c41a6dba97ed90fde9b79c8eb8/LICENSE)
 
 wacl: [BSD 3-Clause License](https://github.com/ecky-l/wacl/blob/9daacabb0102a9986f33263261350edfeebdd83b/LICENSE)
+
+@wasm-fmt/clang-format: [MIT License](https://github.com/wasm-fmt/clang-format/blob/6a84f2d980e5ff4145bd9178a49cd5146e48df78/LICENSE)
+
+@wasm-fmt/ruff_fmt: [MIT License](https://github.com/wasm-fmt/ruff_fmt/blob/6dc277e1be013159858c7de6b150063baa7214bb/LICENSE)
+
+@wasm-fmt/zig_fmt: [MIT License](https://github.com/wasm-fmt/zig_fmt/blob/d998e708899565d509b6875c52c236bc36c00ca8/LICENSE)
 
 wasm-refmt: [MIT License](https://github.com/xtuc/webassemblyjs/blob/45f733aa96476d74c8ac57598e13406a48a6fdc8/LICENSE)
 

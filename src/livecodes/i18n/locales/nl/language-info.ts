@@ -38,6 +38,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Officiële website</2> </1> <3> <4>Handleidingen</4> </3> <5> <6>Referentie</6> </5> <7> <8>Voorbeelden</8> </7> <9> <10>Startsjabloon laden</10> </9>',
     name: 'Blockly',
   },
+  cWasm: {
+    desc: 'C gecompileerd naar WebAssembly door <1>Clang</1>, draait volledig in de browser.',
+    link: '<1> <2>C-taalreferentie</2> </1> <3> <4>Clang officiële website</4> </3> <5> <6>Leer X in Y minuten, waarbij X=C</6> </5> <7> <8>LiveCodes-documentatie</8> </7> <9> <10>Startsjabloon laden</10> </9>',
+    name: 'C (Wasm)',
+  },
   civet: {
     desc: 'Civet is een programmeertaal die compileert naar TypeScript of JavaScript, zodat je bestaande tooling kunt gebruiken maar beknopte en krachtige syntaxis mogelijk maakt.',
     link: '<1> <2>Civet officiële website</2> </1> <3> <4>Civet cheatsheet</4> </3> <5> <6>Startsjabloon laden</6> </5>',
@@ -71,9 +76,9 @@ const languageInfo: I18nLangInfoTranslation = {
     name: 'C++',
   },
   cppWasm: {
-    desc: 'Clang C/C++-compiler draaiend op WebAssembly, met <1>wasm-clang</1> aangepast door <2>polylang.io</2>',
-    link: '<1> <2>Standard C++ Foundation</2> </1> <3> <4>Clang officiële website</4> </3> <5> <6>Leer X in Y minuten, waarbij X=C++</6> </5> <7> <8>Startsjabloon laden</8> </7>',
-    name: 'C/C++ (Wasm)',
+    desc: 'C++ gecompileerd naar WebAssembly door <1>Clang</1>, draait volledig in de browser. Dit biedt een echte C++-compiler, in tegenstelling tot de <2>JSCPP-gebaseerde C++</2>-interpreter.',
+    link: '<1> <2>Standard C++ Foundation</2> </1> <3> <4>Clang officiële website</4> </3> <5> <6>Leer X in Y minuten, waarbij X=C++</6> </5> <7> <8>LiveCodes-documentatie</8> </7> <9> <10>Startsjabloon laden</10> </9>',
+    name: 'C++ (Wasm)',
   },
   csharpWasm: {
     desc: 'C#-compiler draaiend op WebAssembly, met <1>Blazor</1>',
@@ -98,6 +103,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1><2>Officiële website</2></1> <3> <4>LiveCodes Documentatie</4> </3>',
     name: 'EJS',
   },
+  elm: {
+    desc: 'Elm wordt in de browser naar JavaScript gecompileerd door een WebAssembly-versie van de Elm-compiler.',
+    link: '<1><2>Officiële website van Elm</2></1> <3><4>Elm-handleiding</4></3> <5> <6>LiveCodes-documentatie</6> </5> <7> <8>Startersjabloon laden</8> </7>',
+    name: 'Elm',
+  },
   eta: {
     desc: 'Embedded JS-sjabloonengine voor Node, Deno en de browser. Lichtgewicht, snel en pluggable. Geschreven in TypeScript.',
     link: '<1><2>Officiële website</2></1> <3> <4>Documentatie</4> </3> <5> <6>LiveCodes Documentatie</6> </5>',
@@ -112,6 +122,18 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'Flow is een statische type checker voor JavaScript.',
     link: '<1> <2>Flow officiële website</2> </1> <3> <4>Flow documentatie</4> </3>',
     name: 'Flow',
+  },
+  fsharp: {
+    desc1:
+      'F# is een platformonafhankelijke, open-source functionele programmeertaal die op het .NET-platform draait.',
+    desc2: 'Hier wordt het met behulp van Fable naar JavaScript gecompileerd.',
+    link: '<1><2>Officiële website van F#</2></1> <3> <4>F#-documentatie</4> </3> <5> <6>Officiële website van Fable</6> </5> <7> <8>LiveCodes-documentatie</8> </7> <9> <10>Starterssjabloon laden</10> </9>',
+    name: 'F#',
+  },
+  fsharpWasm: {
+    desc: 'De echte F#-compiler en de .NET-runtime draaien op WebAssembly. <1></1>Dit komt overeen met het gedrag van de officiële F#-compiler. De .NET WebAssembly-runtime moet echter op de resultatenpagina worden gedownload, wat bij de eerste keer opstarten enige tijd kan duren.',
+    link: '<1><2>Officiële website van F#</2></1> <3> <4>F#-documentatie</4> </3> <5> <6>LiveCodes-documentatie</6> </5> <7> <8>Startersjabloon laden</8> </7>',
+    name: 'F# (Wasm)',
   },
   gleam: {
     desc1: 'Gleam is een vriendelijke taal voor het bouwen van type-veilige systemen die schalen!',
@@ -141,6 +163,16 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'Minimale templating op steroïden.',
     link: '<1><2>Officiële website</2></1> <3> <4>LiveCodes Documentatie</4> </3>',
     name: 'Handlebars',
+  },
+  haskell: {
+    desc: 'Haskell draait in de browser met behulp van MicroHs.',
+    link: '<1> <2>Officiële website van Haskell</2> </1> <3> <4>MicroHs op GitHub</4> </3> <5> <6>LiveCodes-documentatie</6> </5> <7> <8>Startersjabloon laden</8> </7>',
+    name: 'Haskell',
+  },
+  haskellWasm: {
+    desc: 'Haskell wordt in de browser gecompileerd en uitgevoerd door <1>GHC in de browser</1>, een WebAssembly-versie van GHC die volledig aan de clientzijde draait.',
+    link: '<1> <2>Officiële website van Haskell</2> </1> <3> <4>GHC-documentatie</4> </3> <5> <6>GHC in de browser</6> </5> <7> <8>LiveCodes-documentatie</8> </7> <9> <10>Startersjabloon laden</10> </9>',
+    name: 'Haskell (Wasm)',
   },
   imba: {
     desc: 'De vriendelijke full-stack taal.',
@@ -233,6 +265,16 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'Een rijke en krachtige sjabloontaal voor JavaScript. Nunjucks is in wezen een port van <1>jinja2</1>',
     link: '<1> <2>Officiële website</2> </1> <3> <4>LiveCodes Documentatie</4> </3>',
     name: 'Nunjucks',
+  },
+  objcWasm: {
+    desc: 'Objective-C gecompileerd naar WebAssembly door <1>Clang</1>, met de <2>GNUstep</2> Objective-C-runtime. Dit is een runtime en geen klassenbibliotheek, dus Foundation is niet beschikbaar.',
+    link: '<1> <2>Objective-C-documentatie</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Leer X in Y minuten, waarbij X=Objective-C</6> </5> <7> <8>LiveCodes-documentatie</8> </7> <9> <10>Startsjabloon laden</10> </9>',
+    name: 'Objective-C (Wasm)',
+  },
+  objcppWasm: {
+    desc: 'Objective-C++ gecompileerd naar WebAssembly door <1>Clang</1>, met de <2>GNUstep</2> Objective-C-runtime. Dit is een runtime en geen klassenbibliotheek, dus Foundation is niet beschikbaar.',
+    link: '<1> <2>Objective-C-documentatie</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Leer X in Y minuten, waarbij X=Objective-C</6> </5> <7> <8>LiveCodes-documentatie</8> </7>',
+    name: 'Objective-C++ (Wasm)',
   },
   ocaml: {
     desc1:
@@ -341,6 +383,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Ruby officiële website</2> </1> <3> <4>Ruby documentatie</4> </3> <5> <6>ruby.wasm website</6> </5> <7><8>CRuby</8></7> <9> <10>Leer X in Y minuten, waarbij X=ruby</10> </9> <11> <12>LiveCodes Documentatie</12> </11> <13> <14>Startsjabloon laden</14> </13>',
     name: 'Ruby (WASM)',
   },
+  rustWasm: {
+    desc: 'Rust wordt geïnterpreteerd door <1>Miri</1> (de IR-interpreter op middenniveau voor Rust), gecompileerd naar WebAssembly, en draait volledig in de browser.',
+    link: '<1> <2>Officiële website van Rust</2> </1> <3> <4>Het Rust-boek</4> </3> <5> <6>Leer X in Y minuten, waarbij X = Rust</6> </5> <7> <8>LiveCodes-documentatie</8> </7> <9> <10>Starterssjabloon laden</10> </9>',
+    name: 'Rust (Wasm)',
+  },
   sass: {
     desc: 'Syntactisch geweldige stylesheets.',
     link: '<1> <2>Sass officiële website</2> </1> <3> <4>Sass documentatie</4> </3> <5> <6>Sass (de ingesprongen) syntaxis</6> </5> <7> <8>Leer X in Y minuten, waarbij X=sass</8> </7>',
@@ -425,6 +472,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Officiële website</2> </1> <3> <4>TypeScript documentatie</4> </3> <5> <6>Leer X in Y minuten, waarbij X=TypeScript</6> </5> <7> <8>Startsjabloon laden</8> </7>',
     name: 'TypeScript',
   },
+  vbWasm: {
+    desc: 'VB.NET-compiler draaiend op WebAssembly, met <1>Roslyn</1> en de <2>.NET WebAssembly-runtime</2>',
+    link: '<1> <2>Visual Basic-taaldocumentatie</2> </1> <3> <4>Leer X in Y minuten, waarbij X=Visual Basic</4> </3> <5> <6>LiveCodes Documentatie</6> </5> <7> <8>Startsjabloon laden</8> </7>',
+    name: 'VB.NET (Wasm)',
+  },
   vue: {
     link: '<1> <2>Vue.js v3 officiële website</2> </1> <3> <4>Vue3 documentatie</4> </3> <5> <6>Vue3 single file components</6> </5> <7> <8>LiveCodes Documentatie</8> </7> <9> <10>Startsjabloon laden</10> </9>',
     name: 'Vue3 Single File Components',
@@ -439,6 +491,11 @@ const languageInfo: I18nLangInfoTranslation = {
     desc2: 'Het wordt geconverteerd naar wasm met wabt.js.',
     link: '<1><2>WebAssembly.org</2></1> <3> <4>WebAssembly Text Specs</4> </3> <5> <6>WebAssembly op MDN</6> </5> <7> <8>WebAssembly tekstformaat begrijpen</8> </7> <9> <10>wabt.js documentatie</10> </9> <11> <12>Leer X in Y minuten, waarbij X=WebAssembly</12> </11> <13> <14>Startsjabloon laden</14> </13>',
     name: 'WebAssembly Text Format',
+  },
+  zigWasm: {
+    desc: 'Zig-compiler die op WebAssembly draait.',
+    link: '<1> <2>Zig-website</2> </1> <3> <4>Documentatie over de taal Zig</4> </3> <5> <6>Leer X in Y minuten, waarbij X = Zig</6> </5> <7> <8>LiveCodes-documentatie</8> </7> <9> <10>Starterssjabloon laden</10> </9>',
+    name: 'Zig (Wasm)',
   },
 };
 

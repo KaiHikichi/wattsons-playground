@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Iniciante Bootstrap"
   },
+  "templates.starter.c-wasm": {
+    "translation": "Iniciante C (Wasm)"
+  },
   "templates.starter.civet": {
     "translation": "Iniciante Civet"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "Iniciante Diagrams"
   },
+  "templates.starter.elm": {
+    "translation": "Iniciante Elm"
+  },
   "templates.starter.fennel": {
     "translation": "Iniciante Fennel"
+  },
+  "templates.starter.fsharp": {
+    "translation": "Iniciante F#"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "Iniciante F# (Wasm)"
   },
   "templates.starter.gleam": {
     "translation": "Iniciante Gleam"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Iniciante Go (Wasm)"
+  },
+  "templates.starter.haskell": {
+    "translation": "Iniciante Haskell"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Iniciante Haskell (Wasm)"
   },
   "templates.starter.heading": {
     "translation": "Modelos Iniciantes"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "Iniciante MiniZinc"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Iniciante Objective-C (Wasm)"
+  },
   "templates.starter.ocaml": {
     "translation": "Iniciante OCaml"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Iniciante Ruby (Wasm)"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Iniciante Rust (Wasm)"
+  },
   "templates.starter.scheme": {
     "translation": "Iniciante Scheme"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "Iniciante TypeScript"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "Iniciante VB.NET (Wasm)"
+  },
   "templates.starter.vue": {
     "translation": "Iniciante Vue"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "Iniciante WebAssembly Text"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Iniciante Zig (Wasm)"
   },
   "templates.user.heading": {
     "translation": "Meus Modelos"

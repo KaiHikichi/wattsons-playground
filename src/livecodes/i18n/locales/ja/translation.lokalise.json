@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Bootstrapスターター"
   },
+  "templates.starter.c-wasm": {
+    "translation": "C（Wasm）スターター"
+  },
   "templates.starter.civet": {
     "translation": "Civetスターター"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "ダイアグラムスターター"
   },
+  "templates.starter.elm": {
+    "translation": "Elmスターター"
+  },
   "templates.starter.fennel": {
     "translation": "Fennelスターター"
+  },
+  "templates.starter.fsharp": {
+    "translation": "F#スターター"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "F#（Wasm）スターター"
   },
   "templates.starter.gleam": {
     "translation": "Gleamスターター"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Go（Wasm）スターター"
+  },
+  "templates.starter.haskell": {
+    "translation": "Haskellスターター"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Haskell (Wasm)スターター"
   },
   "templates.starter.heading": {
     "translation": "スターターテンプレート"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "MiniZincスターター"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Objective-C（Wasm）スターター"
+  },
   "templates.starter.ocaml": {
     "translation": "OCamlスターター"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Ruby（Wasm）スターター"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Rust（Wasm）スターター"
+  },
   "templates.starter.scheme": {
     "translation": "Schemeスターター"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "TypeScriptスターター"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "VB.NET（Wasm）スターター"
+  },
   "templates.starter.vue": {
     "translation": "Vue スターター"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "WebAssembly Textスターター"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Zig（Wasm）スターター"
   },
   "templates.user.heading": {
     "translation": "マイテンプレート"
