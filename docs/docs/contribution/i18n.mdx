@@ -214,7 +214,7 @@ flowchart TD
 
 This means there are no changes to the source code/texts, only translations are updated. Adding new languages or updating existing translations are examples of this part.
 
-In such cases, there is a scheduled workflow [`i18n-update-scheduled`](../../../.github/workflows/i18n-update-scheduled.yml) to handle this. The workflow will sync from the `master` branch on Lokalise to the `i18n/develop` branch on the codebase, then automatically create a PR if there are any changes.
+In such cases, there is a scheduled workflow [`i18n-update-scheduled`](https://github.com/live-codes/livecodes/blob/develop/.github/workflows/i18n-update-scheduled.yml) to handle this. The workflow will sync from the `master` branch on Lokalise to the `i18n/develop` branch on the codebase, then automatically create a PR if there are any changes.
 
 Basically, maintainers only need to focus on the following for this part:
 
@@ -249,10 +249,10 @@ Here we do not want an extra i18n branch for simplicity, nor need to pull from L
 
 Four i18n-related workflows are set up in the repository:
 
-- [`i18n-update-notify`](../../../.github\workflows\i18n-update-notify.yml): Creates a comment on merged PRs to notify maintainers to trigger the `i18n-update-push` workflow.
-- [`i18n-update-push`](../../../.github\workflows\i18n-update-push.yml): Creates a new branch named `i18n/<owner>/<head-branch>`, runs `npm run i18n-export` again to ensure the source texts are up-to-date, pushes the changes on git, then pushes the changes to the `i18n/<owner>/<head-branch>` branch on Lokalise.
-- [`i18n-update-pull`](../../../.github\workflows\i18n-update-pull.yml): Pulls the translated texts from Lokalise, updates the `.ts` files under `src/livecodes/i18n/locales`, commits the changes to the `i18n/<owner>/<head-branch>` branch, then creates a PR to merge the changes back to the default branch `develop`.
-- [`i18n-update-scheduled`](../../../.github\workflows\i18n-update-scheduled.yml): Syncs between the `master` branch on Lokalise and the `i18n/develop` branch on the codebase, then automatically creates a PR if there are any changes.
+- [`i18n-update-notify`](https://github.com/live-codes/livecodes/blob/develop/.github/workflows/i18n-update-notify.yml): Creates a comment on merged PRs to notify maintainers to trigger the `i18n-update-push` workflow.
+- [`i18n-update-push`](https://github.com/live-codes/livecodes/blob/develop/.github/workflows/i18n-update-push.yml): Creates a new branch named `i18n/<owner>/<head-branch>`, runs `npm run i18n-export` again to ensure the source texts are up-to-date, pushes the changes on git, then pushes the changes to the `i18n/<owner>/<head-branch>` branch on Lokalise.
+- [`i18n-update-pull`](https://github.com/live-codes/livecodes/blob/develop/.github/workflows/i18n-update-pull.yml): Pulls the translated texts from Lokalise, updates the `.ts` files under `src/livecodes/i18n/locales`, commits the changes to the `i18n/<owner>/<head-branch>` branch, then creates a PR to merge the changes back to the default branch `develop`.
+- [`i18n-update-scheduled`](https://github.com/live-codes/livecodes/blob/develop/.github/workflows/i18n-update-scheduled.yml): Syncs between the `master` branch on Lokalise and the `i18n/develop` branch on the codebase, then automatically creates a PR if there are any changes.
 
 ### Hashing and Cache
 
