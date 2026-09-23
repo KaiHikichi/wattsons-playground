@@ -31,6 +31,7 @@ import {
 import { getEditorTheme } from '../themes';
 import { getCompilerOptions } from '../ts-compiler-options';
 import { customThemes, monacoThemes } from './monaco-themes';
+import { registerTurtleCompletions } from './register-turtle-completions';
 import { registerTwoSlash } from './register-twoslash';
 
 type Options = Monaco.editor.IStandaloneEditorConstructionOptions;
@@ -88,6 +89,7 @@ export const createEditor = async (options: EditorOptions): Promise<CodeEditor> 
   }
 
   customThemes.forEach((t) => monaco.editor.defineTheme(t.name, t.theme));
+  registerTurtleCompletions(monaco);
 
   const loadTheme = async (theme: Theme, editorTheme: Config['editorTheme']) => {
     const selectedTheme = getEditorTheme({
