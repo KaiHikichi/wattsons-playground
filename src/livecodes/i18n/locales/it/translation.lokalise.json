@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Starter Bootstrap"
   },
+  "templates.starter.c-wasm": {
+    "translation": "Starter C (Wasm)"
+  },
   "templates.starter.civet": {
     "translation": "Starter Civet"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "Starter Diagrammi"
   },
+  "templates.starter.elm": {
+    "translation": "Starter Elm"
+  },
   "templates.starter.fennel": {
     "translation": "Starter Fennel"
+  },
+  "templates.starter.fsharp": {
+    "translation": "Starter F#"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "Starter F# (Wasm)"
   },
   "templates.starter.gleam": {
     "translation": "Starter Gleam"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Starter Go (Wasm)"
+  },
+  "templates.starter.haskell": {
+    "translation": "Starter Haskell"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Starter Haskell (Wasm)"
   },
   "templates.starter.heading": {
     "translation": "Modelli di Partenza"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "Starter MiniZinc"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Starter Objective-C (Wasm)"
+  },
   "templates.starter.ocaml": {
     "translation": "Starter OCaml"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Starter Ruby (Wasm)"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Starter Rust (Wasm)"
+  },
   "templates.starter.scheme": {
     "translation": "Starter Scheme"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "Starter TypeScript"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "Starter VB.NET (Wasm)"
+  },
   "templates.starter.vue": {
     "translation": "Starter Vue"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "Starter WebAssembly Text"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Starter Zig (Wasm)"
   },
   "templates.user.heading": {
     "translation": "I Miei Modelli"

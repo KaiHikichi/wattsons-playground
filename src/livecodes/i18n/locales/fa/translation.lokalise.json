@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "شروع کننده Bootstrap"
   },
+  "templates.starter.c-wasm": {
+    "translation": "شروع کننده C (Wasm)"
+  },
   "templates.starter.civet": {
     "translation": "شروع کننده Civet"
   },
@@ -1948,7 +1951,7 @@
     "translation": "شروع کننده C++"
   },
   "templates.starter.cpp-wasm": {
-    "translation": "شروع کننده Go (Wasm)"
+    "translation": "شروع کننده C++ (Wasm)"
   },
   "templates.starter.csharp-wasm": {
     "translation": "شروع کننده C# (Wasm)"
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "شروع کننده نمودارها"
   },
+  "templates.starter.elm": {
+    "translation": "شروع کننده Elm"
+  },
   "templates.starter.fennel": {
     "translation": "شروع کننده Fennel"
+  },
+  "templates.starter.fsharp": {
+    "translation": "شروع کننده F#"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "شروع کننده F# (Wasm)"
   },
   "templates.starter.gleam": {
     "translation": "شروع کننده Gleam"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "شروع کننده Go (Wasm)"
+  },
+  "templates.starter.haskell": {
+    "translation": "شروع کننده Haskell"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "شروع کننده Haskell (Wasm)"
   },
   "templates.starter.heading": {
     "translation": "قالب‌های شروع کننده"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "شروع کننده MiniZinc"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "شروع کننده Objective-C (Wasm)"
+  },
   "templates.starter.ocaml": {
     "translation": "شروع کننده Ocaml"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "شروع کننده Ruby (Wasm)"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "شروع کننده Rust (Wasm)"
+  },
   "templates.starter.scheme": {
     "translation": "شروع کننده Scheme"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "شروع کننده تایپ‌اسکریپت"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "شروع کننده VB.NET (Wasm)"
+  },
   "templates.starter.vue": {
     "translation": "شروع کننده Vue SFC"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "شروع کننده WebAssembly Text"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "شروع کننده Zig (Wasm)"
   },
   "templates.user.heading": {
     "translation": "قالب‌های من"

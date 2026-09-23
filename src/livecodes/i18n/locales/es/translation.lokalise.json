@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Inicio Bootstrap"
   },
+  "templates.starter.c-wasm": {
+    "translation": "Inicio C (Wasm)"
+  },
   "templates.starter.civet": {
     "translation": "Inicio Civet"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "Inicio Diagramas"
   },
+  "templates.starter.elm": {
+    "translation": "Inicio Elm"
+  },
   "templates.starter.fennel": {
     "translation": "Inicio Fennel"
+  },
+  "templates.starter.fsharp": {
+    "translation": "Inicio F#"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "Inicio F# (Wasm)"
   },
   "templates.starter.gleam": {
     "translation": "Inicio Gleam"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Inicio Go (Wasm)"
+  },
+  "templates.starter.haskell": {
+    "translation": "Inicio Haskell"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Inicio Haskell (Wasm)"
   },
   "templates.starter.heading": {
     "translation": "Plantillas de Inicio"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "Inicio MiniZinc"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Inicio Objective-C (Wasm)"
+  },
   "templates.starter.ocaml": {
     "translation": "Inicio Ocaml"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Inicio Ruby (Wasm)"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Inicio Rust (Wasm)"
+  },
   "templates.starter.scheme": {
     "translation": "Inicio Scheme"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "Inicio TypeScript"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "Inicio VB.NET (Wasm)"
+  },
   "templates.starter.vue": {
     "translation": "Inicio Vue"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "Inicio WebAssembly Text"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Inicio Zig (Wasm)"
   },
   "templates.user.heading": {
     "translation": "Mis Plantillas"

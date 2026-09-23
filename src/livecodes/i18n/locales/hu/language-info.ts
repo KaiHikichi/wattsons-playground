@@ -38,6 +38,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Hivatalos weboldal</2> </1> <3> <4>Útmutatók</4> </3> <5> <6>Referencia</6> </5> <7> <8>Példák</8> </7> <9> <10>Kezdő sablon betöltése</10> </9>',
     name: 'Blockly',
   },
+  cWasm: {
+    desc: 'A C a <1>Clang</1> segítségével WebAssembly-re van fordítva, és teljes egészében a böngészőben fut.',
+    link: '<1> <2>C nyelvi referencia</2> </1> <3> <4>Clang hivatalos weboldal</4> </3> <5> <6>Tanulj X-et Y perc alatt, ahol X=C</6> </5> <7> <8>LiveCodes dokumentáció</8> </7> <9> <10>Kezdő sablon betöltése</10> </9>',
+    name: 'C (Wasm)',
+  },
   civet: {
     desc: 'A Civet egy programozási nyelv, amely TypeScript-re vagy JavaScript-re fordul, így használhatsz meglévő eszközöket, de tömör és hatékony szintaxist engedélyezhetsz.',
     link: '<1> <2>Civet hivatalos weboldal</2> </1> <3> <4>Civet gyorsreferencia</4> </3> <5> <6>Kezdő sablon betöltése</6> </5>',
@@ -72,9 +77,9 @@ const languageInfo: I18nLangInfoTranslation = {
     name: 'C++',
   },
   cppWasm: {
-    desc: 'Clang C/C++ fordító WebAssembly-n futva, a <1>wasm-clang</1> használatával, amelyet a <2>polylang.io</2> alkalmazott',
-    link: '<1> <2>Standard C++ Foundation</2> </1> <3> <4>Clang hivatalos weboldal</4> </3> <5> <6>Tanulj X-et Y perc alatt, ahol X=C++</6> </5> <7> <8>Kezdő sablon betöltése</8> </7>',
-    name: 'C/C++ (Wasm)',
+    desc: 'A C++ a <1>Clang</1> segítségével WebAssembly-re van fordítva, és teljes egészében a böngészőben fut. Ez egy valódi C++-fordítót biztosít, ellentétben a <2>JSCPP-alapú C++</2> értelmezővel.',
+    link: '<1> <2>Standard C++ Foundation</2> </1> <3> <4>Clang hivatalos weboldal</4> </3> <5> <6>Tanulj X-et Y perc alatt, ahol X=C++</6> </5> <7> <8>LiveCodes dokumentáció</8> </7> <9> <10>Kezdő sablon betöltése</10> </9>',
+    name: 'C++ (Wasm)',
   },
   csharpWasm: {
     desc: 'C# fordító WebAssembly-n futva, a <1>Blazor</1> használatával',
@@ -99,6 +104,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1><2>Hivatalos weboldal</2></1> <3> <4>LiveCodes dokumentáció</4> </3>',
     name: 'EJS',
   },
+  elm: {
+    desc: 'Az Elm-et a böngészőben az Elm-fordító WebAssembly-verziója fordítja le JavaScript-re.',
+    link: '<1><2>Az Elm hivatalos weboldala</2></1> <3><4>Elm útmutató</4></3> <5> <6>LiveCodes dokumentáció</6> </5> <7> <8>Kezdő sablon betöltése</8> </7>',
+    name: 'Elm',
+  },
   eta: {
     desc: 'Beágyazott JS sablonmotor Node-hoz, Deno-hoz és a böngészőhöz. Könnyűsúlyú, gyors és bővíthető. TypeScript-ben írva.',
     link: '<1><2>Hivatalos weboldal</2></1> <3> <4>Dokumentáció</4> </3> <5> <6>LiveCodes dokumentáció</6> </5>',
@@ -113,6 +123,18 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'A Flow egy statikus típusellenőrző JavaScript-hez.',
     link: '<1> <2>Flow hivatalos weboldal</2> </1> <3> <4>Flow dokumentáció</4> </3>',
     name: 'Flow',
+  },
+  fsharp: {
+    desc1:
+      'Az F# egy platformfüggetlen, nyílt forráskódú funkcionális programozási nyelv, amely a .NET-platformon fut.',
+    desc2: 'Itt a Fable segítségével JavaScript-re fordítják.',
+    link: '<1><2>Az F# hivatalos weboldala</2></1> <3> <4>F# dokumentáció</4> </3> <5> <6>A Fable hivatalos weboldala</6> </5> <7> <8>LiveCodes dokumentációk</8> </7> <9> <10>Kezdő sablon betöltése</10> </9>',
+    name: 'F#',
+  },
+  fsharpWasm: {
+    desc: 'A valódi F#-fordító és a .NET futtatókörnyezet a WebAssembly-n. <1></1>Ez megegyezik a hivatalos F#-fordító viselkedésével. Azonban az eredményoldalon le kell tölteni a .NET WebAssembly futtatókörnyezetet, ami az első futtatáskor némi időt vehet igénybe.',
+    link: '<1><2>Az F# hivatalos weboldala</2></1> <3> <4>F# dokumentáció</4> </3> <5> <6>LiveCodes dokumentáció</6> </5> <7> <8>Kezdő sablon betöltése</8> </7>',
+    name: 'F# (Wasm)',
   },
   gleam: {
     desc1: 'A Gleam egy barátságos nyelv típusbiztos rendszerek építéséhez, amelyek skálázhatók!',
@@ -142,6 +164,16 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'Minimális sablonozás szteroidokon.',
     link: '<1><2>Hivatalos weboldal</2></1> <3> <4>LiveCodes dokumentáció</4> </3>',
     name: 'Handlebars',
+  },
+  haskell: {
+    desc: 'A Haskell a MicroHs segítségével fut a böngészőben.',
+    link: '<1> <2>A Haskell hivatalos honlapja</2> </1> <3> <4>MicroHs a GitHubon</4> </3> <5> <6>LiveCodes dokumentációk</6> </5> <7> <8>Indító sablon betöltése</8> </7>',
+    name: 'Haskell',
+  },
+  haskellWasm: {
+    desc: 'A Haskellt a böngészőben a <1>GHC in the browser</1>, a GHC WebAssembly-verziója fordítja le és futtatja, amely teljes egészében kliensoldalon fut.',
+    link: '<1> <2>A Haskell hivatalos honlapja</2> </1> <3> <4>A GHC dokumentációja</4> </3> <5> <6>A GHC a böngészőben</6> </5> <7> <8>LiveCodes dokumentáció</8> </7> <9> <10>Kezdő sablon betöltése</10> </9>',
+    name: 'Haskell (Wasm)',
   },
   imba: {
     desc: 'A barátságos full-stack nyelv.',
@@ -234,6 +266,16 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'Egy gazdag és hatékony sablonnyelv JavaScript-hez. A Nunjucks lényegében a <1>jinja2</1> portja',
     link: '<1> <2>Hivatalos weboldal</2> </1> <3> <4>LiveCodes dokumentáció</4> </3>',
     name: 'Nunjucks',
+  },
+  objcWasm: {
+    desc: 'Az Objective-C a <1>Clang</1> segítségével WebAssembly-re van fordítva, a <2>GNUstep</2> Objective-C futtatókörnyezetet használva. Ez egy futtatókörnyezet, nem pedig osztálykönyvtár, ezért a Foundation nem érhető el.',
+    link: '<1> <2>Objective-C dokumentáció</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Tanulj X-et Y perc alatt, ahol X=Objective-C</6> </5> <7> <8>LiveCodes dokumentáció</8> </7> <9> <10>Kezdő sablon betöltése</10> </9>',
+    name: 'Objective-C (Wasm)',
+  },
+  objcppWasm: {
+    desc: 'Az Objective-C++ a <1>Clang</1> segítségével WebAssembly-re van fordítva, a <2>GNUstep</2> Objective-C futtatókörnyezetet használva. Ez egy futtatókörnyezet, nem pedig osztálykönyvtár, ezért a Foundation nem érhető el.',
+    link: '<1> <2>Objective-C dokumentáció</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Tanulj X-et Y perc alatt, ahol X=Objective-C</6> </5> <7> <8>LiveCodes dokumentáció</8> </7>',
+    name: 'Objective-C++ (Wasm)',
   },
   ocaml: {
     desc1:
@@ -342,6 +384,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Ruby hivatalos weboldal</2> </1> <3> <4>Ruby dokumentáció</4> </3> <5> <6>ruby.wasm weboldal</6> </5> <7><8>CRuby</8></7> <9> <10>Tanulj X-et Y perc alatt, ahol X=ruby</10> </9> <11> <12>LiveCodes dokumentáció</12> </11> <13> <14>Kezdő sablon betöltése</14> </13>',
     name: 'Ruby (WASM)',
   },
+  rustWasm: {
+    desc: 'A Rust-ot <1>a Miri</1> (a Rust középszintű IR-értelmezője) értelmezi, majd WebAssembly-re fordítja, és a program teljes egészében a böngészőben fut.',
+    link: '<1> <2>A Rust hivatalos weboldala</2> </1> <3> <4>A Rust könyv</4> </3> <5> <6>Tanulj meg X-et Y perc alatt, ahol X=Rust</6> </5> <7> <8>LiveCodes dokumentáció</8> </7> <9> <10>Indító sablon betöltése</10> </9>',
+    name: 'Rust (Wasm)',
+  },
   sass: {
     desc: 'Szintaktikusan Fantasztikus Stíluslapok.',
     link: '<1> <2>Sass hivatalos weboldal</2> </1> <3> <4>Sass dokumentáció</4> </3> <5> <6>Sass (a behúzott) szintaxis</6> </5> <7> <8>Tanulj X-et Y perc alatt, ahol X=sass</8> </7>',
@@ -426,6 +473,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Hivatalos weboldal</2> </1> <3> <4>TypeScript dokumentáció</4> </3> <5> <6>Tanulj X-et Y perc alatt, ahol X=TypeScript</6> </5> <7> <8>Kezdő sablon betöltése</8> </7>',
     name: 'TypeScript',
   },
+  vbWasm: {
+    desc: 'VB.NET fordító WebAssembly-n futva, a <1>Roslyn</1> és a <2>.NET WebAssembly futtatókörnyezet</2> használatával',
+    link: '<1> <2>Visual Basic nyelvi dokumentáció</2> </1> <3> <4>Tanulj X-et Y perc alatt, ahol X=Visual Basic</4> </3> <5> <6>LiveCodes dokumentáció</6> </5> <7> <8>Kezdő sablon betöltése</8> </7>',
+    name: 'VB.NET (Wasm)',
+  },
   vue: {
     link: '<1> <2>Vue.js v3 hivatalos weboldal</2> </1> <3> <4>Vue3 dokumentáció</4> </3> <5> <6>Vue3 egyfájlos komponensek</6> </5> <7> <8>LiveCodes dokumentáció</8> </7> <9> <10>Kezdő sablon betöltése</10> </9>',
     name: 'Vue3 egyfájlos komponensek',
@@ -440,6 +492,11 @@ const languageInfo: I18nLangInfoTranslation = {
     desc2: 'Wabt.js segítségével wasm-má konvertálva.',
     link: '<1><2>WebAssembly.org</2></1> <3> <4>WebAssembly Text Specifikációk</4> </3> <5> <6>WebAssembly az MDN-en</6> </5> <7> <8>A WebAssembly szöveges formátum megértése</8> </7> <9> <10>wabt.js dokumentáció</10> </9> <11> <12>Tanulj X-et Y perc alatt, ahol X=WebAssembly</12> </11> <13> <14>Kezdő sablon betöltése</14> </13>',
     name: 'WebAssembly Text Formátum',
+  },
+  zigWasm: {
+    desc: 'A Zig fordító WebAssembly-en fut.',
+    link: '<1> <2>A Zig weboldala</2> </1> <3> <4>A Zig nyelv dokumentációja</4> </3> <5> <6>Tanulj meg X-et Y perc alatt, ahol X=Zig</6> </5> <7> <8>LiveCodes dokumentáció</8> </7> <9> <10>Indító sablon betöltése</10> </9>',
+    name: 'Zig (Wasm)',
   },
 };
 

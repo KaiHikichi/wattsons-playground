@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Bootstrap স্টার্টার"
   },
+  "templates.starter.c-wasm": {
+    "translation": "C (Wasm) স্টার্টার"
+  },
   "templates.starter.civet": {
     "translation": "Civet স্টার্টার"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "Diagrams স্টার্টার"
   },
+  "templates.starter.elm": {
+    "translation": "Elm স্টার্টার"
+  },
   "templates.starter.fennel": {
     "translation": "Fennel স্টার্টার"
+  },
+  "templates.starter.fsharp": {
+    "translation": "F# স্টার্টার"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "F# (Wasm) স্টার্টার"
   },
   "templates.starter.gleam": {
     "translation": "Gleam স্টার্টার"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Go (Wasm) স্টার্টার"
+  },
+  "templates.starter.haskell": {
+    "translation": "Haskell স্টার্টার"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Haskell (Wasm) স্টার্টার"
   },
   "templates.starter.heading": {
     "translation": "স্টার্টার টেমপ্লেট"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "MiniZinc স্টার্টার"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Objective-C (Wasm) স্টার্টার"
+  },
   "templates.starter.ocaml": {
     "translation": "Ocaml স্টার্টার"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Ruby (Wasm) স্টার্টার"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Rust (Wasm) স্টার্টার"
+  },
   "templates.starter.scheme": {
     "translation": "Scheme স্টার্টার"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "TypeScript স্টার্টার"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "VB.NET (Wasm) স্টার্টার"
+  },
   "templates.starter.vue": {
     "translation": "Vue SFC স্টার্টার"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "WebAssembly Text স্টার্টার"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Zig (Wasm) স্টার্টার"
   },
   "templates.user.heading": {
     "translation": "আমার টেমপ্লেট"

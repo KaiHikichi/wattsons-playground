@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "قالب Bootstrap"
   },
+  "templates.starter.c-wasm": {
+    "translation": "قالب C (Wasm)"
+  },
   "templates.starter.civet": {
     "translation": "قالب Civet"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "قالب الرسوم البيانية"
   },
+  "templates.starter.elm": {
+    "translation": "قالب Elm"
+  },
   "templates.starter.fennel": {
     "translation": "قالب Fennel"
+  },
+  "templates.starter.fsharp": {
+    "translation": "قالب F#"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "قالب F# (Wasm)"
   },
   "templates.starter.gleam": {
     "translation": "قالب Gleam"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "قالب Go (Wasm)"
+  },
+  "templates.starter.haskell": {
+    "translation": "قالب Haskell"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "قالب Haskell (Wasm)"
   },
   "templates.starter.heading": {
     "translation": "قوالب البداية"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "قالب MiniZinc"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "قالب Objective-C (Wasm)"
+  },
   "templates.starter.ocaml": {
     "translation": "قالب Ocaml"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "قالب Ruby-Wasm"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "قالب Rust (Wasm)"
+  },
   "templates.starter.scheme": {
     "translation": "قالب Scheme"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "قالب TypeScript"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "قالب VB.NET (Wasm)"
+  },
   "templates.starter.vue": {
     "translation": "قالب Vue"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "قالب WebAssembly Text"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "قالب Zig (Wasm)"
   },
   "templates.user.heading": {
     "translation": "قوالبي"

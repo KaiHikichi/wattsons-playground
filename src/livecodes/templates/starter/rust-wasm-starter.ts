@@ -1,39 +1,38 @@
 import type { Template } from '../../models';
 
-export const cppWasmStarter: Template = {
-  name: 'cpp-wasm',
-  aliases: ['clang', 'c++-wasm'],
-  title: window.deps.translateString('templates.starter.cpp-wasm', 'C++ (Wasm) Starter'),
-  thumbnail: 'assets/templates/cpp.svg',
+export const rustWasmStarter: Template = {
+  name: 'rust-wasm',
+  aliases: ['rust', 'rs'],
+  title: window.deps.translateString('templates.starter.rust-wasm', 'Rust (Wasm) Starter'),
+  thumbnail: 'assets/templates/rust.svg',
   activeEditor: 'script',
   markup: {
     language: 'html',
     content: `
 <div class="container">
   <h1>Hello, <span id="name">World</span>!</h1>
-  <img class="logo" alt="logo" src="{{ __livecodes_baseUrl__ }}assets/templates/cpp.svg" />
+  <img class="logo" alt="logo" src="{{ __livecodes_baseUrl__ }}assets/templates/rust.svg" />
   <p>You clicked <span id="counter">0</span> times.</p>
   <button id="counter-button" disabled>Loading...</button>
 </div>
 
 <script>
   // set initial input
-  livecodes.cpp.input = "-1";
+  livecodes.rust.input = "-1";
 
   addEventListener('load', async () => {
     const button = document.querySelector("#counter-button");
 
     // wait till loaded
-    await livecodes.cpp.loaded;
+    await livecodes.rust.loaded;
 
     // get initial output
-    const initialOutput = livecodes.cpp.output;
-    update(initialOutput);
+    update(livecodes.rust.output);
 
     button.onclick = async () => {
       button.disabled = true;
       // run with new input
-      const {output, error, exitCode} = await livecodes.cpp.run(window.count);
+      const {output, error, exitCode} = await livecodes.rust.run(window.count);
       update(output);
     };
 
@@ -43,7 +42,7 @@ export const cppWasmStarter: Template = {
 
       const [title, count] = output.split('\\n');
 
-      if (parseInt(count) !== NaN) {
+      if (!isNaN(Number(count))) {
         window.count = count;
         counter.innerText = window.count;
       }
@@ -71,21 +70,23 @@ export const cppWasmStarter: Template = {
 `.trimStart(),
   },
   script: {
-    language: 'cpp-wasm',
+    language: 'rust-wasm',
     content: `
-#include <iostream>
-using namespace std;
+use std::io::BufRead;
 
-int main() {
-    char title[] = "C++";
-    cout << title << endl;
+fn main() {
+    let title = "Rust";
+    println!("{title}");
 
-    int count;
-    cin >> count;
-    count += 1;
-    cout << count << endl;
+    let mut input = String::new();
+    let bytes = std::io::stdin().lock().read_line(&mut input).unwrap();
+    let count: i64 = if bytes == 0 {
+        0
+    } else {
+        input.trim().parse().unwrap_or(0)
+    };
 
-    return 0;
+    println!("{}", count + 1);
 }
 `.trimStart(),
   },

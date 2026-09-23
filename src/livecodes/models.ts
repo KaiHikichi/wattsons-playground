@@ -99,24 +99,25 @@ export type ParserName =
   | 'php'
   | 'pug'
   | 'java'
+  | 'rust'
   | 'minizinc';
 
 export interface PrettierParser {
   name: ParserName;
   plugins?: any[];
-  pluginUrls: string[];
+  pluginUrls?: string[];
 }
 export type FormatFn = (
   value: string,
   cursorOffset: number,
   formatterConfig?: Partial<FormatterConfig>,
-) => Promise<{ formatted: string; cursorOffset: number }>;
+) => Promise<{ formatted: string; cursorOffset?: number }>;
 
 export type LanguageFormatter =
   | {
-      factory: (baseUrl: string, language: Language) => FormatFn;
+      factory: (baseUrl: string, language: Language) => FormatFn | Promise<FormatFn>;
     }
-  | { prettier: PrettierParser };
+  | { prettier: PrettierParser | (() => PrettierParser | Promise<PrettierParser>) };
 
 export interface CssPreset {
   id: CssPresetId;
@@ -142,6 +143,7 @@ export interface CompileInfo {
   importedContent?: string;
   imports?: Record<string, string>;
   errors?: string[];
+  sourceMaps?: Record<string, string>;
 }
 
 export interface CompileResult {
@@ -180,7 +182,9 @@ export interface Compiler {
     | string[]
     | ((options: { compiled: string; baseUrl: string; config: Config }) => string[]);
   deferScripts?: boolean;
-  inlineScript?: string | ((options: { baseUrl: string }) => Promise<string>);
+  inlineScript?:
+    | string
+    | ((options: { baseUrl: string; config: Config }) => string | Promise<string>);
   inlineModule?: string | ((options: { baseUrl: string }) => Promise<string>);
   loadAsExternalModule?: boolean;
   scriptType?:
@@ -191,15 +195,25 @@ export interface Compiler {
     | 'text/ruby-wasm'
     | 'text/x-uniter-php'
     | 'text/php-wasm'
+    | 'text/c-wasm'
     | 'text/cpp'
+    | 'text/cpp-wasm'
+    | 'text/objc-wasm'
+    | 'text/objcpp-wasm'
+    | 'text/rust-wasm'
+    | 'text/zig-wasm'
     | 'text/java'
     | 'text/csharp-wasm'
+    | 'text/vb-wasm'
+    | 'text/fsharp-wasm'
     | 'text/perl'
     | 'text/julia'
     | 'text/biwascheme'
     | 'text/commonlisp'
     | 'text/tcl'
     | 'text/prolog'
+    | 'text/haskell'
+    | 'text/haskell-wasm'
     | 'text/minizinc'
     | 'text/go-wasm'
     | 'application/json'
@@ -241,6 +255,16 @@ export type TemplateAlias =
   | 'c++-wasm'
   | 'c#-wasm'
   | 'cs-wasm'
+  | 'vb.net-wasm'
+  | 'vb'
+  | 'f#'
+  | 'fs'
+  | 'f#-wasm'
+  | 'fs-wasm'
+  | 'rust'
+  | 'rs'
+  | 'hs'
+  | 'hs-wasm'
   | 'pl'
   | 'lisp'
   | 'cljs'
@@ -293,6 +317,7 @@ export interface Console extends Tool {
   evaluate: (code: string) => void;
   reloadEditor: (config: Config) => Promise<void>;
   setTheme?: (theme: Theme) => void;
+  setSourceMap?: (sourceMaps: Record<string, string> | null | undefined) => void;
 }
 
 export interface CompiledCodeViewer extends Tool {

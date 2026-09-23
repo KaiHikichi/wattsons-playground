@@ -70,8 +70,9 @@ test.describe('Starter Templates from UI', () => {
       const titleText = await getResult().innerText('h1');
       expect(titleText).toBe(`Hello, ${template}!`);
 
-      const counterText = await getResult().innerText('text=You clicked');
-      expect(counterText).toBe('You clicked 3 times.');
+      // Stencil and other frameworks render asynchronously, so assert with
+      // retries rather than reading the counter once.
+      await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
     });
   });
 
@@ -240,6 +241,189 @@ test.describe('Starter Templates from UI', () => {
 
     const counterText = await getResult().innerText('text=You clicked');
     expect(counterText).toBe('You clicked 3 times.');
+  });
+
+  test('rust-wasm Starter', async ({ page, getTestUrl, editor }) => {
+    // the interpreter and the stdlib sysroot are downloaded on the first run
+    test.slow();
+
+    await page.goto(getTestUrl());
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await app.click('[aria-label="Project"]');
+    await app.click('text=New');
+    await app.click('text=Rust (Wasm) Starter');
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // the counter stays disabled until the runtime has loaded and run once
+    await expect(getResult().locator('#counter-button')).toBeEnabled({ timeout: 280_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('h1')).toHaveText('Hello, Rust!');
+    // Each click triggers an asynchronous run, so the counter is asserted with
+    // retries rather than read once.
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
+  });
+
+  test('c-wasm Starter', async ({ page, getTestUrl }) => {
+    // the compiler, linker and sysroot (~29 MB) are downloaded on the first run
+    test.slow();
+
+    await page.goto(getTestUrl());
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await app.click('[aria-label="Project"]');
+    await app.click('text=New');
+    await app.click('text=C (Wasm) Starter');
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // the counter stays disabled until the compiler has loaded and run once
+    await expect(getResult().locator('#counter-button')).toBeEnabled({ timeout: 280_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('h1')).toHaveText('Hello, C!');
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
+  });
+
+  test('cpp-wasm Starter', async ({ page, getTestUrl }) => {
+    // the compiler, linker and sysroot (~29 MB) are downloaded on the first run
+    test.slow();
+
+    await page.goto(getTestUrl());
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await app.click('[aria-label="Project"]');
+    await app.click('text=New');
+    await app.click('text=C++ (Wasm) Starter');
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // the counter stays disabled until the compiler has loaded and run once
+    await expect(getResult().locator('#counter-button')).toBeEnabled({ timeout: 280_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('h1')).toHaveText('Hello, C++!');
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
+  });
+
+  test('objc-wasm Starter', async ({ page, getTestUrl }) => {
+    // the compiler, linker, sysroot and Objective-C runtime are downloaded on the first run
+    test.slow();
+
+    await page.goto(getTestUrl());
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await app.click('[aria-label="Project"]');
+    await app.click('text=New');
+    await app.click('text=Objective-C (Wasm) Starter');
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // the counter stays disabled until the compiler has loaded and run once
+    await expect(getResult().locator('#counter-button')).toBeEnabled({ timeout: 280_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('h1')).toHaveText('Hello, Objective-C!');
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
+  });
+
+  test('haskell Starter', async ({ page, getTestUrl }) => {
+    test.slow();
+
+    await page.goto(getTestUrl());
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await app.click('[aria-label="Project"]');
+    await app.click('text=New');
+    await app.click('text=Haskell Starter');
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // the counter stays disabled until the runtime has loaded and run once
+    await expect(getResult().locator('#counter-button')).toBeEnabled({ timeout: 60_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('h1')).toHaveText('Hello, Haskell!');
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
+  });
+
+  test('elm Starter', async ({ page, getTestUrl }) => {
+    // the Elm compiler (ulm.wasm, ~10.6 MB) is downloaded on the first run
+    test.slow();
+
+    await page.goto(getTestUrl());
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await app.click('[aria-label="Project"]');
+    await app.click('text=New');
+    await app.click('text=Elm Starter');
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // nothing is rendered until the compiler is downloaded and the code has run
+    await expect(getResult().locator('h1')).toHaveText('Hello, Elm!', { timeout: 280_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
+  });
+
+  test('vb-wasm Starter', async ({ page, getTestUrl }) => {
+    // the runtime, the Roslyn VB compiler and the reference assemblies (~43 MB)
+    // are downloaded on the first run
+    test.slow();
+
+    await page.goto(getTestUrl());
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await app.click('[aria-label="Project"]');
+    await app.click('text=New');
+    await app.click('text=VB.NET (Wasm) Starter');
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // the counter stays disabled until the runtime has loaded and run once
+    await expect(getResult().locator('#counter-button')).toBeEnabled({ timeout: 280_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('h1')).toHaveText('Hello, VB.NET!');
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
   });
 
   test('d3 Starter', async ({ page, getTestUrl, editor }) => {
@@ -671,8 +855,9 @@ test.describe('Starter Templates from URL', () => {
       const titleText = await getResult().innerText('h1');
       expect(titleText).toBe(`Hello, ${template}!`);
 
-      const counterText = await getResult().innerText('text=You clicked');
-      expect(counterText).toBe('You clicked 3 times.');
+      // Stencil and other frameworks render asynchronously, so assert with
+      // retries rather than reading the counter once.
+      await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
     });
   });
 
@@ -810,6 +995,111 @@ test.describe('Starter Templates from URL', () => {
 
     const counterText = await getResult().innerText('text=You clicked');
     expect(counterText).toBe('You clicked 3 times.');
+  });
+
+  test('haskell Starter (in URL)', async ({ page, getTestUrl }) => {
+    test.slow();
+
+    await page.goto(getTestUrl({ template: 'haskell' }));
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // the counter stays disabled until the runtime has loaded and run once
+    await expect(getResult().locator('#counter-button')).toBeEnabled({ timeout: 60_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('h1')).toHaveText('Hello, Haskell!');
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
+  });
+
+  test('c-wasm Starter (in URL)', async ({ page, getTestUrl }) => {
+    test.slow();
+
+    await page.goto(getTestUrl({ template: 'c-wasm' }));
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // the counter stays disabled until the compiler has loaded and run once
+    await expect(getResult().locator('#counter-button')).toBeEnabled({ timeout: 280_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('h1')).toHaveText('Hello, C!');
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
+  });
+
+  test('cpp-wasm Starter (in URL)', async ({ page, getTestUrl }) => {
+    test.slow();
+
+    await page.goto(getTestUrl({ template: 'cpp-wasm' }));
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // the counter stays disabled until the compiler has loaded and run once
+    await expect(getResult().locator('#counter-button')).toBeEnabled({ timeout: 280_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('h1')).toHaveText('Hello, C++!');
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
+  });
+
+  test('objc-wasm Starter (in URL)', async ({ page, getTestUrl }) => {
+    test.slow();
+
+    await page.goto(getTestUrl({ template: 'objc-wasm' }));
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // the counter stays disabled until the compiler has loaded and run once
+    await expect(getResult().locator('#counter-button')).toBeEnabled({ timeout: 280_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('h1')).toHaveText('Hello, Objective-C!');
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
+  });
+
+  test('vb-wasm Starter (in URL)', async ({ page, getTestUrl }) => {
+    test.slow();
+
+    await page.goto(getTestUrl({ template: 'vb-wasm' }));
+
+    const { app, getResult, waitForResultUpdate } = await getLoadedApp(page);
+
+    await waitForEditorFocus(app);
+    await waitForResultUpdate();
+
+    // the counter stays disabled until the runtime has loaded and run once
+    await expect(getResult().locator('#counter-button')).toBeEnabled({ timeout: 280_000 });
+
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+    await getResult().click('text=Click me');
+
+    await expect(getResult().locator('h1')).toHaveText('Hello, VB.NET!');
+    await expect(getResult().locator('text=You clicked')).toHaveText('You clicked 3 times.');
   });
 
   test('D3 Starter (in URL)', async ({ page, getTestUrl, editor }) => {

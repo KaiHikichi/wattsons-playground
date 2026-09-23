@@ -38,6 +38,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>公式ウェブサイト</2> </1> <3> <4>ガイド</4> </3> <5> <6>リファレンス</6> </5> <7> <8>サンプル</8> </7> <9> <10>スターターテンプレートを読み込む</10> </9>',
     name: 'Blockly',
   },
+  cWasm: {
+    desc: 'C は <1>Clang</1> によって WebAssembly にコンパイルされ、完全にブラウザ内で実行されます。',
+    link: '<1> <2>C 言語リファレンス</2> </1> <3> <4>Clang 公式ウェブサイト</4> </3> <5> <6>X分でYを学ぶ、X=C</6> </5> <7> <8>LiveCodes ドキュメント</8> </7> <9> <10>スターターテンプレートを読み込む</10> </9>',
+    name: 'C (Wasm)',
+  },
   civet: {
     desc: 'Civet は TypeScript または JavaScript にコンパイルされるプログラミング言語で、既存のツールを使用しながら簡潔で強力な構文を可能にします。',
     link: '<1> <2>Civet 公式ウェブサイト</2> </1> <3> <4>Civet チートシート</4> </3> <5> <6>スターターテンプレートを読み込む</6> </5>',
@@ -71,9 +76,9 @@ const languageInfo: I18nLangInfoTranslation = {
     name: 'C++',
   },
   cppWasm: {
-    desc: '<2>polylang.io</2>によって適応された<1>wasm-clang</1>を使用して、WebAssembly上で動作するClang C/C++コンパイラ。',
-    link: '<1> <2>Standard C++ 財団</2> </1> <3> <4>Clang 公式ウェブサイト</4> </3> <5> <6>X分でYを学ぶ、X=C++</6> </5> <7> <8>スターターテンプレートを読み込む</8> </7>',
-    name: 'C/C++ (Wasm)',
+    desc: 'C++ は <1>Clang</1> によって WebAssembly にコンパイルされ、完全にブラウザ内で実行されます。これは、<2>JSCPP ベースの C++</2> インタプリタとは異なり、本物の C++ コンパイラを提供します。',
+    link: '<1> <2>Standard C++ 財団</2> </1> <3> <4>Clang 公式ウェブサイト</4> </3> <5> <6>X分でYを学ぶ、X=C++</6> </5> <7> <8>LiveCodes ドキュメント</8> </7> <9> <10>スターターテンプレートを読み込む</10> </9>',
+    name: 'C++ (Wasm)',
   },
   csharpWasm: {
     desc: 'WebAssembly 上で動作する C# コンパイラ。<1>Blazor を使用。</1>',
@@ -98,6 +103,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1><2>公式ウェブサイト</2></1> <3> <4>LiveCodes ドキュメント</4> </3>',
     name: 'EJS',
   },
+  elm: {
+    desc: 'Elmは、ElmコンパイラのWebAssemblyビルドによって、ブラウザ上でJavaScriptにコンパイルされます。',
+    link: '<1><2>Elm公式サイト</2></1> <3><4>Elmガイド</4></3> <5> <6>LiveCodes ドキュメント</6> </5> <7> <8>スターターテンプレートの読み込み</8> </7>',
+    name: 'Elm',
+  },
   eta: {
     desc: 'Node、Deno、ブラウザ用の埋め込み JS テンプレートエンジン。軽量、高速、プラガブル。TypeScript で書かれています。',
     link: '<1><2>公式ウェブサイト</2></1> <3> <4>ドキュメント</4> </3> <5> <6>LiveCodes ドキュメント</6> </5>',
@@ -113,6 +123,18 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Flow 公式ウェブサイト</2> </1> <3> <4>Flow ドキュメント</4> </3>',
     name: 'Flow',
   },
+  fsharp: {
+    desc1:
+      'F# は、.NET プラットフォーム上で動作する、クロスプラットフォームのオープンソース関数型プログラミング言語です。',
+    desc2: 'ここでは、Fable を使用して JavaScript にコンパイルされています。',
+    link: '<1><2>F# 公式サイト</2></1> <3> <4>F# ドキュメント</4> </3> <5> <6>Fable 公式サイト</6> </5> <7> <8>LiveCodes ドキュメント</8> </7> <9> <10>スターターテンプレートの読み込み</10> </9>',
+    name: 'F#',
+  },
+  fsharpWasm: {
+    desc: 'WebAssembly上で動作する本物のF#コンパイラと.NETランタイム。<1></1>これは公式のF#コンパイラの動作と一致しています。ただし、検索結果ページから.NET WebAssemblyランタイムをダウンロードする必要があり、初回実行時には多少時間がかかる場合があります。',
+    link: '<1><2>F# 公式サイト</2></1> <3> <4>F# ドキュメント</4> </3> <5> <6>LiveCodes ドキュメント</6> </5> <7> <8>スターターテンプレートの読み込み</8> </7>',
+    name: 'F# (Wasm)',
+  },
   gleam: {
     desc1: 'Gleam は、スケーラブルな型安全システムを構築するためのフレンドリーな言語です！',
     desc2:
@@ -124,7 +146,7 @@ const languageInfo: I18nLangInfoTranslation = {
     desc1:
       'Go（Golang）は、シンプルで信頼性が高く効率的なソフトウェアを簡単に構築できるオープンソースのプログラミング言語です。',
     desc2: 'ここでは、GopherJS を使用して JavaScript にコンパイルされます。',
-    link: '<1><2>Go ウェブサイト</2></1> <3><4>Go ドキュメント</4></3> <5> <6>GopherJS リポジトリ</6> </5> <7> <8>X分でYを学ぶ、X=Go</8> </7> <9><10>スターターテンプレートを読み込む</10></9>',
+    link: '<1><2>Go ウェブサイト</2></1> <3><4>Go ドキュメント</4></3> <5> <6>GopherJS リポジトリ</6> </5> <7> <8>X分でYを学ぶ、X=Go</8> </7> <9> <10>LiveCodes ドキュメント</10> </9> <11> <12>スターターテンプレートを読み込む</12> </11>',
     name: 'Go',
   },
   goWasm: {
@@ -142,6 +164,16 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1><2>公式ウェブサイト</2></1> <3> <4>LiveCodes ドキュメント</4> </3>',
     name: 'Handlebars',
   },
+  haskell: {
+    desc: 'MicroHs を使ってブラウザ上で動作する Haskell。',
+    link: '<1> <2>Haskellの公式サイト</2> </1> <3> <4>GitHub上のMicroHs</4> </3> <5> <6>LiveCodes ドキュメント</6> </5> <7> <8>スターターテンプレートの読み込み</8> </7>',
+    name: 'Haskell',
+  },
+  haskellWasm: {
+    desc: 'Haskellは、ブラウザ<1>内で動作するGHC（</1>WebAssembly版GHC）によってコンパイルおよび実行され、その処理はすべてクライアント側で行われます。',
+    link: '<1> <2>Haskell 公式サイト</2> </1> <3> <4>GHCのドキュメント</4> </3> <5> <6>ブラウザ上のGHC</6> </5> <7> <8>LiveCodes ドキュメント</8> </7> <9> <10>スターターテンプレートの読み込み</10> </9>',
+    name: 'Haskell (Wasm)',
+  },
   imba: {
     desc: 'フレンドリーなフルスタック言語。',
     link: '<1><2>公式ウェブサイト</2></1>',
@@ -149,7 +181,7 @@ const languageInfo: I18nLangInfoTranslation = {
   },
   java: {
     desc: 'DoppioJVMを使ってブラウザで動作するJVM。',
-    link: '<1> <2>Java公式サイト    DoppioJVM    XをY分で学ぶ、X=Java    スターターテンプレートのロード</2> </1> <3> <4></4> </3> <5> <6></6> </5> <7> <8></8> </7>',
+    link: '<1> <2>Java公式サイト</2> </1> <3> <4>DoppioJVM</4> </3> <5> <6>XをY分で学ぶ、X=Java</6> </5> <7> <8>LiveCodes ドキュメント</8> </7> <9> <10>スターターテンプレートのロード</10> </9>',
     name: 'Java',
   },
   javascript: {
@@ -233,6 +265,16 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'JavaScript 用の豊富で強力なテンプレート言語。Nunjucks は本質的に<1>jinja2</1>のポートです。',
     link: '<1> <2>公式ウェブサイト</2> </1> <3> <4>LiveCodes ドキュメント</4> </3>',
     name: 'Nunjucks',
+  },
+  objcWasm: {
+    desc: 'Objective-C は <1>Clang</1> によって WebAssembly にコンパイルされ、<2>GNUstep</2> Objective-C ランタイムを使用します。これはランタイムでありクラスライブラリではないため、Foundation は利用できません。',
+    link: '<1> <2>Objective-C ドキュメント</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>X分でYを学ぶ、X=Objective-C</6> </5> <7> <8>LiveCodes ドキュメント</8> </7> <9> <10>スターターテンプレートを読み込む</10> </9>',
+    name: 'Objective-C (Wasm)',
+  },
+  objcppWasm: {
+    desc: 'Objective-C++ は <1>Clang</1> によって WebAssembly にコンパイルされ、<2>GNUstep</2> Objective-C ランタイムを使用します。これはランタイムでありクラスライブラリではないため、Foundation は利用できません。',
+    link: '<1> <2>Objective-C ドキュメント</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>X分でYを学ぶ、X=Objective-C</6> </5> <7> <8>LiveCodes ドキュメント</8> </7>',
+    name: 'Objective-C++ (Wasm)',
   },
   ocaml: {
     desc1:
@@ -342,6 +384,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Ruby公式ウェブサイト</2> </1> <3> <4>Rubyドキュメント</4> </3> <5> <6>ruby.wasmウェブサイト</6> </5> <7><8>CRuby</8></7> <9> <10>X分でわかるRuby（X in Y minutes）</10> </9> <11> <12>LiveCodesドキュメント</12> </11> <13> <14>スターターテンプレートを読み込む</14> </13>',
     name: 'Ruby（WASM）',
   },
+  rustWasm: {
+    desc: 'Rustは、<1>Miri</1>（Rustの中間表現（IR）インタプリタ）によって解釈され、WebAssemblyにコンパイルされた後、完全にブラウザ内で実行されます。',
+    link: '<1> <2>Rust 公式サイト</2> </1> <3> <4>『The Rust Book』</4> </3> <5> <6>「Y分でXを学ぶ」（X=Rust）</6> </5> <7> <8>LiveCodes ドキュメント</8> </7> <9> <10>スターターテンプレートを読み込む</10> </9>',
+    name: 'Rust (Wasm)',
+  },
   sass: {
     desc: '構文的にすばらしいスタイルシート。',
     link: '<1> <2>Sass公式ウェブサイト</2> </1> <3> <4>Sassドキュメント</4> </3> <5> <6>Sass（インデント）構文</6> </5> <7> <8>X分でわかるSass（X in Y minutes）</8> </7>',
@@ -426,6 +473,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>公式ウェブサイト</2> </1> <3> <4>TypeScript ドキュメント</4> </3> <5> <6>X分でYを学ぶ、X=TypeScript</6> </5> <7> <8>スターターテンプレートを読み込む</8> </7>',
     name: 'TypeScript',
   },
+  vbWasm: {
+    desc: 'WebAssembly 上で動作する VB.NET コンパイラ。<1>Roslyn</1> と <2>.NET WebAssembly ランタイム</2> を使用。',
+    link: '<1> <2>Visual Basic 言語のドキュメント</2> </1> <3> <4>X を Y 分で学習します (X=Visual Basic の場合)</4> </3> <5> <6>LiveCodesドキュメンテーション</6> </5> <7> <8>スターターテンプレートをロードする</8> </7>',
+    name: 'VB.NET (Wasm)',
+  },
   vue: {
     link: '<1> <2>Vue.js v3 公式ウェブサイト</2> </1> <3> <4>Vue3 ドキュメント</4> </3> <5> <6>Vue3 単一ファイルコンポーネント</6> </5> <7> <8>LiveCodes ドキュメント</8> </7> <9><10>スターターテンプレートを読み込む</10></9>',
     name: 'Vue3 単一ファイルコンポーネント',
@@ -440,6 +492,11 @@ const languageInfo: I18nLangInfoTranslation = {
     desc2: 'wabt.js を使用して wasm に変換されます。',
     link: '<1><2>WebAssembly.org</2></1> <3> <4>WebAssembly テキスト仕様</4> </3> <5> <6>MDN の WebAssembly</6> </5> <7> <8>WebAssembly テキストフォーマットの理解</8> </7> <9> <10>wabt.js ドキュメント</10> </9> <11> <12>X分でYを学ぶ、X=WebAssembly</12> </11> <13><14>スターターテンプレートを読み込む</14></13>',
     name: 'WebAssembly テキストフォーマット',
+  },
+  zigWasm: {
+    desc: 'WebAssembly上で動作するZigコンパイラ。',
+    link: '<1> <2>Zigのウェブサイト</2> </1> <3> <4>Zig言語のドキュメント</4> </3> <5> <6>「XをY分で学ぶ」（X=Zig）</6> </5> <7> <8>LiveCodes ドキュメント</8> </7> <9> <10>スターターテンプレートを読み込む</10> </9>',
+    name: 'Zig (Wasm)',
   },
 };
 

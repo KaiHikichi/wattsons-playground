@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Démarrage Bootstrap"
   },
+  "templates.starter.c-wasm": {
+    "translation": "Démarrage C (Wasm)"
+  },
   "templates.starter.civet": {
     "translation": "Démarrage Civet"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "Démarrage Diagrammes"
   },
+  "templates.starter.elm": {
+    "translation": "Démarrage Elm"
+  },
   "templates.starter.fennel": {
     "translation": "Démarrage Fennel"
+  },
+  "templates.starter.fsharp": {
+    "translation": "Démarrage F#"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "Démarrage F# (Wasm)"
   },
   "templates.starter.gleam": {
     "translation": "Démarrage Gleam"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Démarrage Go (Wasm)"
+  },
+  "templates.starter.haskell": {
+    "translation": "Démarrage Haskell"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Démarrage Haskell (Wasm)"
   },
   "templates.starter.heading": {
     "translation": "Modèles de Démarrage"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "Démarrage MiniZinc"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Démarrage Objective-C (Wasm)"
+  },
   "templates.starter.ocaml": {
     "translation": "Démarrage OCaml"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Démarrage Ruby (Wasm)"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Démarrage Rust (Wasm)"
+  },
   "templates.starter.scheme": {
     "translation": "Démarrage Scheme"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "Démarrage TypeScript"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "Démarrage VB.NET (Wasm)"
+  },
   "templates.starter.vue": {
     "translation": "Démarrage Vue"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "Démarrage WebAssembly Text"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Démarrage Zig (Wasm)"
   },
   "templates.user.heading": {
     "translation": "Mes Modèles"

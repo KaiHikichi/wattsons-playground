@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Стартер Bootstrap"
   },
+  "templates.starter.c-wasm": {
+    "translation": "Стартер C (Wasm)"
+  },
   "templates.starter.civet": {
     "translation": "Стартер Civet"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "Стартер диаграмм"
   },
+  "templates.starter.elm": {
+    "translation": "Стартер Elm"
+  },
   "templates.starter.fennel": {
     "translation": "Стартер Fennel"
+  },
+  "templates.starter.fsharp": {
+    "translation": "Стартер F#"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "Стартер F# (Wasm)"
   },
   "templates.starter.gleam": {
     "translation": "Стартер Gleam"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Стартер Go (Wasm)"
+  },
+  "templates.starter.haskell": {
+    "translation": "Стартер Haskell"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Стартер Haskell (Wasm)"
   },
   "templates.starter.heading": {
     "translation": "Стартовые шаблоны"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "Стартер MiniZinc"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Стартер Objective-C (Wasm)"
+  },
   "templates.starter.ocaml": {
     "translation": "Стартер OCaml"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Стартер Ruby (Wasm)"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Стартер Rust (Wasm)"
+  },
   "templates.starter.scheme": {
     "translation": "Стартер Scheme"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "Стартер TypeScript"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "Стартер VB.NET (Wasm)"
+  },
   "templates.starter.vue": {
     "translation": "Стартер Vue"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "Стартер WebAssembly Text"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Стартер Zig (Wasm)"
   },
   "templates.user.heading": {
     "translation": "Мои шаблоны"

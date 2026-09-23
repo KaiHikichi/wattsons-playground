@@ -9,6 +9,7 @@ const { cleanTypes } = require('./clean-types');
 const { applyHash } = require('./hash');
 const { injectCss } = require('./inject-css');
 const { buildStyles } = require('./styles');
+const { createTemplatesJson } = require('./templates-json.mjs');
 const { buildI18n, buildLocalePathLoader } = require('./i18n');
 const { arrToObj, mkdir, uint8arrayToString, iife, getFileNames, getEnvVars } = require('./utils');
 
@@ -85,7 +86,7 @@ const baseOptions = {
   define: {
     ...getEnvVars(devMode),
   },
-  loader: { '.html': 'text', '.ttf': 'file' },
+  loader: { '.html': 'text', '.raw.js': 'text', '.ttf': 'file' },
   logLevel: 'error',
   external: ['codemirror', '@codemirror/*', '@lezer/*', '@replit/codemirror-*', 'rainbowbrackets'],
   plugins: [...(devMode ? [] : [minifyHTMLPlugin(minifyHTMLOptions)])],
@@ -226,14 +227,21 @@ const iifeBuild = () =>
       'languages/commonlisp/lang-commonlisp-script.ts',
       'languages/java/lang-java-script.ts',
       'languages/cpp/lang-cpp-script.ts',
-      'languages/cpp-wasm/lang-cpp-wasm-script.ts',
+      'languages/clang-wasm/lang-clang-wasm-script.ts',
       'languages/go-wasm/lang-go-wasm-script.ts',
       'languages/csharp-wasm/lang-csharp-wasm-script.ts',
+      'languages/vb-wasm/lang-vb-wasm-script.ts',
+      'languages/zig-wasm/lang-zig-wasm-script.ts',
       'languages/dot/lang-dot-compiler.ts',
       'languages/ejs/lang-ejs-compiler.ts',
+      'languages/elm/lang-elm-compiler.ts',
       'languages/eta/lang-eta-compiler.ts',
+      'languages/fsharp/lang-fsharp-compiler.ts',
+      'languages/fsharp-wasm/lang-fsharp-wasm-script.ts',
       'languages/haml/lang-haml-compiler.ts',
       'languages/handlebars/lang-handlebars-compiler.ts',
+      'languages/haskell/lang-haskell-script.ts',
+      'languages/haskell-wasm/lang-haskell-wasm-script.ts',
       'languages/imba/lang-imba-compiler.ts',
       'languages/jinja/lang-jinja-compiler.ts',
       'languages/julia/lang-julia-script.ts',
@@ -253,6 +261,7 @@ const iifeBuild = () =>
       'languages/rescript/lang-rescript-formatter.ts',
       'languages/riot/lang-riot-compiler.ts',
       'languages/ruby-wasm/lang-ruby-wasm-script.ts',
+      'languages/rust-wasm/lang-rust-wasm-script.ts',
       'languages/scss/lang-scss-compiler.ts',
       'languages/solid/lang-solid-compiler.ts',
       'languages/sql/lang-sql-compiler.ts',
@@ -303,31 +312,11 @@ const workersBuild = () =>
   });
 
 const functionsBuild = () =>
-  Promise.all([
-    esbuild.build({
-      ...baseOptions,
-      outdir: 'functions/vendors',
-      entryPoints: ['src/livecodes/utils/compression.ts'],
-    }),
-    esbuild
-      .build({
-        ...baseOptions,
-        outdir: undefined,
-        outfile: 'functions/vendors/templates.js',
-        entryPoints: ['src/livecodes/templates/starter/index.ts'],
-        define: {
-          ...baseOptions.define,
-          'window.deps.translateString': 'getTemplateName',
-        },
-      })
-      .then(() => {
-        fs.writeFileSync(
-          'functions/vendors/templates.js',
-          `var getTemplateName = (_, templateName) => templateName;\n${fs.readFileSync('functions/vendors/templates.js', 'utf8')}`,
-          'utf8',
-        );
-      }),
-  ]);
+  esbuild.build({
+    ...baseOptions,
+    outdir: 'functions/vendors',
+    entryPoints: ['src/livecodes/utils/compression.ts'],
+  });
 
 const stylesBuild = () => buildStyles(devMode);
 
@@ -347,6 +336,7 @@ prepareDir().then(async () => {
     await applyHash({ devMode });
     await injectCss();
     if (devMode) {
+      await createTemplatesJson();
       fs.writeFileSync(
         path.resolve('build/tmp/trigger-reload.txt'),
         new Date().toISOString(),

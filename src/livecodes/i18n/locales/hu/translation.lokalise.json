@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Bootstrap kezdő"
   },
+  "templates.starter.c-wasm": {
+    "translation": "C (Wasm) kezdő"
+  },
   "templates.starter.civet": {
     "translation": "Civet kezdő"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "Diagramok kezdő"
   },
+  "templates.starter.elm": {
+    "translation": "Elm kezdő"
+  },
   "templates.starter.fennel": {
     "translation": "Fennel kezdő"
+  },
+  "templates.starter.fsharp": {
+    "translation": "F# kezdő"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "F# (Wasm) kezdő"
   },
   "templates.starter.gleam": {
     "translation": "Gleam kezdő"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Go (Wasm) kezdő"
+  },
+  "templates.starter.haskell": {
+    "translation": "Haskell kezdő"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Haskell (Wasm) kezdő"
   },
   "templates.starter.heading": {
     "translation": "Kezdő sablonok"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "MiniZinc kezdő"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Objective-C (Wasm) kezdő"
+  },
   "templates.starter.ocaml": {
     "translation": "OCaml kezdő"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Ruby (Wasm) kezdő"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Rust (Wasm) kezdő"
+  },
   "templates.starter.scheme": {
     "translation": "Scheme kezdő"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "TypeScript kezdő"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "VB.NET (Wasm) kezdő"
+  },
   "templates.starter.vue": {
     "translation": "Vue SFC kezdő"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "WebAssembly Text kezdő"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Zig (Wasm) kezdő"
   },
   "templates.user.heading": {
     "translation": "Saját sablonok"

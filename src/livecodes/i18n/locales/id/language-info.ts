@@ -38,6 +38,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Situs web resmi</2> </1> <3> <4>Panduan</4> </3> <5> <6>Referensi</6> </5> <7> <8>Contoh</8> </7> <9> <10>Muat template pemula</10> </9>',
     name: 'Blockly',
   },
+  cWasm: {
+    desc: 'C dikompilasi ke WebAssembly oleh <1>Clang</1>, berjalan sepenuhnya di dalam browser.',
+    link: '<1> <2>Referensi bahasa C</2> </1> <3> <4>Situs web resmi Clang</4> </3> <5> <6>Pelajari X dalam Y menit, dengan X=C</6> </5> <7> <8>Dokumentasi LiveCodes</8> </7> <9> <10>Muat template pemula</10> </9>',
+    name: 'C (Wasm)',
+  },
   civet: {
     desc: 'Civet adalah bahasa pemrograman yang dikompilasi ke TypeScript atau JavaScript, sehingga Anda dapat menggunakan alat yang ada tetapi mengaktifkan sintaks yang ringkas dan powerful.',
     link: '<1> <2>Situs web resmi Civet</2> </1> <3> <4>Cheatsheet Civet</4> </3> <5> <6>Muat template pemula</6> </5>',
@@ -72,9 +77,9 @@ const languageInfo: I18nLangInfoTranslation = {
     name: 'C++',
   },
   cppWasm: {
-    desc: 'Kompiler Clang C/C++ berjalan di WebAssembly, menggunakan <1>wasm-clang</1> yang diadaptasi oleh <2>polylang.io</2>',
-    link: '<1> <2>Yayasan Standard C++</2> </1> <3> <4>Situs web resmi Clang</4> </3> <5> <6>Pelajari X dalam Y menit, dengan X=C++</6> </5> <7> <8>Muat template pemula</8> </7>',
-    name: 'C/C++ (Wasm)',
+    desc: 'C++ dikompilasi ke WebAssembly oleh <1>Clang</1>, berjalan sepenuhnya di dalam browser. Ini menyediakan kompiler C++ yang sesungguhnya, tidak seperti interpreter <2>C++ berbasis JSCPP</2>.',
+    link: '<1> <2>Yayasan Standard C++</2> </1> <3> <4>Situs web resmi Clang</4> </3> <5> <6>Pelajari X dalam Y menit, dengan X=C++</6> </5> <7> <8>Dokumentasi LiveCodes</8> </7> <9> <10>Muat template pemula</10> </9>',
+    name: 'C++ (Wasm)',
   },
   csharpWasm: {
     desc: 'Kompiler C# berjalan di WebAssembly, menggunakan <1>Blazor</1>',
@@ -99,6 +104,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1><2>Situs web resmi</2></1> <3> <4>Dokumentasi LiveCodes</4> </3>',
     name: 'EJS',
   },
+  elm: {
+    desc: 'Elm dikompilasi menjadi JavaScript di dalam browser melalui versi WebAssembly dari kompiler Elm.',
+    link: '<1><2>Situs web resmi Elm</2></1> <3><4>Panduan Elm</4></3> <5> <6>Dokumentasi LiveCodes</6> </5> <7> <8>Muat templat awal</8> </7>',
+    name: 'Elm',
+  },
   eta: {
     desc: 'Mesin template JS tertanam untuk Node, Deno, dan browser. Ringan, cepat, dan pluggable. Ditulis dalam TypeScript.',
     link: '<1><2>Situs web resmi</2></1> <3> <4>Dokumentasi</4> </3> <5> <6>Dokumentasi LiveCodes</6> </5>',
@@ -113,6 +123,18 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'Flow adalah pemeriksa tipe statis untuk JavaScript.',
     link: '<1> <2>Situs web resmi Flow</2> </1> <3> <4>Dokumentasi Flow</4> </3>',
     name: 'Flow',
+  },
+  fsharp: {
+    desc1:
+      'F# adalah bahasa pemrograman fungsional lintas platform dan sumber terbuka yang berjalan di platform .NET.',
+    desc2: 'Di sini, kode tersebut dikompilasi menjadi JavaScript menggunakan Fable.',
+    link: '<1><2>Situs web resmi F#</2></1> <3> <4>Dokumentasi F#</4> </3> <5> <6>Situs web resmi Fable</6> </5> <7> <8>Dokumentasi LiveCodes</8> </7> <9> <10>Muat templat awal</10> </9>',
+    name: 'F#',
+  },
+  fsharpWasm: {
+    desc: 'Kompiler F# asli dan runtime .NET yang berjalan di WebAssembly. <1></1>Hal ini sesuai dengan perilaku kompiler F# resmi. Namun, runtime .NET WebAssembly perlu diunduh di halaman hasil, yang mungkin membutuhkan waktu cukup lama saat dijalankan untuk pertama kalinya.',
+    link: '<1><2>Situs web resmi F#</2></1> <3> <4>Dokumentasi F#</4> </3> <5> <6>Dokumentasi LiveCodes</6> </5> <7> <8>Muat templat awal</8> </7>',
+    name: 'F# (Wasm)',
   },
   gleam: {
     desc1: 'Gleam adalah bahasa ramah untuk membangun sistem yang aman dan dapat diskalakan!',
@@ -142,6 +164,16 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'Templating minimal yang powerful.',
     link: '<1><2>Situs web resmi</2></1> <3> <4>Dokumentasi LiveCodes</4> </3>',
     name: 'Handlebars',
+  },
+  haskell: {
+    desc: 'Haskell berjalan di peramban menggunakan MicroHs.',
+    link: '<1> <2>Situs web resmi Haskell</2> </1> <3> <4>MicroHs di GitHub</4> </3> <5> <6>Dokumentasi LiveCodes</6> </5> <7> <8>Muat templat awal</8> </7>',
+    name: 'Haskell',
+  },
+  haskellWasm: {
+    desc: 'Haskell dikompilasi dan dijalankan di dalam browser oleh <1>GHC in the browser</1>, yaitu versi GHC yang dibangun menggunakan WebAssembly, yang sepenuhnya berjalan di sisi klien.',
+    link: '<1> <2>Situs web resmi Haskell</2> </1> <3> <4>Dokumentasi GHC</4> </3> <5> <6>GHC di browser</6> </5> <7> <8>Dokumentasi LiveCodes</8> </7> <9> <10>Muat templat awal</10> </9>',
+    name: 'Haskell (Wasm)',
   },
   imba: {
     desc: 'Bahasa full-stack yang ramah.',
@@ -234,6 +266,16 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'Bahasa templating yang kaya dan powerful untuk JavaScript. Nunjucks pada dasarnya adalah port dari <1>jinja2</1>',
     link: '<1> <2>Situs web resmi</2> </1> <3> <4>Dokumentasi LiveCodes</4> </3>',
     name: 'Nunjucks',
+  },
+  objcWasm: {
+    desc: 'Objective-C dikompilasi ke WebAssembly oleh <1>Clang</1>, menggunakan runtime Objective-C <2>GNUstep</2>. Ini adalah runtime dan bukan pustaka kelas, sehingga Foundation tidak tersedia.',
+    link: '<1> <2>Dokumentasi Objective-C</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Pelajari X dalam Y menit, dengan X=Objective-C</6> </5> <7> <8>Dokumentasi LiveCodes</8> </7> <9> <10>Muat template pemula</10> </9>',
+    name: 'Objective-C (Wasm)',
+  },
+  objcppWasm: {
+    desc: 'Objective-C++ dikompilasi ke WebAssembly oleh <1>Clang</1>, menggunakan runtime Objective-C <2>GNUstep</2>. Ini adalah runtime dan bukan pustaka kelas, sehingga Foundation tidak tersedia.',
+    link: '<1> <2>Dokumentasi Objective-C</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Pelajari X dalam Y menit, dengan X=Objective-C</6> </5> <7> <8>Dokumentasi LiveCodes</8> </7>',
+    name: 'Objective-C++ (Wasm)',
   },
   ocaml: {
     desc1:
@@ -342,6 +384,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Situs web resmi Ruby</2> </1> <3> <4>Dokumentasi Ruby</4> </3> <5> <6>Situs web ruby.wasm</6> </5> <7><8>CRuby</8></7> <9> <10>Pelajari X dalam Y menit, dengan X=ruby</10> </9> <11> <12>Dokumentasi LiveCodes</12> </11> <13> <14>Muat template pemula</14> </13>',
     name: 'Ruby (WASM)',
   },
+  rustWasm: {
+    desc: 'Rust diinterpretasikan oleh <1>Miri</1> (interpreter IR tingkat menengah Rust) yang dikompilasi ke WebAssembly, dan dijalankan sepenuhnya di dalam browser.',
+    link: '<1> <2>Situs web resmi Rust</2> </1> <3> <4>Buku Rust</4> </3> <5> <6>Belajar X dalam Y menit, di mana X = Rust</6> </5> <7> <8>Dokumentasi LiveCodes</8> </7> <9> <10>Muat templat awal</10> </9>',
+    name: 'Rust (Wasm)',
+  },
   sass: {
     desc: 'Syntactically Awesome Style Sheets.',
     link: '<1> <2>Situs web resmi Sass</2> </1> <3> <4>Dokumentasi Sass</4> </3> <5> <6>Sintaks Sass (yang berindentasi)</6> </5> <7> <8>Pelajari X dalam Y menit, dengan X=sass</8> </7>',
@@ -426,6 +473,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Situs web resmi</2> </1> <3> <4>Dokumentasi TypeScript</4> </3> <5> <6>Pelajari X dalam Y menit, dengan X=TypeScript</6> </5> <7> <8>Muat template pemula</8> </7>',
     name: 'TypeScript',
   },
+  vbWasm: {
+    desc: 'Kompiler VB.NET berjalan di WebAssembly, menggunakan <1>Roslyn</1> dan <2>runtime .NET WebAssembly</2>',
+    link: '<1> <2>Dokumentasi bahasa Visual Basic</2> </1> <3> <4>Pelajari X dalam Y menit, dengan X=Visual Basic</4> </3> <5> <6>Dokumentasi LiveCodes</6> </5> <7> <8>Muat template pemula</8> </7>',
+    name: 'VB.NET (Wasm)',
+  },
   vue: {
     link: '<1> <2>Situs web resmi Vue.js v3</2> </1> <3> <4>Dokumentasi Vue3</4> </3> <5> <6>Komponen file tunggal Vue3</6> </5> <7> <8>Dokumentasi LiveCodes</8> </7> <9> <10>Muat template pemula</10> </9>',
     name: 'Komponen File Tunggal Vue3',
@@ -440,6 +492,11 @@ const languageInfo: I18nLangInfoTranslation = {
     desc2: 'Dikonversi ke wasm menggunakan wabt.js.',
     link: '<1><2>WebAssembly.org</2></1> <3> <4>Spesifikasi Teks WebAssembly</4> </3> <5> <6>WebAssembly di MDN</6> </5> <7> <8>Memahami format teks WebAssembly</8> </7> <9> <10>Dokumentasi wabt.js</10> </9> <11> <12>Pelajari X dalam Y menit, dengan X=WebAssembly</12> </11> <13> <14>Muat template pemula</14> </13>',
     name: 'Format Teks WebAssembly',
+  },
+  zigWasm: {
+    desc: 'Kompiler Zig yang berjalan di WebAssembly.',
+    link: '<1> <2>Situs web Zig</2> </1> <3> <4>Dokumentasi bahasa Zig</4> </3> <5> <6>Pelajari X dalam Y menit, di mana X = Zig</6> </5> <7> <8>Dokumentasi LiveCodes</8> </7> <9> <10>Muat templat awal</10> </9>',
+    name: 'Zig (Wasm)',
   },
 };
 

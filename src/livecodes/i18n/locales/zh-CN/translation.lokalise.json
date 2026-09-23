@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Bootstrap 启动模板"
   },
+  "templates.starter.c-wasm": {
+    "translation": "C（WASM）启动模板"
+  },
   "templates.starter.civet": {
     "translation": "Civet 启动模板"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "图表启动模板"
   },
+  "templates.starter.elm": {
+    "translation": "Elm 启动模板"
+  },
   "templates.starter.fennel": {
     "translation": "Fennel 启动模板"
+  },
+  "templates.starter.fsharp": {
+    "translation": "F# 启动模板"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "F#（WASM）启动模板"
   },
   "templates.starter.gleam": {
     "translation": "Gleam 启动模板"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Go（WASM）启动模板"
+  },
+  "templates.starter.haskell": {
+    "translation": "Haskell 启动模板"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Haskell (Wasm) 启动模板"
   },
   "templates.starter.heading": {
     "translation": "启动模板"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "MiniZinc 启动模板"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Objective-C（WASM）启动模板"
+  },
   "templates.starter.ocaml": {
     "translation": "Ocaml 启动模板"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Ruby（Wasm）启动模板"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Rust（Wasm）启动模板"
+  },
   "templates.starter.scheme": {
     "translation": "Scheme 启动模板"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "TypeScript 启动模板"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "VB.NET（WASM）启动模板"
+  },
   "templates.starter.vue": {
     "translation": "Vue 单文件组件启动模板"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "WebAssembly 启动模板"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Zig（WASM）启动模板"
   },
   "templates.user.heading": {
     "translation": "我的模板"

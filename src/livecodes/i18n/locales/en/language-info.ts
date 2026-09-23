@@ -45,6 +45,11 @@ const languageInfo = {
     link: '<1> <2>Official website</2> </1> <3> <4>Guides</4> </3> <5> <6>Reference</6> </5> <7> <8>Samples</8> </7> <9> <10>Load starter template</10> </9>',
     name: 'Blockly',
   },
+  cWasm: {
+    desc: 'C compiled to WebAssembly by <1>Clang</1>, running entirely in the browser.',
+    link: '<1> <2>C language reference</2> </1> <3> <4>Clang official website</4> </3> <5> <6>Learn X in Y minutes, where X=C</6> </5> <7> <8>LiveCodes Documentation</8> </7> <9> <10>Load starter template</10> </9>',
+    name: 'C (Wasm)',
+  },
   civet: {
     desc: 'Civet is a programming language that compiles to TypeScript or JavaScript, so you can use existing tooling but enable concise and powerful syntax.',
     link: '<1> <2>Civet official website</2> </1> <3> <4>Civet cheatsheet</4> </3> <5> <6>Load starter template</6> </5>',
@@ -78,9 +83,9 @@ const languageInfo = {
     name: 'C++',
   },
   cppWasm: {
-    desc: 'Clang C/C++ compiler running on WebAssembly, using <1>wasm-clang</1> adapted by <2>polylang.io</2>',
-    link: '<1> <2>Standard C++ Foundation</2> </1> <3> <4>Clang official website</4> </3> <5> <6>Learn X in Y minutes, where X=C++</6> </5> <7> <8>Load starter template</8> </7>',
-    name: 'C/C++ (Wasm)',
+    desc: 'C++ compiled to WebAssembly by <1>Clang</1>, running entirely in the browser. This provides a real C++ compiler, unlike the <2>JSCPP-based C++</2> interpreter.',
+    link: '<1> <2>Standard C++ Foundation</2> </1> <3> <4>Clang official website</4> </3> <5> <6>Learn X in Y minutes, where X=C++</6> </5> <7> <8>LiveCodes Documentation</8> </7> <9> <10>Load starter template</10> </9>',
+    name: 'C++ (Wasm)',
   },
   csharpWasm: {
     desc: 'C# compiler running on WebAssembly, using <1>Blazor</1>',
@@ -105,6 +110,11 @@ const languageInfo = {
     link: '<1><2>Official website</2></1> <3> <4>LiveCodes Documentations</4> </3>',
     name: 'EJS',
   },
+  elm: {
+    desc: 'Elm is compiled to JavaScript in the browser by a WebAssembly build of the Elm compiler.',
+    link: '<1><2>Elm official website</2></1> <3><4>Elm guide</4></3> <5> <6>LiveCodes Documentation</6> </5> <7> <8>Load starter template</8> </7>',
+    name: 'Elm',
+  },
   eta: {
     desc: 'Embedded JS template engine for Node, Deno, and the browser. Lightweight, fast, and pluggable. Written in TypeScript.',
     link: '<1><2>Official website</2></1> <3> <4>Documentation</4> </3> <5> <6>LiveCodes Documentations</6> </5>',
@@ -119,6 +129,18 @@ const languageInfo = {
     desc: 'Flow is a static type checker for JavaScript.',
     link: '<1> <2>Flow official website</2> </1> <3> <4>Flow documentation</4> </3>',
     name: 'Flow',
+  },
+  fsharp: {
+    desc1:
+      'F# is a cross-platform, open-source functional programming language that runs on the .NET platform.',
+    desc2: 'Here, it is compiled to JavaScript using Fable.',
+    link: '<1><2>F# official website</2></1> <3> <4>F# documentation</4> </3> <5> <6>Fable official website</6> </5> <7> <8>LiveCodes Documentations</8> </7> <9> <10>Load starter template</10> </9>',
+    name: 'F#',
+  },
+  fsharpWasm: {
+    desc: 'The real F# compiler and .NET runtime running on WebAssembly. <1></1>This matches the behavior of the official F# compiler. However, the .NET WebAssembly runtime needs to be downloaded in the result page, which can take some time on the first run.',
+    link: '<1><2>F# official website</2></1> <3> <4>F# documentation</4> </3> <5> <6>LiveCodes Documentation</6> </5> <7> <8>Load starter template</8> </7>',
+    name: 'F# (Wasm)',
   },
   gleam: {
     desc1: 'Gleam is a friendly language for building type-safe systems that scale!',
@@ -148,6 +170,16 @@ const languageInfo = {
     desc: 'Minimal templating on steroids.',
     link: '<1><2>Official website</2></1> <3> <4>LiveCodes Documentations</4> </3>',
     name: 'Handlebars',
+  },
+  haskell: {
+    desc: 'Haskell running in the browser using MicroHs.',
+    link: '<1> <2>Haskell official website</2> </1> <3> <4>MicroHs on GitHub</4> </3> <5> <6>LiveCodes Documentations</6> </5> <7> <8>Load starter template</8> </7>',
+    name: 'Haskell',
+  },
+  haskellWasm: {
+    desc: 'Haskell is compiled and run in the browser by <1>GHC in the browser</1>, a WebAssembly build of GHC, running entirely client-side.',
+    link: '<1> <2>Haskell official website</2> </1> <3> <4>GHC documentation</4> </3> <5> <6>GHC in the browser</6> </5> <7> <8>LiveCodes Documentation</8> </7> <9> <10>Load starter template</10> </9>',
+    name: 'Haskell (Wasm)',
   },
   imba: {
     desc: 'The friendly full-stack language.',
@@ -240,6 +272,16 @@ const languageInfo = {
     desc: 'A rich and powerful templating language for JavaScript. Nunjucks is essentially a port of <1>jinja2</1>',
     link: '<1> <2>Official website</2> </1> <3> <4>LiveCodes Documentations</4> </3>',
     name: 'Nunjucks',
+  },
+  objcWasm: {
+    desc: 'Objective-C compiled to WebAssembly by <1>Clang</1>, using the <2>GNUstep</2> Objective-C runtime. This is a runtime and not a class library, so Foundation is not available.',
+    link: '<1> <2>Objective-C documentation</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Learn X in Y minutes, where X=Objective-C</6> </5> <7> <8>LiveCodes Documentation</8> </7> <9> <10>Load starter template</10> </9>',
+    name: 'Objective-C (Wasm)',
+  },
+  objcppWasm: {
+    desc: 'Objective-C++ compiled to WebAssembly by <1>Clang</1>, using the <2>GNUstep</2> Objective-C runtime. This is a runtime and not a class library, so Foundation is not available.',
+    link: '<1> <2>Objective-C documentation</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Learn X in Y minutes, where X=Objective-C</6> </5> <7> <8>LiveCodes Documentation</8> </7>',
+    name: 'Objective-C++ (Wasm)',
   },
   ocaml: {
     desc1:
@@ -348,6 +390,11 @@ const languageInfo = {
     link: '<1> <2>Ruby official website</2> </1> <3> <4>Ruby documentation</4> </3> <5> <6>ruby.wasm website</6> </5> <7><8>CRuby</8></7> <9> <10>Learn X in Y minutes, where X=ruby</10> </9> <11> <12>LiveCodes Documentations</12> </11> <13> <14>Load starter template</14> </13>',
     name: 'Ruby (WASM)',
   },
+  rustWasm: {
+    desc: 'Rust is interpreted by <1>Miri</1> (the Rust mid-level IR interpreter) compiled to WebAssembly, running entirely in the browser.',
+    link: '<1> <2>Rust official website</2> </1> <3> <4>The Rust Book</4> </3> <5> <6>Learn X in Y minutes, where X=Rust</6> </5> <7> <8>LiveCodes Documentation</8> </7> <9> <10>Load starter template</10> </9>',
+    name: 'Rust (Wasm)',
+  },
   sass: {
     desc: 'Syntactically Awesome Style Sheets.',
     link: '<1> <2>Sass official website</2> </1> <3> <4>Sass documentation</4> </3> <5> <6>Sass (the indented) syntax</6> </5> <7> <8>Learn X in Y minutes, where X=sass</8> </7>',
@@ -432,6 +479,11 @@ const languageInfo = {
     link: '<1> <2>Official website</2> </1> <3> <4>TypeScript documentation</4> </3> <5> <6>Learn X in Y minutes, where X=TypeScript</6> </5> <7> <8>Load starter template</8> </7>',
     name: 'TypeScript',
   },
+  vbWasm: {
+    desc: 'VB.NET compiler running on WebAssembly, using <1>Roslyn</1> and the <2>.NET WebAssembly runtime</2>',
+    link: '<1> <2>Visual Basic language documentation</2> </1> <3> <4>Learn X in Y minutes, where X=Visual Basic</4> </3> <5> <6>LiveCodes Documentation</6> </5> <7> <8>Load starter template</8> </7>',
+    name: 'VB.NET (Wasm)',
+  },
   vue: {
     link: '<1> <2>Vue.js v3 official website</2> </1> <3> <4>Vue3 documentation</4> </3> <5> <6>Vue3 single file components</6> </5> <7> <8>LiveCodes Documentations</8> </7> <9> <10>Load starter template</10> </9>',
     name: 'Vue3 Single File Components',
@@ -446,6 +498,11 @@ const languageInfo = {
     desc2: 'It is converted to wasm using wabt.js.',
     link: '<1><2>WebAssembly.org</2></1> <3> <4>WebAssembly Text Specs</4> </3> <5> <6>WebAssembly on MDN</6> </5> <7> <8>Understanding WebAssembly text format</8> </7> <9> <10>wabt.js documentation</10> </9> <11> <12>Learn X in Y minutes, where X=WebAssembly</12> </11> <13> <14>Load starter template</14> </13>',
     name: 'WebAssembly Text Format',
+  },
+  zigWasm: {
+    desc: 'Zig compiler running on WebAssembly.',
+    link: '<1> <2>Zig website</2> </1> <3> <4>Zig language documentation</4> </3> <5> <6>Learn X in Y minutes, where X=Zig</6> </5> <7> <8>LiveCodes Documentation</8> </7> <9> <10>Load starter template</10> </9>',
+    name: 'Zig (Wasm)',
   },
 } as const satisfies I18nTranslationTemplate;
 

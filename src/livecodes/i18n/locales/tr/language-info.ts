@@ -38,6 +38,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Resmi web sitesi</2> </1> <3> <4>Rehberler</4> </3> <5> <6>Referans</6> </5> <7> <8>Örnekler</8> </7> <9> <10>Başlangıç şablonunu yükle</10> </9>',
     name: 'Blockly',
   },
+  cWasm: {
+    desc: "C, <1>Clang</1> tarafından WebAssembly'ye derlenir ve tamamen tarayıcı içinde çalışır.",
+    link: '<1> <2>C dili referansı</2> </1> <3> <4>Clang resmi web sitesi</4> </3> <5> <6>Y Dakikada X Öğrenin, X=C</6> </5> <7> <8>LiveCodes Belgeleri</8> </7> <9> <10>Başlangıç şablonunu yükle</10> </9>',
+    name: 'C (Wasm)',
+  },
   civet: {
     desc: "Civet, TypeScript veya JavaScript'e derlenen bir programlama dilidir, böylece mevcut araçları kullanabilir ancak daha kısa ve güçlü bir sözdizimi sağlayabilirsiniz.",
     link: '<1> <2>Civet resmi web sitesi</2> </1> <3> <4>Civet kopya kağıdı</4> </3> <5> <6>Başlangıç şablonunu yükle</6> </5>',
@@ -71,9 +76,9 @@ const languageInfo: I18nLangInfoTranslation = {
     name: 'C++',
   },
   cppWasm: {
-    desc: 'WebAssembly üzerinde çalışan, <2>polylang.io</2> tarafından uyarlanmış <1>wasm-clang</1> kullanan Clang C/C++ derleyicisi.',
-    link: '<1> <2>Standart C++ Vakfı</2> </1> <3> <4>Clang resmi web sitesi</4> </3> <5> <6>Y Dakikada X Öğrenin, X=C++</6> </5> <7> <8>Başlangıç şablonunu yükle</8> </7>',
-    name: 'C/C++ (Wasm)',
+    desc: "C++, <1>Clang</1> tarafından WebAssembly'ye derlenir ve tamamen tarayıcı içinde çalışır. Bu, <2>JSCPP tabanlı C++</2> yorumlayıcısının aksine gerçek bir C++ derleyicisi sağlar.",
+    link: '<1> <2>Standart C++ Vakfı</2> </1> <3> <4>Clang resmi web sitesi</4> </3> <5> <6>Y Dakikada X Öğrenin, X=C++</6> </5> <7> <8>LiveCodes Belgeleri</8> </7> <9> <10>Başlangıç şablonunu yükle</10> </9>',
+    name: 'C++ (Wasm)',
   },
   csharpWasm: {
     desc: 'WebAssembly üzerinde çalışan C# derleyicisi, <1>Blazor</1> kullanılarak.',
@@ -98,6 +103,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1><2>Resmi web sitesi</2></1> <3> <4>LiveCodes Dokümantasyonu</4> </3>',
     name: 'EJS',
   },
+  elm: {
+    desc: "Elm, Elm derleyicisinin bir WebAssembly derlemesi aracılığıyla tarayıcıda JavaScript'e derlenir.",
+    link: '<1><2>Elm resmi web sitesi</2></1> <3><4>Elm kılavuzu</4></3> <5> <6>LiveCodes Belgeleri</6> </5> <7> <8>Başlangıç şablonunu yükle</8> </7>',
+    name: 'Elm',
+  },
   eta: {
     desc: 'Node, Deno ve tarayıcı için gömülü JS şablon motoru. Hafif, hızlı ve eklenti destekli. TypeScript ile yazılmıştır.',
     link: '<1><2>Resmi web sitesi</2></1> <3> <4>Dokümantasyon</4> </3> <5> <6>LiveCodes Dokümantasyonu</6> </5>',
@@ -112,6 +122,18 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'Flow, JavaScript için statik bir tip denetleyicisidir.',
     link: '<1> <2>Flow resmi web sitesi</2> </1> <3> <4>Flow dokümantasyonu</4> </3>',
     name: 'Flow',
+  },
+  fsharp: {
+    desc1:
+      'F#, .NET platformunda çalışan, platformlar arası, açık kaynaklı bir işlevsel programlama dilidir.',
+    desc2: 'Burada, Fable kullanılarak JavaScript’e derlenir.',
+    link: '<1><2>F# resmi web sitesi</2></1> <3> <4>F# belgeleri</4> </3> <5> <6>Fable resmi web sitesi</6> </5> <7> <8>LiveCodes Belgeleri</8> </7> <9> <10>Başlangıç şablonunu yükle</10> </9>',
+    name: 'F#',
+  },
+  fsharpWasm: {
+    desc: 'WebAssembly üzerinde çalışan gerçek F# derleyicisi ve .NET çalışma zamanı. <1></1>Bu, resmi F# derleyicisinin davranışıyla aynıdır. Ancak, sonuç sayfasında .NET WebAssembly çalışma zamanının indirilmesi gerekir; bu da ilk çalıştırmada biraz zaman alabilir.',
+    link: '<1><2>F# resmi web sitesi</2></1> <3> <4>F# belgeleri</4> </3> <5> <6>LiveCodes Belgeleri</6> </5> <7> <8>Başlangıç şablonunu yükle</8> </7>',
+    name: 'F# (Wasm)',
   },
   gleam: {
     desc1:
@@ -142,6 +164,16 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: 'Steroidli minimal şablonlama.',
     link: '<1><2>Resmi web sitesi</2></1> <3> <4>LiveCodes Dokümantasyonu</4> </3>',
     name: 'Handlebars',
+  },
+  haskell: {
+    desc: 'MicroHs kullanılarak tarayıcıda çalışan Haskell.',
+    link: "<1> <2>Haskell resmi web sitesi</2> </1> <3> <4>GitHub'daki MicroHs</4> </3> <5> <6>LiveCodes Belgeleri</6> </5> <7> <8>Başlangıç şablonunu yükle</8> </7>",
+    name: 'Haskell',
+  },
+  haskellWasm: {
+    desc: 'Haskell, tamamen istemci tarafında çalışan GHC’nin bir WebAssembly derlemesi olan <1>“GHC in the browser”</1> tarafından derlenir ve tarayıcıda çalıştırılır.',
+    link: '<1> <2>Haskell resmi web sitesi</2> </1> <3> <4>GHC belgeleri</4> </3> <5> <6>Tarayıcıda GHC</6> </5> <7> <8>LiveCodes Belgeleri</8> </7> <9> <10>Başlangıç şablonunu yükle</10> </9>',
+    name: 'Haskell (Wasm)',
   },
   imba: {
     desc: 'Kullanımı kolay full-stack dil.',
@@ -234,6 +266,16 @@ const languageInfo: I18nLangInfoTranslation = {
     desc: "JavaScript için zengin ve güçlü bir şablonlama dili. Nunjucks aslında <1>jinja2</1>'nin bir portudur.",
     link: '<1> <2>Resmi web sitesi</2> </1> <3> <4>LiveCodes Dokümantasyonu</4> </3>',
     name: 'Nunjucks',
+  },
+  objcWasm: {
+    desc: "Objective-C, <1>Clang</1> tarafından <2>GNUstep</2> Objective-C çalışma zamanı kullanılarak WebAssembly'ye derlenir. Bu bir çalışma zamanıdır, sınıf kitaplığı değildir, bu nedenle Foundation kullanılamaz.",
+    link: '<1> <2>Objective-C belgeleri</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Y Dakikada X Öğrenin, X=Objective-C</6> </5> <7> <8>LiveCodes Belgeleri</8> </7> <9> <10>Başlangıç şablonunu yükle</10> </9>',
+    name: 'Objective-C (Wasm)',
+  },
+  objcppWasm: {
+    desc: "Objective-C++, <1>Clang</1> tarafından <2>GNUstep</2> Objective-C çalışma zamanı kullanılarak WebAssembly'ye derlenir. Bu bir çalışma zamanıdır, sınıf kitaplığı değildir, bu nedenle Foundation kullanılamaz.",
+    link: '<1> <2>Objective-C belgeleri</2> </1> <3> <4>GNUstep libobjc2</4> </3> <5> <6>Y Dakikada X Öğrenin, X=Objective-C</6> </5> <7> <8>LiveCodes Belgeleri</8> </7>',
+    name: 'Objective-C++ (Wasm)',
   },
   ocaml: {
     desc1:
@@ -342,6 +384,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Ruby resmi web sitesi</2> </1> <3> <4>Ruby dokümantasyonu</4> </3> <5> <6>ruby.wasm web sitesi</6> </5> <7><8>CRuby</8></7> <9> <10>Y Dakikada X Öğrenin, X=ruby</10> </9> <11> <12>LiveCodes Dokümantasyonu</12> </11> <13> <14>Başlangıç şablonunu yükle</14> </13>',
     name: 'Ruby (WASM)',
   },
+  rustWasm: {
+    desc: 'Rust, WebAssembly’ye derlenen <1>Miri</1> (Rust’un orta düzey IR yorumlayıcısı) tarafından yorumlanır ve tamamen tarayıcı içinde çalışır.',
+    link: "<1> <2>Rust resmi web sitesi</2> </1> <3> <4>Rust Kitabı</4> </3> <5> <6>Y dakikada X'i öğrenin, burada X=Rust</6> </5> <7> <8>LiveCodes Belgeleri</8> </7> <9> <10>Başlangıç şablonunu yükle</10> </9>",
+    name: 'Rust (Wasm)',
+  },
   sass: {
     desc: 'Sözdizimsel Olarak Harika Stil Sayfaları.',
     link: '<1> <2>Sass resmi web sitesi</2> </1> <3> <4>Sass dokümantasyonu</4> </3> <5> <6>Sass (girintili) sözdizimi</6> </5> <7> <8>Y Dakikada X Öğrenin, X=sass</8> </7>',
@@ -426,6 +473,11 @@ const languageInfo: I18nLangInfoTranslation = {
     link: '<1> <2>Resmi web sitesi</2> </1> <3> <4>TypeScript dokümantasyonu</4> </3> <5> <6>Y Dakikada X Öğrenin, X=TypeScript</6> </5> <7> <8>Başlangıç şablonunu yükle</8> </7>',
     name: 'TypeScript',
   },
+  vbWasm: {
+    desc: 'WebAssembly üzerinde çalışan VB.NET derleyicisi, <1>Roslyn</1> ve <2>.NET WebAssembly çalışma zamanı</2> kullanılarak.',
+    link: '<1> <2>Visual Basic dil dokümantasyonu</2> </1> <3> <4>Y Dakikada X Öğrenin, X=Visual Basic</4> </3> <5> <6>LiveCodes Dokümantasyonu</6> </5> <7> <8>Başlangıç şablonunu yükle</8> </7>',
+    name: 'VB.NET (Wasm)',
+  },
   vue: {
     link: '<1> <2>Vue.js v3 resmi web sitesi</2> </1> <3> <4>Vue3 dokümantasyonu</4> </3> <5> <6>Vue3 tek dosya bileşenleri</6> </5> <7> <8>LiveCodes Dokümantasyonu</8> </7> <9> <10>Başlangıç şablonunu yükle</10> </9>',
     name: 'Vue3 Tek Dosya Bileşenleri',
@@ -440,6 +492,11 @@ const languageInfo: I18nLangInfoTranslation = {
     desc2: "wabt.js kullanılarak wasm'a dönüştürülür.",
     link: "<1><2>WebAssembly.org</2></1> <3> <4>WebAssembly Metin Özellikleri</4> </3> <5> <6>MDN'de WebAssembly</6> </5> <7> <8>WebAssembly metin formatını anlama</8> </7> <9> <10>wabt.js dokümantasyonu</10> </9> <11> <12>Y Dakikada X Öğrenin, X=WebAssembly</12> </11> <13> <14>Başlangıç şablonunu yükle</14> </13>",
     name: 'WebAssembly Metin Formatı',
+  },
+  zigWasm: {
+    desc: 'WebAssembly üzerinde çalışan Zig derleyicisi.',
+    link: "<1> <2>Zig web sitesi</2> </1> <3> <4>Zig dil belgeleri</4> </3> <5> <6>Y dakikada X'i öğrenin, burada X=Zig</6> </5> <7> <8>LiveCodes Belgeleri</8> </7> <9> <10>Başlangıç şablonunu yükle</10> </9>",
+    name: 'Zig (Wasm)',
   },
 };
 

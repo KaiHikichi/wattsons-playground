@@ -2572,6 +2572,10 @@
     "notes": "",
     "translation": "Bootstrap Starter"
   },
+  "templates.starter.c-wasm": {
+    "notes": "",
+    "translation": "C (Wasm) Starter"
+  },
   "templates.starter.civet": {
     "notes": "",
     "translation": "Civet Starter"
@@ -2616,9 +2620,21 @@
     "notes": "",
     "translation": "Diagrams Starter"
   },
+  "templates.starter.elm": {
+    "notes": "",
+    "translation": "Elm Starter"
+  },
   "templates.starter.fennel": {
     "notes": "",
     "translation": "Fennel Starter"
+  },
+  "templates.starter.fsharp": {
+    "notes": "",
+    "translation": "F# Starter"
+  },
+  "templates.starter.fsharp-wasm": {
+    "notes": "",
+    "translation": "F# (Wasm) Starter"
   },
   "templates.starter.gleam": {
     "notes": "",
@@ -2631,6 +2647,14 @@
   "templates.starter.go-wasm": {
     "notes": "",
     "translation": "Go (Wasm) Starter"
+  },
+  "templates.starter.haskell": {
+    "notes": "",
+    "translation": "Haskell Starter"
+  },
+  "templates.starter.haskell-wasm": {
+    "notes": "",
+    "translation": "Haskell (Wasm) Starter"
   },
   "templates.starter.heading": {
     "notes": "",
@@ -2704,6 +2728,10 @@
     "notes": "",
     "translation": "MiniZinc Starter"
   },
+  "templates.starter.objc-wasm": {
+    "notes": "",
+    "translation": "Objective-C (Wasm) Starter"
+  },
   "templates.starter.ocaml": {
     "notes": "",
     "translation": "Ocaml Starter"
@@ -2776,6 +2804,10 @@
     "notes": "",
     "translation": "Ruby (Wasm) Starter"
   },
+  "templates.starter.rust-wasm": {
+    "notes": "",
+    "translation": "Rust (Wasm) Starter"
+  },
   "templates.starter.scheme": {
     "notes": "",
     "translation": "Scheme Starter"
@@ -2816,6 +2848,10 @@
     "notes": "",
     "translation": "TypeScript Starter"
   },
+  "templates.starter.vb-wasm": {
+    "notes": "",
+    "translation": "VB.NET (Wasm) Starter"
+  },
   "templates.starter.vue": {
     "notes": "",
     "translation": "Vue SFC Starter"
@@ -2827,6 +2863,10 @@
   "templates.starter.wat": {
     "notes": "",
     "translation": "WebAssembly Text Starter"
+  },
+  "templates.starter.zig-wasm": {
+    "notes": "",
+    "translation": "Zig (Wasm) Starter"
   },
   "templates.user.heading": {
     "notes": "",

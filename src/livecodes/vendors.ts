@@ -40,6 +40,10 @@ export const blocklyCdnBaseUrl = /* @__PURE__ */ getUrl('blockly@11.1.1/');
 
 export const browserfsUrl = /* @__PURE__ */ getUrl('browserfs@1.4.3/dist/browserfs.min.js');
 
+export const browserHaskellBaseUrl = /* @__PURE__ */ getUrl(
+  '@live-codes/browser-haskell@0.1.0/dist/',
+);
+
 export const browserJestUrl = /* @__PURE__ */ getUrl(
   '@live-codes/browser-jest@0.0.3/dist/browser-jest.umd.js',
 );
@@ -51,6 +55,8 @@ export const chaiUrl = /* @__PURE__ */ getModuleUrl('chai@5.1.2');
 export const cherryCljsBaseUrl = /* @__PURE__ */ getUrl('cherry-cljs@0.2.19/');
 
 export const cjs2esUrl = /* @__PURE__ */ getUrl('cjs2es@1.1.1/dist/cjs2es.browser.js');
+
+export const clangWasmBaseUrl = /* @__PURE__ */ getUrl('@live-codes/clang-wasm@0.2.0/');
 
 export const clioBaseUrl = /* @__PURE__ */ getUrl(
   '@live-codes/clio-browser-compiler@0.0.3/public/build/',
@@ -90,7 +96,7 @@ export const codeiumProviderUrl = /* @__PURE__ */ getUrl(
   '@live-codes/monaco-codeium-provider@0.2.2/dist/index.js',
 );
 
-export const codeMirrorBaseUrl = /* @__PURE__ */ getUrl('@live-codes/codemirror@0.4.0/build/');
+export const codeMirrorBaseUrl = /* @__PURE__ */ getUrl('@live-codes/codemirror@0.4.2/build/');
 
 export const codemirrorMinimapUrl = /* @__PURE__ */ getUrl(
   '@replit/codemirror-minimap@0.5.2/dist/index.js',
@@ -103,8 +109,6 @@ export const coffeeScriptUrl = /* @__PURE__ */ getUrl(
 export const colorisBaseUrl = /* @__PURE__ */ getUrl('@melloware/coloris@0.22.0/dist/');
 
 export const comlinkBaseUrl = /* @__PURE__ */ getUrl('comlink@4.4.1/dist/');
-
-export const cppWasmBaseUrl = /* @__PURE__ */ getUrl('@chriskoch/cpp-wasm@1.0.2/');
 
 export const creltUrl = /* @__PURE__ */ getUrl('crelt@1.0.6/index.js');
 
@@ -129,6 +133,8 @@ export const dotUrl = /* @__PURE__ */ getUrl('dot@1.1.3/doT.js');
 export const ejsUrl = /* @__PURE__ */ getUrl('ejs@4.0.1/ejs.js');
 
 export const elkjsBaseUrl = /* @__PURE__ */ getUrl('elkjs@0.8.2/lib/');
+
+export const elmWasmBaseUrl = /* @__PURE__ */ getUrl('@live-codes/elm-wasm@0.2.1/dist/');
 
 export const emmetMonacoUrl = /* @__PURE__ */ getUrl('emmet-monaco-es@5.5.0/dist/emmet-monaco.js');
 
@@ -248,6 +254,10 @@ export const fontVictorMonoUrl = /* @__PURE__ */ getUrl('victormono@1.5.4/dist/i
 
 export const fscreenUrl = /* @__PURE__ */ getUrl('fscreen@1.2.0/dist/fscreen.esm.js');
 
+export const fsharpWasmBaseUrl = /* @__PURE__ */ getUrl('@live-codes/fsharp-wasm@0.3.0/');
+
+export const ghcBrowserBaseUrl = /* @__PURE__ */ getUrl('@live-codes/ghc-in-browser@0.2.0/');
+
 export const githubMarkdownCss = /* @__PURE__ */ getUrl(
   'github-markdown-css@5.1.0/github-markdown.css',
 );
@@ -259,6 +269,10 @@ export const go2jsBaseUrl = /* @__PURE__ */ getUrl('@live-codes/go2js@0.5.0/buil
 export const graphreCdnUrl = /* @__PURE__ */ getUrl('graphre@0.1.3/dist/graphre.js');
 
 export const handlebarsBaseUrl = /* @__PURE__ */ getUrl('handlebars@4.7.8/dist/');
+
+export const haskellWasiShimUrl = /* @__PURE__ */ getUrl(
+  'https://esm.sh/gh/haskell-wasm/browser_wasi_shim@2f86b49dce50916e2984029c535321e34b234229',
+);
 
 export const highlightjsUrl = /* @__PURE__ */ getModuleUrl('highlight.js@11.11.1');
 export const highlightjsStylesUrl = /* @__PURE__ */ getUrl(
@@ -276,6 +290,8 @@ export const jestTypesUrl = /* @__PURE__ */ getUrl('@types/jest@27.4.1/index.d.t
 export const jsclUrl = /* @__PURE__ */ getUrl(
   'gh:jscl-project/jscl-project.github.io@058adc599f0d012718ef3ad28e704a92c4dd741e/jscl.js',
 );
+
+export const jsUntarUrl = /* @__PURE__ */ getUrl('js-untar@2.0.0/build/dist/untar.js');
 
 export const jsZipUrl = /* @__PURE__ */ getUrl('jszip@3.10.1/dist/jszip.js');
 
@@ -320,7 +336,7 @@ export const monacoBaseUrl = /* @__PURE__ */ getUrl('@live-codes/monaco-editor@0
 export const monacoEmacsUrl = /* @__PURE__ */ getUrl('monaco-emacs@0.3.0/dist/monaco-emacs.js');
 
 export const monacoLanguagesBaseUrl = /* @__PURE__ */ getUrl(
-  '@live-codes/monaco-languages@0.2.0/dist/',
+  '@live-codes/monaco-languages@0.3.5/dist/',
 );
 
 export const monacoThemesBaseUrl = /* @__PURE__ */ getUrl('monaco-themes@0.4.4/themes/');
@@ -363,6 +379,10 @@ export const prettierBaseUrl = /* @__PURE__ */ getUrl('prettier@3.3.2/');
 
 export const prettierMinizincUrl = /* @__PURE__ */ getUrl(
   '@live-codes/prettier-plugin-minizinc@0.2.0/dist/standalone.js',
+);
+
+export const prettierRustUrl = /* @__PURE__ */ getUrl(
+  '@live-codes/prettier-plugin-rust@0.2.0/index.global.js',
 );
 
 export const prettierPhpUrl = /* @__PURE__ */ getUrl('@prettier/plugin-php@0.22.2/standalone.js');
@@ -425,6 +445,11 @@ export const rubyWasmScriptUrl = /* @__PURE__ */ getUrl(
   '@ruby/wasm-wasi@2.7.2/dist/browser.umd.js',
 );
 
+export const rustWasmUrl = /* @__PURE__ */ getUrl(
+  '@live-codes/rust-wasm@0.3.0/dist/worker.iife.js',
+);
+export const wasmRustcBaseUrl = /* @__PURE__ */ getUrl('@live-codes/wasm-rustc@0.2.0/');
+
 export const snackbarUrl = /* @__PURE__ */ getUrl('@snackbar/core@1.7.0/dist/snackbar.css');
 
 export const spacingJsUrl = /* @__PURE__ */ getUrl('spacingjs@1.0.7/dist/bundle.js');
@@ -470,6 +495,8 @@ export const typescriptUrl = getUrl(`typescript@${typescriptVersion}/lib/typescr
 
 export const uniterUrl = /* @__PURE__ */ getUrl('uniter@2.18.0/dist/uniter.js');
 
+export const vbWasmBaseUrl = /* @__PURE__ */ getUrl('@live-codes/vb-wasm@0.1.1/');
+
 export const vegaCdnUrl = /* @__PURE__ */ getUrl('vega@5.25.0/build/vega.js');
 
 export const vegaLiteCdnUrl = /* @__PURE__ */ getUrl('vega-lite@5.9.3/build/vega-lite.js');
@@ -486,8 +513,16 @@ export const vueSfcLoaderCdnBaseUrl = /* @__PURE__ */ getUrl('vue3-sfc-loader@0.
 
 export const wabtjsUrl = /* @__PURE__ */ getUrl('wabt@1.0.35/index.js');
 
+export const wasiShimUrl = /* @__PURE__ */ getUrl('@bjorn3/browser_wasi_shim@0.3.0/dist/index.js');
+
+export const wasmFmtClangBaseUrl = /* @__PURE__ */ getUrl('@wasm-fmt/clang-format@23.1.0/');
+export const wasmFmtRuffBaseUrl = /* @__PURE__ */ getUrl('@wasm-fmt/ruff_fmt@0.15.20/');
+export const wasmFmtZigBaseUrl = /* @__PURE__ */ getUrl('@wasm-fmt/zig_fmt@0.16.0/');
+
 export const wasmoonUrl = /* @__PURE__ */ getUrl('wasmoon@1.16.0/dist/index.js');
 
 export const waveDromBaseUrl = /* @__PURE__ */ getUrl('wavedrom@3.2.0/');
 
 export const webRBaseUrl = /* @__PURE__ */ getUrl('webr@0.4.0/dist/');
+
+export const zigWasmBaseUrl = /* @__PURE__ */ getUrl('@seth0x41/zig-wasm@1.0.0/');

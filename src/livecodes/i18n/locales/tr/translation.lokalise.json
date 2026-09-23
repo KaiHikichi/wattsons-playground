@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Bootstrap Başlangıç"
   },
+  "templates.starter.c-wasm": {
+    "translation": "C (Wasm) Başlangıç"
+  },
   "templates.starter.civet": {
     "translation": "Civet Başlangıç"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "Diyagramlar Başlangıç"
   },
+  "templates.starter.elm": {
+    "translation": "Elm Başlangıç"
+  },
   "templates.starter.fennel": {
     "translation": "Fennel Başlangıç"
+  },
+  "templates.starter.fsharp": {
+    "translation": "F# Başlangıç"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "F# (Wasm) Başlangıç"
   },
   "templates.starter.gleam": {
     "translation": "Gleam Başlangıç"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Go (Wasm) Başlangıç"
+  },
+  "templates.starter.haskell": {
+    "translation": "Haskell Başlangıç"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Haskell (Wasm) Başlangıç"
   },
   "templates.starter.heading": {
     "translation": "Başlangıç Şablonları"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "MiniZinc Başlangıç"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Objective-C (Wasm) Başlangıç"
+  },
   "templates.starter.ocaml": {
     "translation": "Ocaml Başlangıç"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Ruby (Wasm) Başlangıç"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Rust (Wasm) Başlangıç"
+  },
   "templates.starter.scheme": {
     "translation": "Scheme Başlangıç"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "TypeScript Başlangıç"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "VB.NET (Wasm) Başlangıç"
+  },
   "templates.starter.vue": {
     "translation": "Vue SFC Başlangıç"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "WebAssembly Text Başlangıç"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Zig (Wasm) Başlangıç"
   },
   "templates.user.heading": {
     "translation": "Şablonlarım"

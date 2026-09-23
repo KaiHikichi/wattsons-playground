@@ -242,8 +242,9 @@ export const createEditor = async (options: EditorOptions): Promise<CodeEditor> 
 
   const loadMonacoLanguage = async (lang: Language) => {
     const langSupport = getLanguageSpecs(lang)?.editorSupport?.monaco?.languageSupport;
-    if (langSupport && !loadedLanguages.has(lang)) {
-      loadedLanguages.add(lang);
+    const mappedLanguage = mapLanguage(lang, 'monaco');
+    if (langSupport && !loadedLanguages.has(mappedLanguage)) {
+      loadedLanguages.add(mappedLanguage);
       const loadLanguage =
         typeof langSupport === 'string'
           ? (await import(langSupport)).default
@@ -637,7 +638,7 @@ export const createEditor = async (options: EditorOptions): Promise<CodeEditor> 
   const setPosition = (position: EditorPosition) => {
     const newPosition = {
       lineNumber: position.lineNumber,
-      column: position.column ?? 1,
+      column: position.column && position.column > 0 ? position.column : 1,
     };
     editor.setPosition(newPosition);
     setTimeout(() => editor.revealPositionInCenter(newPosition, 0), 50);

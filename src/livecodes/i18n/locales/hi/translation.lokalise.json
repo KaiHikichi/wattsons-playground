@@ -1929,6 +1929,9 @@
   "templates.starter.bootstrap": {
     "translation": "Bootstrap स्टार्टर"
   },
+  "templates.starter.c-wasm": {
+    "translation": "C (Wasm) स्टार्टर"
+  },
   "templates.starter.civet": {
     "translation": "Civet स्टार्टर"
   },
@@ -1962,8 +1965,17 @@
   "templates.starter.diagrams": {
     "translation": "आरेख स्टार्टर"
   },
+  "templates.starter.elm": {
+    "translation": "Elm स्टार्टर"
+  },
   "templates.starter.fennel": {
     "translation": "Fennel स्टार्टर"
+  },
+  "templates.starter.fsharp": {
+    "translation": "F# स्टार्टर"
+  },
+  "templates.starter.fsharp-wasm": {
+    "translation": "F# (Wasm) स्टार्टर"
   },
   "templates.starter.gleam": {
     "translation": "Gleam स्टार्टर"
@@ -1973,6 +1985,12 @@
   },
   "templates.starter.go-wasm": {
     "translation": "Go (Wasm) स्टार्टर"
+  },
+  "templates.starter.haskell": {
+    "translation": "Haskell स्टार्टर"
+  },
+  "templates.starter.haskell-wasm": {
+    "translation": "Haskell (Wasm) स्टार्टर"
   },
   "templates.starter.heading": {
     "translation": "स्टार्टर टेम्पलेट्स"
@@ -2028,6 +2046,9 @@
   "templates.starter.minizinc": {
     "translation": "MiniZinc स्टार्टर"
   },
+  "templates.starter.objc-wasm": {
+    "translation": "Objective-C (Wasm) स्टार्टर"
+  },
   "templates.starter.ocaml": {
     "translation": "OCaml स्टार्टर"
   },
@@ -2082,6 +2103,9 @@
   "templates.starter.ruby-wasm": {
     "translation": "Ruby (Wasm) स्टार्टर"
   },
+  "templates.starter.rust-wasm": {
+    "translation": "Rust (Wasm) स्टार्टर"
+  },
   "templates.starter.scheme": {
     "translation": "Scheme स्टार्टर"
   },
@@ -2112,6 +2136,9 @@
   "templates.starter.typescript": {
     "translation": "TypeScript स्टार्टर"
   },
+  "templates.starter.vb-wasm": {
+    "translation": "VB.NET (Wasm) स्टार्टर"
+  },
   "templates.starter.vue": {
     "translation": "Vue स्टार्टर"
   },
@@ -2120,6 +2147,9 @@
   },
   "templates.starter.wat": {
     "translation": "WebAssembly Text स्टार्टर"
+  },
+  "templates.starter.zig-wasm": {
+    "translation": "Zig (Wasm) स्टार्टर"
   },
   "templates.user.heading": {
     "translation": "मेरे टेम्पलेट्स"
