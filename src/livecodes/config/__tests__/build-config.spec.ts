@@ -3,6 +3,18 @@ import type { Config } from '../../models';
 import { getParams, loadParamConfig } from '../build-config';
 import { defaultConfig } from '../default-config';
 
+describe('getParams', () => {
+  test('?activityId= (empty value is dropped, not coerced to true)', () => {
+    const output = getParams('?activityId=');
+    expect(output.activityId).toBeUndefined();
+  });
+
+  test('?activityId=abc-123 (valid value is kept)', () => {
+    const output = getParams('?activityId=abc-123');
+    expect(output.activityId).toEqual('abc-123');
+  });
+});
+
 describe('loadParamConfig', () => {
   test('?js', () => {
     const output: Partial<Config> = loadParamConfig(defaultConfig, { js: '' });
