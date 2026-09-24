@@ -13,7 +13,7 @@ export const defaultConfig: Config = {
   formatOnsave: false,
   view: 'split',
   mode: 'full',
-  theme: 'dark',
+  theme: 'light',
   themeColor: 'hsl(42, 22%, 91%)',
   layout: 'responsive',
   editorTheme: undefined,

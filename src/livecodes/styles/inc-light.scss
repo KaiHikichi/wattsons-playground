@@ -28,10 +28,11 @@
   --dark-color: var(--color40);
   --dark-active: var(--color50);
 
-  --link: var(--color40);
+  --link: var(--color30); // SA: AA contrast on --layout (#122)
   --light: hsl(var(--hue), var(--st), var(--lt));
 
   --editor-title-simple-color: var(--color10);
+  --editor-title-color: var(--color); // SA: AA contrast on inactive tabs (#122)
 
   --thumbnail-bg-active: var(--color90);
   --thumbnail-bg-color: var(--color80);
@@ -49,7 +50,7 @@
   --input-color: hsl(var(--hue), 13%, 21%);
   --input-range-bg-color: var(--darker-bg-color);
   --input-switch-active: var(--color90);
-  --input-switch-color: var(--color60);
+  --input-switch-color: var(--color40); // SA: 3:1 vs switch knob (#122)
 
   --modal-text-color: hsl(var(--hue), 13%, 21%);
 

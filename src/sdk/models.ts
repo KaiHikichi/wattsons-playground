@@ -926,7 +926,7 @@ export interface EditorConfig {
 
   /**
    * Sets the app [theme](https://livecodes.io/docs/features/themes) to light/dark mode.
-   * @default "dark"
+   * @default "light"
    */
   theme: Theme;
 
