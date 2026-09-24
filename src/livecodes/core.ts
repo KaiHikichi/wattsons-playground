@@ -1417,7 +1417,7 @@ const share = async (
   const projectTitle = content.title !== defaultConfig.title ? content.title + ' - ' : '';
 
   return {
-    title: projectTitle + 'LiveCodes',
+    title: projectTitle + 'Wattsons-Playground',
     url: shareURL.href,
   };
 };

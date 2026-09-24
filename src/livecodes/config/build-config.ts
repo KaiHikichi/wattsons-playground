@@ -136,6 +136,12 @@ export const getParams = (
       //
     }
     params = { ...encodedParams, ...params };
+    if (key === 'activityId') {
+      if (typeof params[key] !== 'string' || !/^[\w-]{1,64}$/.test(params[key] as string)) {
+        delete params[key];
+      }
+      return;
+    }
     if (params[key] === '') params[key] = true;
     if (params[key] === 'true') params[key] = true;
     if (params[key] === 'false') params[key] = false;
