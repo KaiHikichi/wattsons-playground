@@ -134,6 +134,18 @@ For detailed documentation on specific systems, see the [Contribution Guide](./d
 - **Testing & Development**: Storybook setup
 - **Release**: Release workflow and version management
 
+## Science Alive fork notes
+
+This fork adds `activityId` to the URL query/hash so hello-wattson can link a
+student to a specific saved project. It touches two places here:
+`src/sdk/models.ts` (the `activityId` field on the SDK's URL/embed types) and
+`src/livecodes/core.ts` (where the app reads `activityId` from the query
+string or hash and loads/creates the matching saved project). hello-wattson's
+`src/js/playground.ts` builds URLs in that same format. If you change how
+`activityId` is read, written, or where it lives in the URL here, update
+`playground.ts` in hello-wattson the same day, and vice versa — a mismatch
+silently breaks generated playground links. No CI check catches this.
+
 ## Funding
 
 LiveCodes is a part of GitHub Sponsors. If you would like to support the project, please refer to the [sponsor page](https://livecodes.io/docs/sponsor) for details.
