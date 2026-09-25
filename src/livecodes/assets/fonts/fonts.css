@@ -18,8 +18,7 @@
 
 @font-face {
   font-family: 'Fraunces';
-  src: url('./Fraunces-Italic-VariableFont_SOFT,WONK,opsz,wght.ttf')
-    format('truetype');
+  src: url('./Fraunces-Italic-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -40,4 +39,3 @@
   font-style: italic;
   font-display: swap;
 }
-
