@@ -257,8 +257,9 @@
   --brand-glow-cyan-soft: 0 0 12px hsla(193, 100%, 50%, 0.1);
 
   /* Typography */
-  --font-ui: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  --font-ui: 'Sen', 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Fraunces', serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
     monospace;
 
@@ -1190,6 +1191,7 @@ a.tools-pane-title {
   color: var(--toolspane-color);
   cursor: pointer;
   display: flex;
+  font-family: var(--font-heading);
   justify-content: center;
   padding: 0 var(--s8);
   position: relative;

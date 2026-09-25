@@ -204,9 +204,8 @@ export const fontInterUrl = /* @__PURE__ */ getUrl(
 
 export const fontIosevkaUrl = /* @__PURE__ */ getUrl('@fontsource/iosevka@4.5.4/index.css');
 
-export const fontJetbrainsMonoUrl = /* @__PURE__ */ getUrl(
-  '@fontsource/jetbrains-mono@4.5.11/index.css',
-);
+// Self-hosted (OFL), not from a CDN: also declares Sen and Fraunces for the UI
+export const fontJetbrainsMonoUrl = '/livecodes/assets/fonts/fonts.css';
 
 export const fontMaterialIconsUrl = /* @__PURE__ */ getUrl(
   'https://fonts.googleapis.com/css?family=Material+Icons&display=swap',

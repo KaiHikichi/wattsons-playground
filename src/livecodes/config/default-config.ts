@@ -55,7 +55,7 @@ export const defaultConfig: Config = {
   processors: [],
   customSettings: {},
   editor: undefined,
-  fontFamily: undefined,
+  fontFamily: 'jetbrains-mono',
   fontSize: undefined,
   useTabs: false,
   tabSize: 2,
