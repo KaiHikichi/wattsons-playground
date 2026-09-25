@@ -257,7 +257,7 @@ const processHTML = async (files) => {
   };
 
   // Hardcoded translations for main page
-  addTranslation('translation:splash.loading', 'Loading LiveCodes…', '', ['textContent']);
+  addTranslation('translation:splash.loading', 'Loading Wattson’s Playground…', '', ['textContent']);
 
   await Promise.all(
     files.map(async (file) => {
