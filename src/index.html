@@ -71,59 +71,10 @@
     <div id="livecodes"></div>
     <div id="loading">
       <div class="logo-wrapper">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-          role="img"
-          aria-label="LiveCodes loading icon"
-        >
-          <defs>
-            <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
-              <circle cx="1" cy="1" r=".75" fill="rgba(255,255,255,.04)" />
-            </pattern>
-
-            <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-              <feGaussianBlur stdDeviation="4" result="b" />
-              <feMerge>
-                <feMergeNode in="b" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-            <filter id="dot-glow" x="-80%" y="-80%" width="260%" height="260%">
-              <feGaussianBlur stdDeviation="8" result="b" />
-              <feMerge>
-                <feMergeNode in="b" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-          </defs>
-
-          <rect width="512" height="512" rx="80" fill="url(#dots)" />
-
-          <g
-            class="brackets"
-            filter="url(#glow)"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            fill="none"
-          >
-            <polyline points="146,176 86,256 146,336" stroke="#00c8ff" stroke-width="44" />
-            <line x1="310" y1="160" x2="202" y2="352" stroke="#00e5c8" stroke-width="44" />
-            <polyline points="366,176 426,256 366,336" stroke="#00c8ff" stroke-width="44" />
-          </g>
-
-          <circle
-            class="live-dot"
-            cx="395"
-            cy="100"
-            r="26"
-            fill="#ff4d4d"
-            filter="url(#dot-glow)"
-          />
-        </svg>
+        <img src="livecodes/assets/templates/wattson.svg" alt="Wattson" width="160" height="160" />
       </div>
 
-      <div id="loading-text" dir="auto" hidden>Loading LiveCodes…</div>
+      <div id="loading-text" dir="auto" hidden>Loading Wattson’s Playground…</div>
       <noscript>
         <div class="noscript">Please enable JavaScript to use LiveCodes</div>
       </noscript>

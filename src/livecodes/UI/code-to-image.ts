@@ -301,7 +301,7 @@ export const createCodeToImageUI = async ({
 
   const updateWatermark = (url: string) => {
     watermark.innerHTML = `
-    <img src="${baseUrl}assets/images/livecodes-logo.svg" alt="LiveCodes logo" />
+    <img src="${baseUrl}assets/templates/wattson.svg" alt="Wattson logo" />
     ${url}
   `;
   };

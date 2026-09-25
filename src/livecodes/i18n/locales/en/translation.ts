@@ -946,7 +946,7 @@ const translation = {
     text: 'Plain Text',
   },
   splash: {
-    loading: 'Loading LiveCodes…',
+    loading: 'Loading Wattson’s Playground…',
   },
   sync: {
     autoSync: 'Auto sync',

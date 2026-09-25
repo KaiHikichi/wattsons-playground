@@ -54,7 +54,7 @@ export const createShareContainer = async (
       container: qrcodeContainer,
       url: shareDataShort.url,
       title: shareDataShort.title,
-      logo: baseUrl + 'assets/images/livecodes-logo.svg',
+      logo: baseUrl + 'assets/templates/wattson.svg',
     });
   };
 
